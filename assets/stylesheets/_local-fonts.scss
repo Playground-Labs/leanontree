@@ -2,34 +2,34 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: url('/assets/fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
-       url('../fonts/MaterialIcons-Regular.woff') format('woff'),
-       url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+       url('/assets/fonts/MaterialIcons-Regular.woff2') format('woff2'),
+       url('/assets/fonts/MaterialIcons-Regular.woff') format('woff'),
+       url('/assets/fonts/MaterialIcons-Regular.ttf') format('truetype');
 }
 @font-face
 {
 font-family: "Socialico Plus";
-src: url('../fonts/Socialico Plus.otf');
+src: url('/assets/fonts/Socialico Plus.otf');
 }
 @font-face
 {
 font-family: "Socialico";
-src: url('../fonts/Socialico.otf');
+src: url('/assets/fonts/Socialico.otf');
 }
 @font-face
 {
 font-family: "Bebas Neue";
-src: url('../fonts/BebasNeue.otf');
+src: url('/assets/fonts/BebasNeue.otf');
 }
 @font-face
 {
 font-family: "Something-in-the-way";
-src: url('../fonts/Something-in-the-way.ttf');
+src: url('/assets/fonts/Something-in-the-way.ttf');
 }
 @font-face {
 font-family: "Social Shapes";
-src: url('../fonts/social_shapes.ttf')  ;
+src: url('/assets/fonts/social_shapes.ttf')  ;
 }
