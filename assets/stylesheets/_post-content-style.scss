@@ -1,0 +1,175 @@
+.page-header
+{
+background: url('/img/lot/px_by_Gre3g.png');
+padding-bottom: 0px !important; /*overidding the default value in template which is 9px*/
+}
+.post-heading
+{
+  padding-bottom: 10px;
+  color: #000000;
+  background: #FFCC00;
+  text-shadow: 0px 2px 3px #FFFF33;
+  }
+.post-title-post-layout
+{
+  margin-top: 30px;
+  margin-bottom: 0px;
+
+  font-family: 'Oswald', sans-serif;
+ font-size: 32pt;
+text-align: center;
+}
+@media (min-width: 768px) {
+  .post-heading
+  {
+    padding-bottom: 10px;
+    color: #000000;
+    background: #FFCC00;
+    text-shadow: 0px 2px 3px #FFFF33;
+  }
+  .post-title-post-layout
+  {
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+    font-family: 'Oswald', sans-serif;
+   font-size: 64pt;
+  text-align: center;
+  }
+}
+
+.post-body-post-layout {
+font-family: 'Droid Sans', sans-serif;
+font-weight: 400;
+font-size: 12pt;
+margin-left: 5px;
+margin-right: 5px;
+color: #FFFFFF;
+}
+@media (min-width: 768px){
+  .post-body-post-layout {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  color: #FFFFFF;
+  }
+}
+
+#post-sub-text{
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.contributor_picture{
+  width: 90px;
+	height: 90px;
+  border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  float:left;
+}
+#author-and-date{
+padding: 0px;
+margin: 0px;
+}
+#author-and-date ul{
+  list-style-type: none;
+  text-align: center;
+}
+#author-and-date li{
+  text-align: center;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  #post-sub-text{
+    padding-bottom: 4em;
+    padding-top: 1em;
+  }
+  .contributor_picture{
+    width: 100px;
+  	height: 100px;
+
+  	border-radius: 150px;
+  	-webkit-border-radius: 150px;
+  	-moz-border-radius: 150px;
+  	background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+
+    float:left;
+  }
+  .post-author {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  float: left;
+  margin-right: 1em;
+  color: #FFFFFF;
+  padding-top: 15px;
+
+  }
+  .post-date-post-layout {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  float: left;
+  margin-right: 1em;
+  color: #FFFFFF;
+  padding-top: 15px;
+  }
+}
+
+.previous-post
+{
+  text-align: left;
+
+}
+.next-post
+{
+  text-align: right;
+}
+
+#tag-container ul
+{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#tag-container li
+{
+display: inline-block;
+margin-bottom: 8px;
+}
+@media (min-width : 768px){
+  #tag-container ul
+  {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #tag-container li
+  {
+  display: inline-block;
+  padding-top: 0.1em;
+
+  }
+}
+#social-sharing-request{
+  text-align:center;
+  font-family:'Pacifico',sans-serif;
+  font-size:1.5em;
+  color:#FF9933;
+}
+@media (min-width : 768px){
+  #social-sharing-request{
+    text-align:center;
+    font-family:'Pacifico',sans-serif;
+    font-size:2em;
+    color:#FF9933;
+  }
+}
+.post-body .separator .img-responsive {
+    margin: 0 auto;
+}

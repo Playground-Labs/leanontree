@@ -1,0 +1,44 @@
+#sidebar-v1
+{
+  border-radius: 40px;
+  border: 2px solid #334C58;
+background : url('/img/lot/graphy.png');
+padding: 15px;
+}
+.gadget-title
+{
+font-family: 'Fjalla One', sans-serif;
+font-size: 36px;
+}
+.gadget-title a:link
+{
+color: #3B4343 !important;
+text-decoration: none;
+}
+.gadget-title a:visited
+{
+color: #3B4343 !important;
+text-decoration: none;
+}
+.gadget-title a:hover
+{
+color: #1B1B1B !important;
+text-decoration: none;
+}
+.gadget-content
+{
+font-family: 'Source Sans Pro', sans-serif;
+}
+.gadget-content-list
+{
+
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+.gadget-content-list-items
+{
+text-decoration: none;
+overflow: hidden;
+display: inline-block;
+}

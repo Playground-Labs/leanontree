@@ -1,0 +1,108 @@
+
+.jumbotron {
+background-position: 0% 30%;
+background-image: url(/img/lot/lotblogheader.jpg);
+background-size: cover;
+background-repeat:no-repeat;
+color: white;
+overflow: hidden;
+}
+.jumbotron-custom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  background-position: 40% 80%;
+background-image: url(/img/header/header-a.jpg);
+background-size: cover;
+background-repeat:no-repeat;
+
+color: white;
+overflow: hidden;
+}
+.jumbotron-custom h1,
+.jumbotron-custom .h1 {
+  color: inherit;
+}
+.jumbotron-custom p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron-custom > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron-custom,
+.container-fluid .jumbotron-custom {
+  border-radius: 6px;
+}
+.jumbotron-custom .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron-custom {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron-custom,
+  .container-fluid .jumbotron-custom {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron-custom h1,
+  .jumbotron-custom .h1 {
+    font-size: 63px;
+  }
+}
+.jumbotron-blog-title
+{
+font-family: 'Bebas Neue', sans-serif;
+}
+
+.jumbotron-blog-tag
+{
+text-align: center;
+opacity: 0.8;
+background-color: #000000;
+}
+.jumbotron-blog-tag-custom
+{
+text-align: right;
+opacity: 0.5;
+background-color: #000000;
+padding: 5em;
+}
+.jumbotron-blog-tag-custom span
+{
+font-family: 'Francois One', sans-serif;
+margin: 0 auto;
+display: inline-block;
+}
+.jumbotron-blog-tag span
+{
+font-family: 'Francois One', sans-serif;
+margin: 0 auto;
+display: inline-block;
+}
+.jumbotron-blog-tag span a:link
+{
+text-decoration:none;
+color: #FFFFFF;
+}
+.jumbotron-blog-tag span a:visited
+{
+text-decoration:none;
+color: #FFFFFF;
+}
+.jumbotron-blog-tag span a:hover
+{
+text-decoration:none;
+color: #000000;
+}
+.socialmediaiconsonjumbotron
+{
+float:right;
+margin-right:10px;
+text-decoration: none;
+}

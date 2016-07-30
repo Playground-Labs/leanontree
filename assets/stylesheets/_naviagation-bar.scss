@@ -1,0 +1,30 @@
+.navbar-list
+{
+font-family: 'Lobster', cursive;
+font-size: 18pt;
+}
+.mobile-navbar{
+  margin-right: 20px;
+}
+
+.dropdown-menu-items
+{
+font-size: 14pt;
+}
+
+.navbar-brand
+{
+ font-family: 'Bebas Neue', sans-serif;
+ font-size: 24pt;
+ position: relative;
+ bottom: 7px;
+}
+@media (min-width: 768px) {
+   .navbar-brand
+  {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24pt;
+    position: relative;
+    bottom: 7px;
+  }
+}
