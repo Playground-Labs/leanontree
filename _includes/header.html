@@ -18,9 +18,6 @@
   {% else %}<meta name="description" content="{{ site.description }}">{% endif %}
   {% endif %}
 <link rel="icon" type="image/png" href="/img/lot-icons/LeanOnTreeIcon.png">
-<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Roboto:400,300italic,300,400italic|Cookie|Lobster|Fjalla+One|Yanone+Kaffeesatz:400,300,700|Grand+Hotel|Delius+Unicase" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Ubuntu:400,500,700|Quicksand:400,700|Roboto+Condensed:300italic,400italic,400,300|Oswald:400,700,300|Ubuntu+Condensed:400|Archivo+Narrow|Cuprum|Abel|Pacifico' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Bangers|Righteous|Montserrat|Francois+One|Source+Sans+Pro|Playball|Maiden+Orange|Rancho|Walter+Turncoat|Homenaje|Arvo' rel='stylesheet' type='text/css'>
 <link href="/assets/stylesheets/bootstrap.css" rel="stylesheet">
 <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
 <link href="/assets/stylesheets/core/application.css" rel="stylesheet">
@@ -71,115 +68,18 @@
 
 </script>
 </head>
-
 <body class="site">
-<!--header>
-  <nav class="header-nav-bar navbar navbar-default">
-    <a class="site-header-nav-elements" href="/"><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>&nbsp;ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a class="site-header-nav-elements" href="/"><i class="glyphicon glyphicon-heart" aria-hidden="true"></i>&nbsp;SELF LOVE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a class="site-brand"href="/">LEAN ON TREE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a class="site-header-nav-elements" href="/"><i class="glyphicon glyphicon-leaf" aria-hidden="true"></i>&nbsp;INITIATIVES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a class="site-header-nav-elements" href="/"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>&nbsp;CONTACT</a>
-
-  </nav>
-  <div class="site-brand"></div-->
-  {% if page.layout == 'post'%}
-  <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
-    {% else %}
-  <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
-    {% endif %}
-  <div class="container-fluid">
-  <div class="navbar-header">
-	<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed mobile-navbar" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
- <a class="navbar-brand" href="/"><i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>LEAN ON TREE</a>
-        </div>
-		<div class="collapse navbar-collapse" id="navbarCollapse" >
-        <ul class="nav navbar-nav navbar-list">
-        <li><a class="hometab" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a></li>
-        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>&nbsp;Self Love <span class="caret"></span> </a>
-    <ul class="dropdown-menu dropdown-menu-items" >
-	{% for post in site.posts %}
-	{% if post.title == "Fifty Things I Love About Myself" %}
-	<li>
-	<a href="{{ post.url }}">The Contest</a>
-	</li>
-	<li><a href="{{ post.url }}#how-to-join">How to join ?</a></li>
-	{% endif %}
-	{% endfor %}
-
-    <li><a href="/entries/self-love/">Entries</a></li>
-  </ul>
-</li>
-<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
-    <span class="glyphicon glyphicon-random" aria-hidden="true"></span>&nbsp;&nbsp;Twisted POV
-    <span class="caret"></span>
-</a>
-    <ul class="dropdown-menu dropdown-menu-items" >
-	{% for post in site.posts %}
-	{% if post.title == "Twisted POV" %}
-	  <li>
-	<a href="{{ post.url }}">Introduction</a>
-	</li>
-	{% endif %}
-	{% endfor %}
-
-
-    <li><a href="/entries/twistedPOV/">Posts</a></li>
-  </ul>
-</li>
-<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
-    <span class="glyphicon glyphicon-bed" aria-hidden="true"></span>&nbsp;&nbsp;myDecember
-    <span class="caret"></span>
-</a>
-    <ul class="dropdown-menu dropdown-menu-items" >
-	{% for post in site.posts %}
-	{% if post.title == "My December" %}
-	  <li>
-	<a href="{{ post.url }}">The Event</a>
-	</li>
-	{% endif %}
-	{% endfor %}
-    <li><a href="/entries/myDecember/">Posts</a></li>
-  </ul>
-</li>
-<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
-    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>&nbsp;&nbsp;CSA
-    <span class="caret"></span>
-</a>
-    <ul class="dropdown-menu dropdown-menu-items" >
-	{% for post in site.posts %}
-	{% if post.title == "Child Sexual Abuse (CSA)" %}
-	  <li>
-	<a href="{{ post.url }}">The Event</a>
-	</li>
-	{% endif %}
-	{% endfor %}
-    <li><a href="/entries/CSA/">Posts</a></li>
-  </ul>
-</li>
-<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
-    <span class="glyphicon glyphicon-lamp" aria-hidden="true"></span>&nbsp;&nbsp;Story Hour
-    <span class="caret"></span>
-</a>
-    <ul class="dropdown-menu dropdown-menu-items" >
-	{% for post in site.posts %}
-	{% if post.title == "The Story Hour" %}
-	  <li>
-	<a href="{{ post.url }}">The Event</a>
-	</li>
-	{% endif %}
-	{% endfor %}
-    <li><a href="/entries/thestoryhour/">Posts</a></li>
-  </ul>
-</li>
-        </ul>
-    </div>
-    </div>
-
+<header class="masthead-and-navigation-links">
+<div class="mast-head-sec">
+<ul class="brand-mast-head-content">
+  <li id="brand-name">LEAN<br/>ON<br/>TREE</li>
+  <li id="brand-tag-line">It's A Story<br/>It's Life<br/>Your's And Mine!</li>
+</ul>
+<nav class="site-navigation-menu">
+  <a href="#">About</a>&nbsp;/&nbsp;
+  <a href="#">Initiatives</a>&nbsp;/&nbsp;
+    <a href="#">Archive</a>&nbsp;/&nbsp;
+  <a href="#">Contact</a>
 </nav>
+</div>
 </header>

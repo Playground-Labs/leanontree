@@ -1,0 +1,52 @@
+.mast-head-sec
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-right: 10px;
+margin-left: 10px;
+}
+ul.brand-mast-head-content {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+ul.brand-mast-head-content li {
+float:left;
+}
+#brand-name {
+font-family: 'Dosis', sans-serif;
+font-size: 20pt;
+margin-top: 10px;
+border-width: 2.5px;
+border-style: solid;
+padding-left: 10px;
+padding-right: 10px;
+}
+#brand-tag-line {
+font-family: 'Amatic SC', cursive;
+font-weight: 400;
+font-size: 20pt;
+margin-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+letter-spacing: 2px;
+}
+nav.site-navigation-menu {
+
+font-family: 'Bungee', cursive;
+
+a, a:link, a:visited {
+   text-decoration: none;
+    color: #A9A19F;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #454343;
+}
+
+}
+
