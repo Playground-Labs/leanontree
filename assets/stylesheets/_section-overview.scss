@@ -1,36 +1,37 @@
 #site-content-index-wrapper {
  display: flex;   
  flex-direction: column;
- height: 100vh; 
+ max-height: 80vh; 
+
  flex-wrap: wrap;
 }
 .site-content-index {
 
-    width: 33.33vw;
+    max-width: 33.33vw;
     background-color: #000000; 
   
     overflow: hidden;
 }
 .site-content-index-item-a {
-   height:50vh;  
+   height:40vh;  
+   border: 5px solid #FFFFFF;
  
 }
 .site-content-index-item-b {
-height: 50vh;
-
+height: 40vh;
+border: 5px solid #FFFFFF;
 }
 .site-content-index-item-c {
 
- height:100vh; 
-
+ height:80vh; 
+border: 5px solid #FFFFFF;
 }
 .site-content-index-item-d {
  
-  height:50vh; 
- 
+  height:40vh; 
+border: 5px solid #FFFFFF;
 }
 .site-content-index-item-e {
 
-   height:50vh; 
-
-}
+   height:40vh; 
+border: 5px solid #FFFFFF;}
