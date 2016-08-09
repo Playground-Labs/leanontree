@@ -2,36 +2,56 @@
  display: flex;   
  flex-direction: column;
  max-height: 80vh; 
-
+ max-width: 100vw;
  flex-wrap: wrap;
+ overflow: hidden;
+
 }
 .site-content-index {
 
-    max-width: 33.33vw;
-    background-color: #000000; 
+max-width: 33.33vw;
+
   
-    overflow: hidden;
+overflow: hidden;
 }
 .site-content-index-item-a {
-   height:40vh;  
-   border: 5px solid #FFFFFF;
- 
+height:40vh;  
+border-top: 5px solid #FFFFFF;
+border-left: 5px solid #FFFFFF;
+transition: all 0.5s ease;
+background-color: #ff5733; 
+&:hover {
+opacity:0.4
 }
+
+}
+
 .site-content-index-item-b {
-height: 40vh;
-border: 5px solid #FFFFFF;
+height:40vh;  
+border-top: 5px solid #FFFFFF;
+border-left: 5px solid #FFFFFF;
+border-bottom: 5px solid #FFFFFF;
+ background-color:#C70039;
 }
+
 .site-content-index-item-c {
 
- height:80vh; 
+height:80vh; 
 border: 5px solid #FFFFFF;
+background-color:#480828;
 }
 .site-content-index-item-d {
  
   height:40vh; 
-border: 5px solid #FFFFFF;
+border-top: 5px solid #FFFFFF;
+border-right: 5px solid #FFFFFF;
+background-color: #313437;
 }
 .site-content-index-item-e {
 
-   height:40vh; 
-border: 5px solid #FFFFFF;}
+  height:40vh; 
+border-top: 5px solid #FFFFFF;
+border-right: 5px solid #FFFFFF;
+border-bottom: 5px solid #FFFFFF;
+background-color:#a06f87;
+}
