@@ -439,10 +439,8 @@ nav.site-navigation-menu {
   height: 40vh;
   border-top: 5px solid #FFFFFF;
   border-left: 5px solid #FFFFFF;
-  transition: all 0.5s ease;
+  transition: all 0.5s linear;
   background-color: #ff5733; }
-  .site-content-index-item-a:hover {
-    opacity: 0.4; }
 
 .site-content-index-item-b {
   height: 40vh;

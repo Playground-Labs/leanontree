@@ -18,10 +18,11 @@ overflow: hidden;
 height:40vh;  
 border-top: 5px solid #FFFFFF;
 border-left: 5px solid #FFFFFF;
-transition: all 0.5s ease;
+transition: all 0.5s linear;
 background-color: #ff5733; 
 &:hover {
-opacity:0.4
+
+
 }
 
 }
