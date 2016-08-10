@@ -1,57 +1,86 @@
 #site-content-index-wrapper {
  display: flex;   
  flex-direction: column;
- max-height: 80vh; 
- max-width: 100vw;
+ max-height: 80vh;
  flex-wrap: wrap;
  overflow: hidden;
 
 }
 .site-content-index {
 
-max-width: 33.33vw;
-
-  
+width: 33.33vw;
+display: flex; 
+justify-content: center;
+align-items: center;
 overflow: hidden;
 }
+.site-content-index #self-love {
+  color: #de2b04;
+  font-family: 'Oleo Script', cursive;
+  font-weight: 400;
+  font-size: 60px;  
+    text-shadow: 0px 2px 1px  #101713;
+
+}
+.site-content-index #my-december {
+    color: #fac1d1;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 400;
+  font-size: 60px;
+}
+.site-content-index #story-hour {
+  color: #923d67;
+  font-family: 'Bungee Shade', cursive;
+  font-weight: 400;
+  font-size: 80px;
+}
+.site-content-index #child-sexual-abuse {
+  color: #191615;  
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 700;
+  font-size: 40px;
+  text-shadow:    1px 1px 0 #525151; 
+
+}
+.site-content-index #twisted-pov {
+  font-family: 'Henny Penny', cursive;
+  font-weight: 400;
+  font-size: 60px;
+    text-shadow: 3px 3px 3px  #101713;
+
+}
+
+
 .site-content-index-item-a {
 height:40vh;  
-border-top: 5px solid #FFFFFF;
-border-left: 5px solid #FFFFFF;
+
 transition: all 0.5s ease;
 background-color: #ff5733; 
-&:hover {
-opacity:0.4
-}
+
 
 }
 
 .site-content-index-item-b {
 height:40vh;  
-border-top: 5px solid #FFFFFF;
-border-left: 5px solid #FFFFFF;
-border-bottom: 5px solid #FFFFFF;
+
  background-color:#C70039;
 }
 
 .site-content-index-item-c {
 
 height:80vh; 
-border: 5px solid #FFFFFF;
+
 background-color:#480828;
 }
 .site-content-index-item-d {
  
   height:40vh; 
-border-top: 5px solid #FFFFFF;
-border-right: 5px solid #FFFFFF;
+
 background-color: #313437;
 }
 .site-content-index-item-e {
 
   height:40vh; 
-border-top: 5px solid #FFFFFF;
-border-right: 5px solid #FFFFFF;
-border-bottom: 5px solid #FFFFFF;
-background-color:#a06f87;
+  
+background-color:#02b04c;
 }
