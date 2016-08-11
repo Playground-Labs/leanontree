@@ -376,7 +376,10 @@ ul.brand-mast-head-content {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 ul.brand-mast-head-content li {
   float: left; }
@@ -387,7 +390,8 @@ ul.brand-mast-head-content li {
   border-width: 2.5px;
   border-style: solid;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  text-shadow: 2px 2px 5px #d4a302; }
 
 #brand-tag-line {
   font-family: 'Amatic SC', cursive;
