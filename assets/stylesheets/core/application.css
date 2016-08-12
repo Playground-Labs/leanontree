@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Bungee|Dosis|Noto+Sans|Oxygen|Passion+One|Rubik|Cantora+One|Bungee+Shade|Hammersmith+One|Fredericka+the+Great|Henny+Penny|Oleo+Script+Swash+Caps|Oleo+Script";
+@import "https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Bungee|Dosis|Noto+Sans|Oxygen|Passion+One|Rubik|Cantora+One|Bungee+Shade|Hammersmith+One|Fredericka+the+Great|Henny+Penny|Oleo+Script+Swash+Caps|Oleo+Script|Alegreya+Sans+SC|Chathura";
 @import "http://fonts.googleapis.com/css?family=Droid+Sans|Roboto:400,300italic,300,400italic|Cookie|Lobster|Fjalla+One|Yanone+Kaffeesatz:400,300,700|Grand+Hotel|Delius+Unicase";
 @import "http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Ubuntu:400,500,700|Quicksand:400,700|Roboto+Condensed:300italic,400italic,400,300|Oswald:400,700,300|Ubuntu+Condensed:400|Archivo+Narrow|Cuprum|Abel|Pacifico";
 @import "http://fonts.googleapis.com/css?family=Bangers|Righteous|Montserrat|Francois+One|Source+Sans+Pro|Playball|Maiden+Orange|Rancho|Walter+Turncoat|Homenaje|Arvo";
@@ -391,7 +391,7 @@ ul.brand-mast-head-content li {
   border-style: solid;
   padding-left: 10px;
   padding-right: 10px;
-  text-shadow: 2px 2px 5px #d4a302; }
+  text-shadow: 2px 2px 2px #B88C02; }
 
 #brand-tag-line {
   font-family: 'Amatic SC', cursive;
@@ -442,62 +442,356 @@ nav.site-navigation-menu {
 
 .site-content-index {
   width: 33.33vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+
+.self-love-description, .self-love-definition, .self-love-glyph {
+  position: absolute; }
+
+.self-love-glyph {
+  font-size: 72pt;
+  color: #851902;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-450%, -450%);
+  transition: all .7s ease-in-out; }
+
+.self-love-definition {
+  border: 1px solid #851902;
+  padding: 0px 0px 0px 0px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -450%);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.self-love-description {
+  color: #851902;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 650%);
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link, .self-love-description > a:visited, .self-love-definition > a:visited, .self-love-description > a:hover {
+  text-decoration: none;
+  color: #851902; }
 
 .site-content-index #self-love {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #de2b04;
   font-family: 'Oleo Script', cursive;
   font-weight: 400;
   font-size: 60px;
-  text-shadow: 0px 2px 1px  #101713; }
-
-.site-content-index #my-december {
-  color: #fac1d1;
-  font-family: 'Fredericka the Great', cursive;
-  font-weight: 400;
-  font-size: 60px; }
-
-.site-content-index #story-hour {
-  color: #923d67;
-  font-family: 'Bungee Shade', cursive;
-  font-weight: 400;
-  font-size: 80px; }
-
-.site-content-index #child-sexual-abuse {
-  color: #191615;
-  font-family: 'Cutive Mono', monospace;
-  font-weight: 700;
-  font-size: 40px;
-  text-shadow: 1px 1px 0 #525151; }
-
-.site-content-index #twisted-pov {
-  font-family: 'Henny Penny', cursive;
-  font-weight: 400;
-  font-size: 60px;
-  text-shadow: 3px 3px 3px  #101713; }
+  text-shadow: 0px 2px 1px  #101713;
+  transition: all .7s ease-in-out; }
 
 .site-content-index-item-a {
   height: 40vh;
-  background-color: #ff5733; }
+  background-color: #ff5733;
+  transition: all .7s ease-in-out; }
+
+.site-content-index-item-a:hover #self-love {
+  transform: translate(15%, 15%);
+  opacity: 0; }
+
+.site-content-index-item-a:hover {
+  background-color: #000000; }
+
+.site-content-index-item-a:hover .self-love-glyph {
+  transform: translate(-50%, -50%); }
+
+.site-content-index-item-a:hover .self-love-definition {
+  border: 1px solid #851902;
+  padding: 0px 10px 0px 10px;
+  opacity: 1; }
+
+.site-content-index-item-a:hover .self-love-description {
+  transform: translate(-50%, 250%);
+  border: 1px solid #851902;
+  padding: 0px 10px 0px 10px; }
+
+.my-december-description, .my-december-definition, .my-december-glyph {
+  position: absolute; }
+
+.my-december-glyph {
+  font-size: 72pt;
+  color: #A41840;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-450%, -450%);
+  transition: all .9s ease-in-out; }
+
+.my-december-definition {
+  border: 1px solid #A41840;
+  padding: 0px 0px 0px 0px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -450%);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.my-december-description {
+  color: #A41840;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 650%);
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.my-december-description > a, .my-december-definition > a, .my-december-description > a:link, .my-december-definition > a:link, .my-december-description > a:visited, .my-december-definition > a:visited, .my-december-description > a:hover, .my-december-definition > a:hover {
+  text-decoration: none;
+  color: #A41840; }
+
+.site-content-index #my-december {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fac1d1;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 400;
+  font-size: 60px;
+  transition: all .7s ease-in-out; }
 
 .site-content-index-item-b {
   height: 40vh;
   background-color: #C70039; }
 
+.site-content-index-item-b:hover #my-december {
+  transform: translate(15%, 15%);
+  opacity: 0; }
+
+.site-content-index-item-b:hover {
+  background-color: #000000; }
+
+.site-content-index-item-b:hover .my-december-glyph {
+  transform: translate(-50%, -50%); }
+
+.site-content-index-item-b:hover .my-december-definition {
+  border: 1px solid #A41840;
+  padding: 0px 10px 0px 10px;
+  opacity: 1; }
+
+.site-content-index-item-b:hover .my-december-description {
+  transform: translate(-50%, 250%);
+  border: 1px solid #A41840;
+  padding: 0px 10px 0px 10px; }
+
+.story-hour-description, .story-hour-definition, .story-hour-glyph {
+  position: absolute; }
+
+.story-hour-glyph {
+  font-size: 72pt;
+  color: #3D0721;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-450%, -450%);
+  transition: all .7s ease-in-out; }
+
+.story-hour-definition {
+  border: 1px solid #3D0721;
+  padding: 0px 0px 0px 0px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -450%);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.story-hour-description {
+  color: #3D0721;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 1350%);
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.story-hour-description > a, .story-hour-definition > a, .story-hour-description > a:link, .story-hour-definition > a:link, .story-hour-description > a:visited, .story-hour-definition > a:visited, .story-hour-description > a:hover, .story-hour-definition > a:hover {
+  text-decoration: none;
+  color: #3D0721; }
+
+.site-content-index #story-hour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #923d67;
+  font-family: 'Bungee Shade', cursive;
+  font-weight: 400;
+  font-size: 80px;
+  transition: all .7s ease-in-out; }
+
 .site-content-index-item-c {
   height: 80vh;
   background-color: #480828; }
 
+.site-content-index-item-c:hover #story-hour {
+  transform: translate(15%, 15%);
+  opacity: 0; }
+
+.site-content-index-item-c:hover {
+  background-color: #000000; }
+
+.site-content-index-item-c:hover .story-hour-glyph {
+  transform: translate(-50%, -50%); }
+
+.site-content-index-item-c:hover .story-hour-definition {
+  border: 1px solid #3D0721;
+  padding: 0px 10px 0px 10px;
+  opacity: 1; }
+
+.site-content-index-item-c:hover .story-hour-description {
+  transform: translate(-50%, 250%);
+  border: 1px solid #3D0721;
+  padding: 0px 10px 0px 10px; }
+
+.child-sexual-abuse-description, .child-sexual-abuse-definition, .child-sexual-abuse-glyph {
+  position: absolute; }
+
+.child-sexual-abuse-glyph {
+  font-size: 72pt;
+  color: #3FB0A1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-450%, -450%);
+  transition: all .7s ease-in-out; }
+
+.child-sexual-abuse-definition {
+  border: 1px solid #3FB0A1;
+  padding: 0px 0px 0px 0px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -450%);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.child-sexual-abuse-description {
+  color: #3FB0A1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 650%);
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.child-sexual-abuse-description > a, .child-sexual-abuse-definition > a, .child-sexual-abuse-description > a:link, .child-sexual-abuse-definition > a:link, .child-sexual-abuse-description > a:visited, .child-sexual-abuse-definition > a:visited, .child-sexual-abuse-description > a:hover, .child-sexual-abuse-definition > a:hover {
+  text-decoration: none;
+  color: #3FB0A1; }
+
+.site-content-index #child-sexual-abuse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #02A591;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 700;
+  font-size: 40px;
+  text-shadow: 1px 1px 0 #019B87;
+  transition: all .7s ease-in-out; }
+
 .site-content-index-item-d {
   height: 40vh;
-  background-color: #313437; }
+  background-color: #26DCC4; }
+
+.site-content-index-item-d:hover #child-sexual-abuse {
+  transform: translate(15%, 15%);
+  opacity: 0; }
+
+.site-content-index-item-d:hover {
+  background-color: #000000; }
+
+.site-content-index-item-d:hover .child-sexual-abuse-glyph {
+  transform: translate(-50%, -50%); }
+
+.site-content-index-item-d:hover .child-sexual-abuse-definition {
+  border: 1px solid #3FB0A1;
+  padding: 0px 10px 0px 10px;
+  opacity: 1; }
+
+.site-content-index-item-d:hover .child-sexual-abuse-description {
+  transform: translate(-50%, 250%);
+  border: 1px solid #3FB0A1;
+  padding: 0px 10px 0px 10px; }
+
+.twisted-pov-description, .twisted-pov-definition, .twisted-pov-glyph {
+  position: absolute; }
+
+.twisted-pov-glyph {
+  font-size: 72pt;
+  color: #02A547;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-450%, -450%);
+  transition: all .7s ease-in-out; }
+
+.twisted-pov-definition {
+  border: 1px solid #02A547;
+  padding: 0px 0px 0px 0px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -450%);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.twisted-pov-description {
+  color: #02A547;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 650%);
+  transition: all .7s ease-in-out;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.twisted-pov-description > a, .twisted-pov-definition > a, .twisted-pov-description > a:link, .twisted-pov-definition > a:link, .twisted-pov-description > a:visited, .twisted-pov-definition > a:visited, .twisted-pov-description > a:hover, .twisted-pov-definition > a:hover {
+  text-decoration: none;
+  color: #02A547; }
+
+.site-content-index #twisted-pov {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Henny Penny', cursive;
+  font-weight: 400;
+  font-size: 60px;
+  text-shadow: 3px 3px 3px  #101713;
+  transition: all .7s ease-in-out; }
 
 .site-content-index-item-e {
   height: 40vh;
   background-color: #02b04c; }
+
+.site-content-index-item-e:hover #twisted-pov {
+  transform: translate(15%, 15%);
+  opacity: 0; }
+
+.site-content-index-item-e:hover {
+  background-color: #000000; }
+
+.site-content-index-item-e:hover .twisted-pov-glyph {
+  transform: translate(-50%, -50%); }
+
+.site-content-index-item-e:hover .twisted-pov-definition {
+  border: 1px solid #02A547;
+  padding: 0px 10px 0px 10px;
+  opacity: 1; }
+
+.site-content-index-item-e:hover .twisted-pov-description {
+  transform: translate(-50%, 250%);
+  border: 1px solid #02A547;
+  padding: 0px 10px 0px 10px; }
 
 .jumbotron {
   background-position: 0% 30%;
