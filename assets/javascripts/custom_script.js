@@ -35,3 +35,20 @@ window.fbAsyncInit = function() {
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > $(".masthead-and-navigation-links").height()) {
+        $('#brand-tag-line').addClass('brand-tag-line-dynamic');
+        $('.masthead-and-navigation-links').addClass('dynamic-header');
+      $('.brand-name').addClass('brand-name-dynamic');
+
+    } else {
+ 
+       $('#brand-tag-line').removeClass('brand-tag-line-dynamic');
+         $('.masthead-and-navigation-links').removeClass('dynamic-header');
+      $('.brand-name').removeClass('brand-name-dynamic');
+     
+       
+    }
+});

@@ -1,14 +1,51 @@
 header.masthead-and-navigation-links
 {
     min-height: 20vh;
-    max-width: 100vw;
+    max-height: 20vh;
+    width: 100%; 
     overflow: hidden;
     background-color: #FFC300 ;
-    
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
 
+@media(min-width: $screen-md-min) 
+{
+header.masthead-and-navigation-links
+{
+    min-height: 20vh;
+    max-height: 20vh;
+    width: 100%; 
+    overflow: hidden;
+    background-color: #FFC300 ;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+header.dynamic-header{
+min-height: 10vh !important;
+max-height: 10vh !important;
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
 }
 .mast-head-sec
 {
+flex-grow: 1;    
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -30,22 +67,36 @@ justify-content: center;
 ul.brand-mast-head-content li {
 float:left;
 }
-#brand-name {
+#brand-name, .brand-name {
 font-family: 'Dosis', sans-serif;
-font-size: 21pt;
+font-size: 17pt;
 border-width: 2.5px;
 border-style: solid;
 padding-left: 10px;
 padding-right: 10px;
 text-shadow: 2px 2px 2px #B88C02;
+display: flex;
+flex-direction: column;
+transition: all .9s ease-in-out;
+ }
+.brand-name-dynamic {
+flex-direction: row !important;
+transition: all .9s ease-in-out;
 }
-#brand-tag-line {
+
+
+#brand-tag-line,  .brand-tag-line {
 font-family: 'Amatic SC', cursive;
 font-weight: 400;
-font-size: 22pt;
+font-size: 18pt;
 padding-left: 10px;
 padding-right: 10px;
 letter-spacing: 2px;
+opacity: 1;
+transition: all .9s ease-in-out;
+}
+.brand-tag-line-dynamic{
+opacity: 0 !important;
 }
 nav.site-navigation-menu {
 
@@ -62,5 +113,10 @@ a:hover {
     color: #93081b;
 }
 
+span.icon {
+    display:none;
+}
 }
 
+
+}

@@ -8,7 +8,8 @@
   display: -webkit-flex;
   min-height: 100vh;
   max-width: 100vw;
-  
+  min-width: 100vw;
+  overflow-x: hidden;
   flex-direction: column;
 }
 
