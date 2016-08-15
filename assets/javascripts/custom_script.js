@@ -12,12 +12,23 @@ var newwindow = window.open(url,'name','height=250,width=500');
 	}
     return false;
     } 
+ function toggleMenu() {
+       var hb = document.getElementById("main-nav");
+    if (hb.className === "site-navigation-menu") {
+        hb.className += " site-navigation-menu-responsive";
+    } else {
+        hb.className = "site-navigation-menu";
+    }
+ }   
 $(document).ready(function(){
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
     $(this).parent().find('li').toggle();
 });
-
+   
+document.querySelector( 'a.icon' ).addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
 });
 
 window.fbAsyncInit = function() {
@@ -52,3 +63,4 @@ $(window).scroll(function() {
        
     }
 });
+
