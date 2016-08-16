@@ -510,7 +510,8 @@ ul.site-navigation-menu-responsive {
   background-color: grey;
   transition: all 100ms; }
 
-ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
+ul.site-navigation-menu-responsive li,
+ul.site-navigation-menu-responsive li a {
   float: none !important;
   display: block !important;
   padding: 5px;
@@ -541,7 +542,14 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   ul.site-navigation-menu li a {
     display: inline-block; }
 
-  a.icon, a.icon span {
+  ul.site-navigation-menu li a:after {
+    content: "\00a0/\00a0"; }
+
+  ul.site-navigation-menu li:last-child a:after {
+    content: ""; }
+
+  a.icon,
+  a.icon span {
     display: none; } }
 .navbar-list {
   font-family: 'Lobster', cursive;
@@ -567,14 +575,14 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
     bottom: 7px; } }
 #site-content-index-wrapper {
   display: flex;
-  flex-direction: column;
-  max-height: 80vh;
+  flex-direction: row;
+  max-height: 90vh;
   flex-wrap: wrap;
   overflow: hidden;
-  margin-top: 20vh; }
+  margin-top: 10vh; }
 
 .site-content-index {
-  width: 33.33vw;
+  width: 50vw;
   overflow: hidden;
   position: relative; }
 
@@ -627,7 +635,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .site-content-index-item-a {
-  height: 40vh;
+  height: 30vh;
   background-color: #ff5733;
   transition: all .7s ease-in-out; }
 
@@ -699,7 +707,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .site-content-index-item-b {
-  height: 40vh;
+  height: 30vh;
   background-color: #C70039; }
 
 .site-content-index-item-b:hover #my-december {
@@ -770,7 +778,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .site-content-index-item-c {
-  height: 80vh;
+  height: 30vh;
   background-color: #480828; }
 
 .site-content-index-item-c:hover #story-hour {
@@ -842,7 +850,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .site-content-index-item-d {
-  height: 40vh;
+  height: 30vh;
   background-color: #26DCC4; }
 
 .site-content-index-item-d:hover #child-sexual-abuse {
@@ -913,7 +921,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .site-content-index-item-e {
-  height: 40vh;
+  height: 30vh;
   background-color: #02b04c; }
 
 .site-content-index-item-e:hover #twisted-pov {
@@ -936,6 +944,29 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   border: 1px solid #02A547;
   padding: 0px 10px 0px 10px; }
 
+@media (min-width: 992px) {
+  #site-content-index-wrapper {
+    flex-direction: column;
+    max-height: 80vh;
+    margin-top: 20vh; }
+
+  .site-content-index {
+    width: 33.33vw; }
+
+  .site-content-index-item-a {
+    height: 40vh; }
+
+  .site-content-index-item-b {
+    height: 40vh; }
+
+  .site-content-index-item-c {
+    height: 80vh; }
+
+  .site-content-index-item-d {
+    height: 40vh; }
+
+  .site-content-index-item-e {
+    height: 40vh; } }
 .jumbotron {
   background-position: 0% 30%;
   background-image: url(/img/lot/lotblogheader.jpg);
@@ -1361,7 +1392,8 @@ a.post-page-link:hover {
 
 .gadget-title {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 36px; }
+  font-size: 36px;
+  text-align: center; }
 
 .gadget-title a:link {
   color: #3B4343 !important;
@@ -1390,12 +1422,14 @@ a.post-page-link:hover {
 
 .about-us {
   padding-left: 0em;
-  padding-right: 0em; }
+  padding-right: 0em;
+  margin-top: 10vh; }
 
-@media (min-width: 768 px) {
+@media (min-width: 768px) {
   .about-us {
     padding-left: 5em;
-    padding-right: 5em; } }
+    padding-right: 5em;
+    margin-top: 20vh; } }
 .aboutus-layout-section {
   padding-top: 15px; }
 
@@ -1514,6 +1548,9 @@ a.social-media-decoration:hover {
   text-decoration: none; }
 
 /* CSS for Site archive. Timeline style */
+.main-content {
+  margin-top: 20vh; }
+
 .badges-year {
   text-align: center;
   font-family: 'Yanone Kaffeesatz', sans-serif;

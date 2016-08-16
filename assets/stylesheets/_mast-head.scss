@@ -1,7 +1,7 @@
 ﻿header.masthead-and-navigation-links {
     min-height: 10vh;
     max-height: 10vh;
-    width: 100%;   
+    width: 100%;
     background-color: #FFC300;
     position: fixed;
     top: 0;
@@ -16,7 +16,6 @@ header.dynamic-header {
     min-height: 10vh !important;
     max-height: 10vh !important;
 }
-
 
 .mast-head-sec {
     flex-grow: 1;
@@ -67,7 +66,7 @@ ul.brand-mast-head-content li {
 #brand-tag-line,
 .brand-tag-line {
     font-family: 'Amatic SC', cursive;
-     font-weight: 400;
+    font-weight: 400;
     font-size: 4.2vmin;
     padding-left: 10px;
     padding-right: 10px;
@@ -90,7 +89,7 @@ ul.site-navigation-menu {
     font-size: 5vmin;
     li {
         float: left;
-       }
+    }
     li a,
     li a:link,
     li a:visited {
@@ -106,22 +105,21 @@ ul.site-navigation-menu {
 
 ul.site-navigation-menu li a {
     display: none;
-    
 }
+
 a.icon {
-display:block;
-position:absolute;
-right: 0px;
-top: 0px;
-width: 20vw;
-height: 10vh ;
-z-index:200; 
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20vw;
+    height: 10vh;
+    z-index: 200;
 }
- 
+
 a.icon span,
 a.icon span:before,
 a.icon span:after {
-    
     content: '';
     position: absolute;
     right: 0px;
@@ -133,6 +131,7 @@ a.icon span:after {
     cursor: pointer;
     transition: all 500ms ease-in-out;
 }
+
 a.icon span {
     top: 50%;
     transform: translate(-50%, -50%);
@@ -146,76 +145,76 @@ a.icon span:after {
     bottom: -10px;
 }
 
-
 a.icon.active span {
- 
- background-color: transparent;
-
+    background-color: transparent;
 }
+
 a.icon.active span:before {
     top: 0px !important;
     transform: rotate(45deg);
 }
+
 a.icon.active span:after {
     top: 0px !important;
     transform: rotate(-45deg);
 }
+
 ul.site-navigation-menu-responsive {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index:100;  
-  display: inline-block !important;
-  text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    display: inline-block !important;
+    text-align: left;
+    overflow: visible!important;
+    width: 100%;
+    background-color: grey;
+    transition: all 100ms;
+}
+
+ul.site-navigation-menu-responsive li,
+ul.site-navigation-menu-responsive li a {
+    float: none !important;
+    display: block !important;
+    padding: 5px;
+    text-shadow: none !important;
+}
  
-   overflow: visible!important;
-  width: 100%;
-  background-color: grey;
+ 
 
-   transition: all 100ms;
-}
-ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
-float: none !important;
-display: block !important;
-padding: 5px;
-text-shadow: none !important;
-
-}
-  
 @media(min-width: $screen-md-min) {
     header.masthead-and-navigation-links {
         min-height: 20vh;
-        max-height: 20vh;       
+        max-height: 20vh;
         background-color: #FFC300;
     }
-
-
     #brand-name,
     .brand-name {
         font-family: 'Dosis', sans-serif;
         font-size: 4vmin;
         border-width: 0.5vmin;
         border-style: solid;
-    
         display: flex;
         flex-direction: column;
-    
     }
-   
     #brand-tag-line,
     .brand-tag-line {
- 
         opacity: 1;
-      
     }
     ul.site-navigation-menu {
-     font-size: 2.8vmin;
+        font-size: 2.8vmin;
     }
-
-    ul.site-navigation-menu li a{
+    ul.site-navigation-menu li a {
         display: inline-block;
     }
-    a.icon, a.icon span{
+    ul.site-navigation-menu li a:after {
+        content:"\00a0/\00a0";
+    }
+     ul.site-navigation-menu li:last-child a:after {
+        content:"";
+    }
+    a.icon,
+    a.icon span {
         display: none;
     }
 }
