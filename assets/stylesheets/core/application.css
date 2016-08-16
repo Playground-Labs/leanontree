@@ -376,12 +376,6 @@ header.dynamic-header {
   min-height: 10vh !important;
   max-height: 10vh !important; }
 
-.sticky {
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  top: 0px;
-  border-bottom: 1px solid gainsboro; }
-
 .mast-head-sec {
   flex-grow: 1;
   display: flex;
@@ -409,8 +403,8 @@ ul.brand-mast-head-content li {
 #brand-name,
 .brand-name {
   font-family: 'Dosis', sans-serif;
-  font-size: 1.8em;
-  border-width: 2.5px;
+  font-size: 7vmin;
+  border-width: 0.5vmin;
   border-style: solid;
   padding-left: 10px;
   padding-right: 10px;
@@ -427,11 +421,11 @@ ul.brand-mast-head-content li {
 .brand-tag-line {
   font-family: 'Amatic SC', cursive;
   font-weight: 400;
-  font-size: 18pt;
+  font-size: 4.2vmin;
   padding-left: 10px;
   padding-right: 10px;
   letter-spacing: 2px;
-  opacity: 1;
+  opacity: 0;
   transition: all .9s ease-in-out; }
 
 .brand-tag-line-dynamic {
@@ -443,7 +437,8 @@ ul.site-navigation-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 5vmin; }
   ul.site-navigation-menu li {
     float: left; }
   ul.site-navigation-menu li a,
@@ -525,49 +520,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   header.masthead-and-navigation-links {
     min-height: 20vh;
     max-height: 20vh;
-    width: 100%;
-    overflow: hidden;
-    background-color: #FFC300;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all .5s ease-in-out; }
-
-  header.dynamic-header {
-    min-height: 10vh !important;
-    max-height: 10vh !important; }
-
-  .sticky {
-    background-color: rgba(255, 255, 255, 0.93);
-    opacity: 1;
-    top: 0px;
-    border-bottom: 1px solid gainsboro; }
-
-  .mast-head-sec {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px; }
-
-  ul.brand-mast-head-content {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
-  ul.brand-mast-head-content li {
-    float: left; }
+    background-color: #FFC300; }
 
   #brand-name,
   .brand-name {
@@ -575,30 +528,15 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
     font-size: 4vmin;
     border-width: 0.5vmin;
     border-style: solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-shadow: 2px 2px 2px #B88C02;
     display: flex;
-    flex-direction: column;
-    transition: all .9s ease-in-out; }
-
-  .brand-name-dynamic {
-    flex-direction: row !important;
-    transition: all .9s ease-in-out; }
+    flex-direction: column; }
 
   #brand-tag-line,
   .brand-tag-line {
-    font-family: 'Amatic SC', cursive;
-    font-weight: 400;
-    font-size: 4.2vmin;
-    padding-left: 10px;
-    padding-right: 10px;
-    letter-spacing: 2px;
-    opacity: 1;
-    transition: all .9s ease-in-out; }
+    opacity: 1; }
 
-  .brand-tag-line-dynamic {
-    opacity: 0 !important; }
+  ul.site-navigation-menu {
+    font-size: 2.8vmin; }
 
   ul.site-navigation-menu li a {
     display: inline-block; }
@@ -644,7 +582,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   position: absolute; }
 
 .self-love-glyph {
-  font-size: 72pt;
+  font-size: 16vmin;
   color: #851902;
   left: 50%;
   top: 50%;
@@ -653,14 +591,15 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .self-love-definition {
-  border: 1px solid #851902;
+  border: 0.2vmin solid #851902;
   padding: 0px 0px 0px 0px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -450%);
   opacity: 0;
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .self-love-description {
   color: #851902;
@@ -668,7 +607,8 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   top: 50%;
   transform: translate(-50%, 650%);
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link, .self-love-description > a:visited, .self-love-definition > a:visited, .self-love-description > a:hover {
   text-decoration: none;
@@ -682,7 +622,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   color: #de2b04;
   font-family: 'Oleo Script', cursive;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 10vmin;
   text-shadow: 0px 2px 1px  #101713;
   transition: all .7s ease-in-out; }
 
@@ -702,7 +642,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transform: translate(-50%, -50%); }
 
 .site-content-index-item-a:hover .self-love-definition {
-  border: 1px solid #851902;
+  border: 0.2vmin solid #851902;
   padding: 0px 10px 0px 10px;
   opacity: 1; }
 
@@ -715,7 +655,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   position: absolute; }
 
 .my-december-glyph {
-  font-size: 72pt;
+  font-size: 16vmin;
   color: #A41840;
   left: 50%;
   top: 50%;
@@ -724,14 +664,15 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .9s ease-in-out; }
 
 .my-december-definition {
-  border: 1px solid #A41840;
+  border: 0.2vmin solid #A41840;
   padding: 0px 0px 0px 0px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -450%);
   opacity: 0;
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .my-december-description {
   color: #A41840;
@@ -739,7 +680,8 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   top: 50%;
   transform: translate(-50%, 650%);
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .my-december-description > a, .my-december-definition > a, .my-december-description > a:link, .my-december-definition > a:link, .my-december-description > a:visited, .my-december-definition > a:visited, .my-december-description > a:hover, .my-december-definition > a:hover {
   text-decoration: none;
@@ -753,7 +695,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   color: #fac1d1;
   font-family: 'Fredericka the Great', cursive;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 10vmin;
   transition: all .7s ease-in-out; }
 
 .site-content-index-item-b {
@@ -771,7 +713,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transform: translate(-50%, -50%); }
 
 .site-content-index-item-b:hover .my-december-definition {
-  border: 1px solid #A41840;
+  border: 0.2vmin solid #A41840;
   padding: 0px 10px 0px 10px;
   opacity: 1; }
 
@@ -784,7 +726,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   position: absolute; }
 
 .story-hour-glyph {
-  font-size: 72pt;
+  font-size: 16vmin;
   color: #3D0721;
   left: 50%;
   top: 50%;
@@ -793,14 +735,15 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .story-hour-definition {
-  border: 1px solid #3D0721;
+  border: 0.2vmin solid #3D0721;
   padding: 0px 0px 0px 0px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -450%);
   opacity: 0;
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .story-hour-description {
   color: #3D0721;
@@ -808,7 +751,8 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   top: 50%;
   transform: translate(-50%, 1350%);
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .story-hour-description > a, .story-hour-definition > a, .story-hour-description > a:link, .story-hour-definition > a:link, .story-hour-description > a:visited, .story-hour-definition > a:visited, .story-hour-description > a:hover, .story-hour-definition > a:hover {
   text-decoration: none;
@@ -822,7 +766,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   color: #923d67;
   font-family: 'Bungee Shade', cursive;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 14vmin;
   transition: all .7s ease-in-out; }
 
 .site-content-index-item-c {
@@ -840,7 +784,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transform: translate(-50%, -50%); }
 
 .site-content-index-item-c:hover .story-hour-definition {
-  border: 1px solid #3D0721;
+  border: 0.2vmin solid #3D0721;
   padding: 0px 10px 0px 10px;
   opacity: 1; }
 
@@ -853,7 +797,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   position: absolute; }
 
 .child-sexual-abuse-glyph {
-  font-size: 72pt;
+  font-size: 16vmin;
   color: #3FB0A1;
   left: 50%;
   top: 50%;
@@ -862,14 +806,15 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .child-sexual-abuse-definition {
-  border: 1px solid #3FB0A1;
+  border: 0.2vmin solid #3FB0A1;
   padding: 0px 0px 0px 0px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -450%);
   opacity: 0;
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .child-sexual-abuse-description {
   color: #3FB0A1;
@@ -877,7 +822,8 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   top: 50%;
   transform: translate(-50%, 650%);
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .child-sexual-abuse-description > a, .child-sexual-abuse-definition > a, .child-sexual-abuse-description > a:link, .child-sexual-abuse-definition > a:link, .child-sexual-abuse-description > a:visited, .child-sexual-abuse-definition > a:visited, .child-sexual-abuse-description > a:hover, .child-sexual-abuse-definition > a:hover {
   text-decoration: none;
@@ -891,7 +837,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   color: #02A591;
   font-family: 'Cutive Mono', monospace;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 8vmin;
   text-shadow: 1px 1px 0 #019B87;
   transition: all .7s ease-in-out; }
 
@@ -910,7 +856,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transform: translate(-50%, -50%); }
 
 .site-content-index-item-d:hover .child-sexual-abuse-definition {
-  border: 1px solid #3FB0A1;
+  border: 0.2vmin solid #3FB0A1;
   padding: 0px 10px 0px 10px;
   opacity: 1; }
 
@@ -923,7 +869,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   position: absolute; }
 
 .twisted-pov-glyph {
-  font-size: 72pt;
+  font-size: 16vmin;
   color: #02A547;
   left: 50%;
   top: 50%;
@@ -932,14 +878,15 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transition: all .7s ease-in-out; }
 
 .twisted-pov-definition {
-  border: 1px solid #02A547;
+  border: 0.2vmin solid #02A547;
   padding: 0px 0px 0px 0px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -450%);
   opacity: 0;
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .twisted-pov-description {
   color: #02A547;
@@ -947,7 +894,8 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   top: 50%;
   transform: translate(-50%, 650%);
   transition: all .7s ease-in-out;
-  font-family: 'Alegreya Sans SC', sans-serif; }
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.6vmin; }
 
 .twisted-pov-description > a, .twisted-pov-definition > a, .twisted-pov-description > a:link, .twisted-pov-definition > a:link, .twisted-pov-description > a:visited, .twisted-pov-definition > a:visited, .twisted-pov-description > a:hover, .twisted-pov-definition > a:hover {
   text-decoration: none;
@@ -960,7 +908,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transform: translate(-50%, -50%);
   font-family: 'Henny Penny', cursive;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 10vmin;
   text-shadow: 3px 3px 3px  #101713;
   transition: all .7s ease-in-out; }
 
@@ -979,7 +927,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   transform: translate(-50%, -50%); }
 
 .site-content-index-item-e:hover .twisted-pov-definition {
-  border: 1px solid #02A547;
+  border: 0.2vmin solid #02A547;
   padding: 0px 10px 0px 10px;
   opacity: 1; }
 

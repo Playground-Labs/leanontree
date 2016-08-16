@@ -1,8 +1,7 @@
 ﻿header.masthead-and-navigation-links {
     min-height: 10vh;
     max-height: 10vh;
-    width: 100%;
-   
+    width: 100%;   
     background-color: #FFC300;
     position: fixed;
     top: 0;
@@ -18,12 +17,6 @@ header.dynamic-header {
     max-height: 10vh !important;
 }
 
-.sticky {
-    background-color: rgba(255, 255, 255, 0.93);
-    opacity: 1;
-    top: 0px;
-    border-bottom: 1px solid gainsboro;
-}
 
 .mast-head-sec {
     flex-grow: 1;
@@ -55,8 +48,8 @@ ul.brand-mast-head-content li {
 #brand-name,
 .brand-name {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.8em;
-    border-width: 2.5px;
+    font-size: 7vmin;
+    border-width: 0.5vmin;
     border-style: solid;
     padding-left: 10px;
     padding-right: 10px;
@@ -74,12 +67,12 @@ ul.brand-mast-head-content li {
 #brand-tag-line,
 .brand-tag-line {
     font-family: 'Amatic SC', cursive;
-    font-weight: 400;
-    font-size: 18pt;
+     font-weight: 400;
+    font-size: 4.2vmin;
     padding-left: 10px;
     padding-right: 10px;
     letter-spacing: 2px;
-    opacity: 1;
+    opacity: 0;
     transition: all .9s ease-in-out;
 }
 
@@ -94,7 +87,7 @@ ul.site-navigation-menu {
     margin: 0;
     padding: 0;
     overflow: hidden;
-
+    font-size: 5vmin;
     li {
         float: left;
        }
@@ -192,82 +185,33 @@ text-shadow: none !important;
 @media(min-width: $screen-md-min) {
     header.masthead-and-navigation-links {
         min-height: 20vh;
-        max-height: 20vh;
-        width: 100%;
-        overflow: hidden;
+        max-height: 20vh;       
         background-color: #FFC300;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: all .5s ease-in-out;
     }
-    header.dynamic-header {
-        min-height: 10vh !important;
-        max-height: 10vh !important;
-    }
-    .sticky {
-        background-color: rgba(255, 255, 255, 0.93);
-        opacity: 1;
-        top: 0px;
-        border-bottom: 1px solid gainsboro;
-    }
-    .mast-head-sec {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    ul.brand-mast-head-content {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    ul.brand-mast-head-content li {
-        float: left;
-    }
+
+
     #brand-name,
     .brand-name {
         font-family: 'Dosis', sans-serif;
         font-size: 4vmin;
         border-width: 0.5vmin;
         border-style: solid;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-shadow: 2px 2px 2px #B88C02;
+    
         display: flex;
         flex-direction: column;
-        transition: all .9s ease-in-out;
+    
     }
-    .brand-name-dynamic {
-        flex-direction: row !important;
-        transition: all .9s ease-in-out;
-    }
+   
     #brand-tag-line,
     .brand-tag-line {
-        font-family: 'Amatic SC', cursive;
-        font-weight: 400;
-        font-size: 4.2vmin;
-        padding-left: 10px;
-        padding-right: 10px;
-        letter-spacing: 2px;
+ 
         opacity: 1;
-        transition: all .9s ease-in-out;
+      
     }
-    .brand-tag-line-dynamic {
-        opacity: 0 !important;
+    ul.site-navigation-menu {
+     font-size: 2.8vmin;
     }
+
     ul.site-navigation-menu li a{
         display: inline-block;
     }
