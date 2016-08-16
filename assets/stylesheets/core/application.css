@@ -572,8 +572,8 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   #brand-name,
   .brand-name {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.8em;
-    border-width: 2.5px;
+    font-size: 4vmin;
+    border-width: 0.5vmin;
     border-style: solid;
     padding-left: 10px;
     padding-right: 10px;
@@ -590,7 +590,7 @@ ul.site-navigation-menu-responsive li, ul.site-navigation-menu-responsive li a {
   .brand-tag-line {
     font-family: 'Amatic SC', cursive;
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 4.2vmin;
     padding-left: 10px;
     padding-right: 10px;
     letter-spacing: 2px;
