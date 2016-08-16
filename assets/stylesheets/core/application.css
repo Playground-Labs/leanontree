@@ -1525,10 +1525,15 @@ a.footer-section-b-elements:hover {
   text-decoration: none;
   color: #FFFFFF; }
 
+.footer-container {
+  margin: 0 !important;
+  padding: 0 !important; }
+
 .social-wrapper {
   display: table;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  width: 100vw; }
 
 .socialmediaiconlinksextended {
   font-family: 'Socialico Plus', sans-serif;

@@ -13,6 +13,7 @@ branches:
   only:
   - master     # test the gh-pages branch
   - dev_leanontree_v1_changes_and_fixes
+  - dev_leanontree_refactoring
 
 env:
   global:
@@ -39,4 +40,4 @@ deploy:
     detect_encoding: true
     cache_control: "max-age=60"
     on:
-      branch: dev_leanontree_v1_changes_and_fixes
+      all_branches: true
