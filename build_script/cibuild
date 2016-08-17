@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e # halt script on error
-$SITE_DIR = _site
+SITE_DIR=_site
 bundle exec jekyll build
 #bundle exec htmlproof ./_site
 
