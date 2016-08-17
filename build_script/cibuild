@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -e # halt script on error
-
+$SITE_DIR = _site
 bundle exec jekyll build
 #bundle exec htmlproof ./_site
+
+ find $SITE_DIR \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' \) -exec gzip -9 -n {} \; -exec mv {}.gz {} \;
