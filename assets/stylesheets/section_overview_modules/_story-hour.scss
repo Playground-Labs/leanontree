@@ -1,0 +1,191 @@
+.story-hour-description, .story-hour-definition, .story-hour-glyph {
+ position: absolute; 
+}
+
+.site-content-index-item-c {
+height:30vh;  
+background-color:#480828;
+@include animation(story-hour-bg-change 5s ease-in-out 0s alternate infinite none running);
+}
+.story-hour-glyph {
+  font-size: 16vmin;
+  @include glyph-common();
+  @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
+  }
+.story-hour-definition {
+border: 0.2vmin solid #3D0721;  
+top: -10%;
+@include theme-description-definition-common();
+@include animation(self-love-definition-appear 5s ease-in-out 0s alternate infinite none running);
+}
+.story-hour-description {
+border: 0.2vmin solid #3D0721;  
+bottom: -10%;
+@include theme-description-definition-common();
+@include animation(self-love-description-appear 5s ease-in-out 0s alternate infinite none running);
+}
+
+.story-hour-description > a, .story-hour-definition > a, .story-hour-description > a:link, .story-hour-definition > a:link,.story-hour-description > a:visited, .story-hour-definition > a:visited,.story-hour-description > a:hover, .story-hour-definition > a:hover {
+text-decoration: none;
+color: #3D0721;
+
+}
+.site-content-index #story-hour {
+   position: absolute;
+  top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+  color: #923d67;
+  font-family: 'Bungee Shade', cursive;
+  font-weight: 400;
+  font-size: 14vmin;
+  transition: all .7s ease-in-out;
+@include animation(disappear 5s ease-in-out 0s alternate infinite none running);
+}
+
+@keyframes story-hour-bg-change {
+ 0%, 25% {
+    background-color: #480828;
+  }
+    50% {
+  background-color: #000000;
+  }
+  100% {
+  background-color: #000000;
+  }
+}
+@keyframes disappear {
+ 0%,  25% {
+     opacity: 1;
+     transform: translate(-50%,-50%);
+  }
+ 
+  50% {
+    opacity: 0;
+    transform: translate(15%,15%);  
+  }
+  100% {
+    opacity: 0;
+    transform: translate(15%,15%);  
+  }
+}
+@keyframes glyph-appear {
+ 0%, 25%{
+     opacity: 0;
+  }
+   50% {
+top: 50%;
+left: 50%;
+ transform: translate(-50%,-50%);  
+opacity: 1; 
+  }
+  100% {
+      top: 50%;
+     left: 50%;
+  transform: translate(-50%,-50%);  
+opacity: 1;  
+  }
+}
+@keyframes story-hour-definition-appear {
+ 0%, 25% {
+  opacity: 0;
+  padding: 0px 0px 0px 0px;
+  }
+    50% {
+top: 10%;
+border: 0.2vmin solid #3D0721;
+padding: 0px 20px 0px 20px;
+opacity: 1; 
+  }
+  100% {
+    top: 10%;
+border: 0.2vmin solid #3D0721;
+padding: 0px 20px 0px 20px;
+opacity: 1; 
+  }
+}
+@keyframes story-hour-description-appear {
+ 0%, 25% {
+     opacity: 0;
+       padding: 0px 0px 0px 0px;
+  }
+
+    50% {
+bottom: 10%;
+border: 1px solid #3D0721;
+padding: 0px 20px 0px 20px;
+opacity: 1;
+  }
+  100% {
+bottom: 10%;
+border: 1px solid #3D0721;
+padding: 0px 20px 0px 20px;
+opacity: 1;
+  }
+}
+
+
+@media(min-width: $screen-md-min) {
+
+.story-hour-glyph {
+  font-size: 16vmin;
+  color:#3D0721;
+  left: -10%;
+  top: -10%;
+  opacity: 0;
+
+ transition: all .7s ease-in-out;
+ animation: none;
+  }
+.story-hour-definition {
+border: 0.2vmin solid #3D0721;
+top: -10%;
+transition: all .7s ease-in-out;
+font-size: 2.6vmin;
+animation: none;
+}
+.story-hour-description {
+border: 0.2vmin solid #3D0721;
+bottom: -10%;
+transition: all .7s ease-in-out;
+font-size: 2.6vmin;
+animation: none;
+}
+.site-content-index #story-hour {
+  animation: none;
+}
+.site-content-index-item-c {
+height:80vh;  
+background-color:#480828;
+animation: none;
+}
+.site-content-index-item-c:hover #story-hour{
+     transform: translate(15%,15%);  
+     opacity: 0;
+   }
+.site-content-index-item-c:hover {
+  background-color: #000000;
+}
+.site-content-index-item-c:hover .story-hour-glyph 
+{
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);  
+opacity: 1;
+}
+.site-content-index-item-c:hover .story-hour-definition 
+{
+top: 15%;  
+border: 0.2vmin solid #3D0721;
+padding: 0px 10px 0px 10px;
+opacity: 1; 
+}
+.site-content-index-item-c:hover .story-hour-description
+{
+bottom: 15%; 
+border: 0.2vmin solid #3D0721;
+padding: 0px 10px 0px 10px;
+opacity: 1;  
+}
+
+}

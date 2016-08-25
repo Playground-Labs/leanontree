@@ -1,0 +1,82 @@
+.child-sexual-abuse-description, .child-sexual-abuse-definition, .child-sexual-abuse-glyph {
+ position: absolute; 
+}
+
+.child-sexual-abuse-glyph {
+  font-size: 16vmin;
+  color: #3FB0A1;
+  left: 50%;
+  top: 50%;
+ transform: translate(-50%,-50%);
+ transform: translate(-450%,-450%);
+ transition: all .7s ease-in-out;
+  }
+.child-sexual-abuse-definition {
+border: 0.2vmin solid #3FB0A1;
+padding: 0px 0px 0px 0px;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-450%);
+opacity: 0;
+transition: all .7s ease-in-out;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size: 2.6vmin;
+}
+.child-sexual-abuse-description {
+color: #3FB0A1;
+left: 50%;
+top: 50%;
+transform: translate(-50%,650%);
+transition: all .7s ease-in-out;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size: 2.6vmin;
+}
+
+.child-sexual-abuse-description > a, .child-sexual-abuse-definition > a, .child-sexual-abuse-description > a:link, .child-sexual-abuse-definition > a:link,.child-sexual-abuse-description > a:visited, .child-sexual-abuse-definition > a:visited,.child-sexual-abuse-description > a:hover, .child-sexual-abuse-definition > a:hover {
+text-decoration: none;
+color: #3FB0A1;
+
+}
+.site-content-index #child-sexual-abuse {
+   position: absolute;
+  top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+  color: #02A591;  
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 700;
+  font-size: 8vmin;
+  text-shadow:    1px 1px 0 #019B87; 
+   transition: all .7s ease-in-out;
+
+}
+.site-content-index-item-d {
+ 
+  height:30vh;  
+
+background-color: #26DCC4;
+}
+.site-content-index-item-d:hover #child-sexual-abuse{
+     transform: translate(15%,15%);  
+     opacity: 0;
+   }
+.site-content-index-item-d:hover {
+  background-color: #000000;
+}
+.site-content-index-item-d:hover .child-sexual-abuse-glyph
+ 
+{
+transform: translate(-50%,-50%);  
+}
+.site-content-index-item-d:hover .child-sexual-abuse-definition 
+{
+border: 0.2vmin solid #3FB0A1;
+padding: 0px 10px 0px 10px;
+opacity: 1; 
+}
+.site-content-index-item-d:hover .child-sexual-abuse-description
+{
+transform: translate(-50%, 250%);   
+border: 1px solid #3FB0A1;
+padding: 0px 10px 0px 10px;
+}

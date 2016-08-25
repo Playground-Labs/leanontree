@@ -602,67 +602,53 @@ ul.site-navigation-menu-responsive li a {
 .site-content-index-item-a {
   height: 30vh;
   background-color: #ff5733;
-  animation-name: self-love-bg-change;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; }
+  -webkit-animation: self-love-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: self-love-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: self-love-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: self-love-bg-change 5s ease-in-out 0s alternate infinite none running;
+  animation: self-love-bg-change 5s ease-in-out 0s alternate infinite none running; }
 
 .self-love-glyph {
-  font-size: 16vmin;
   color: #851902;
-  left: 50%;
-  top: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transform: translate(-450%, -450%);
-  animation-name: glyph-appear;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; }
+  font-size: 16vmin;
+  left: -10%;
+  top: -10%;
+  opacity: 1;
+  -webkit-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: glyph-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .self-love-definition {
   border: 0.2vmin solid #851902;
+  top: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -12vh);
+  transform: translateX(-50%);
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  animation-name: self-love-definition-appear;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; }
+  -webkit-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .self-love-description {
-  border: 0.2vmin solid transparent;
-  color: #851902;
+  border: 0.2vmin solid #851902;
+  bottom: -10%;
+  padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, 18vh);
+  transform: translateX(-50%);
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  animation-name: self-love-description-appear;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; }
+  -webkit-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link, .self-love-description > a:visited, .self-love-definition > a:visited, .self-love-description > a:hover {
   text-decoration: none;
@@ -678,15 +664,19 @@ ul.site-navigation-menu-responsive li a {
   font-weight: 400;
   font-size: 10vmin;
   text-shadow: 0px 2px 1px  #101713;
-  animation-name: disappear;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; }
+  -webkit-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  animation: disappear 5s ease-in-out 0s alternate infinite none running; }
 
+@keyframes self-love-bg-change {
+  0%, 25% {
+    background-color: #ff5733; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
 @keyframes disappear {
   0%,  25% {
     opacity: 1;
@@ -701,44 +691,121 @@ ul.site-navigation-menu-responsive li a {
   0%, 25% {
     opacity: 0; }
   50% {
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; }
   100% {
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; } }
 @keyframes self-love-definition-appear {
   0%, 25% {
-    opacity: 0; }
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
   50% {
+    top: 10%;
     border: 0.2vmin solid #851902;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
     opacity: 1; }
   100% {
+    top: 10%;
     border: 0.2vmin solid #851902;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes self-love-description-appear {
   0%, 25% {
-    opacity: 0; }
-  25% {
-    opacity: 0; }
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
   50% {
-    transform: translate(-50%, 4vh);
+    bottom: 10%;
     border: 1px solid #851902;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
     opacity: 1; }
   100% {
-    transform: translate(-50%, 4vh);
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@media (min-width: 992px) {
+  .self-love-glyph {
+    font-size: 16vmin;
+    color: #851902;
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none; }
+
+  .self-love-definition {
+    border: 0.2vmin solid #851902;
+    padding: 0px 0px 0px 0px;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 2.6vmin;
+    animation: none; }
+
+  .self-love-description {
+    color: #851902;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 2.6vmin;
+    animation: none; }
+
+  .self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link, .self-love-description > a:visited, .self-love-definition > a:visited, .self-love-description > a:hover {
+    text-decoration: none;
+    color: #851902; }
+
+  .site-content-index #self-love {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #de2b04;
+    font-family: 'Oleo Script', cursive;
+    font-weight: 400;
+    font-size: 10vmin;
+    text-shadow: 0px 2px 1px  #101713;
+    transition: all .7s ease-in-out;
+    animation: none; }
+
+  .site-content-index-item-a {
+    height: 40vh;
+    animation: none; }
+
+  .site-content-index-item-a:hover #self-love {
+    transform: translate(15%, 15%);
+    opacity: 0; }
+
+  .site-content-index-item-a:hover {
+    background-color: #000000; }
+
+  .site-content-index-item-a:hover .self-love-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+
+  .site-content-index-item-a:hover .self-love-definition {
+    top: 15%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; }
+
+  .site-content-index-item-a:hover .self-love-description {
+    bottom: 15%;
     border: 1px solid #851902;
     padding: 0px 10px 0px 10px;
     opacity: 1; } }
-@keyframes self-love-bg-change {
-  0%, 25% {
-    background-color: #ff5733; }
-  50% {
-    background-color: #000000; }
-  100% {
-    background-color: #000000; } }
 .my-december-description, .my-december-definition, .my-december-glyph {
   position: absolute; }
 
@@ -813,34 +880,56 @@ ul.site-navigation-menu-responsive li a {
 .story-hour-description, .story-hour-definition, .story-hour-glyph {
   position: absolute; }
 
+.site-content-index-item-c {
+  height: 30vh;
+  background-color: #480828;
+  -webkit-animation: story-hour-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: story-hour-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: story-hour-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: story-hour-bg-change 5s ease-in-out 0s alternate infinite none running;
+  animation: story-hour-bg-change 5s ease-in-out 0s alternate infinite none running; }
+
 .story-hour-glyph {
   font-size: 16vmin;
-  color: #3D0721;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-450%, -450%);
-  transition: all .7s ease-in-out; }
+  font-size: 16vmin;
+  left: -10%;
+  top: -10%;
+  opacity: 1;
+  -webkit-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: glyph-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .story-hour-definition {
   border: 0.2vmin solid #3D0721;
+  top: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -450%);
+  transform: translateX(-50%);
   opacity: 0;
-  transition: all .7s ease-in-out;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .story-hour-description {
-  color: #3D0721;
+  border: 0.2vmin solid #3D0721;
+  bottom: -10%;
+  padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, 1350%);
-  transition: all .7s ease-in-out;
+  transform: translateX(-50%);
+  opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .story-hour-description > a, .story-hour-definition > a, .story-hour-description > a:link, .story-hour-definition > a:link, .story-hour-description > a:visited, .story-hour-definition > a:visited, .story-hour-description > a:hover, .story-hour-definition > a:hover {
   text-decoration: none;
@@ -855,32 +944,127 @@ ul.site-navigation-menu-responsive li a {
   font-family: 'Bungee Shade', cursive;
   font-weight: 400;
   font-size: 14vmin;
-  transition: all .7s ease-in-out; }
+  transition: all .7s ease-in-out;
+  -webkit-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  animation: disappear 5s ease-in-out 0s alternate infinite none running; }
 
-.site-content-index-item-c {
-  height: 30vh;
-  background-color: #480828; }
+@keyframes story-hour-bg-change {
+  0%, 25% {
+    background-color: #480828; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@keyframes disappear {
+  0%,  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@keyframes glyph-appear {
+  0%, 25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@keyframes story-hour-definition-appear {
+  0%, 25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #3D0721;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #3D0721;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@keyframes story-hour-description-appear {
+  0%, 25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #3D0721;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #3D0721;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@media (min-width: 992px) {
+  .story-hour-glyph {
+    font-size: 16vmin;
+    color: #3D0721;
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none; }
 
-.site-content-index-item-c:hover #story-hour {
-  transform: translate(15%, 15%);
-  opacity: 0; }
+  .story-hour-definition {
+    border: 0.2vmin solid #3D0721;
+    top: -10%;
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-c:hover {
-  background-color: #000000; }
+  .story-hour-description {
+    border: 0.2vmin solid #3D0721;
+    bottom: -10%;
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-c:hover .story-hour-glyph {
-  transform: translate(-50%, -50%); }
+  .site-content-index #story-hour {
+    animation: none; }
 
-.site-content-index-item-c:hover .story-hour-definition {
-  border: 0.2vmin solid #3D0721;
-  padding: 0px 10px 0px 10px;
-  opacity: 1; }
+  .site-content-index-item-c {
+    height: 80vh;
+    background-color: #480828;
+    animation: none; }
 
-.site-content-index-item-c:hover .story-hour-description {
-  transform: translate(-50%, 250%);
-  border: 1px solid #3D0721;
-  padding: 0px 10px 0px 10px; }
+  .site-content-index-item-c:hover #story-hour {
+    transform: translate(15%, 15%);
+    opacity: 0; }
 
+  .site-content-index-item-c:hover {
+    background-color: #000000; }
+
+  .site-content-index-item-c:hover .story-hour-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+
+  .site-content-index-item-c:hover .story-hour-definition {
+    top: 15%;
+    border: 0.2vmin solid #3D0721;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; }
+
+  .site-content-index-item-c:hover .story-hour-description {
+    bottom: 15%;
+    border: 0.2vmin solid #3D0721;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; } }
 .child-sexual-abuse-description, .child-sexual-abuse-definition, .child-sexual-abuse-glyph {
   position: absolute; }
 
@@ -1034,88 +1218,8 @@ ul.site-navigation-menu-responsive li a {
   .site-content-index {
     width: 33.33vw; }
 
-  .self-love-glyph {
-    font-size: 16vmin;
-    color: #851902;
-    left: 50%;
-    top: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transform: translate(-450%, -450%);
-    transition: all .7s ease-in-out;
-    animation: none; }
-
-  .self-love-definition {
-    border: 0.2vmin solid #851902;
-    padding: 0px 0px 0px 0px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -450%);
-    opacity: 0;
-    transition: all .7s ease-in-out;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 2.6vmin;
-    animation: none; }
-
-  .self-love-description {
-    color: #851902;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 18vh);
-    opacity: 1;
-    transition: all .7s ease-in-out;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 2.6vmin;
-    animation: none; }
-
-  .self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link, .self-love-description > a:visited, .self-love-definition > a:visited, .self-love-description > a:hover {
-    text-decoration: none;
-    color: #851902; }
-
-  .site-content-index #self-love {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #de2b04;
-    font-family: 'Oleo Script', cursive;
-    font-weight: 400;
-    font-size: 10vmin;
-    text-shadow: 0px 2px 1px  #101713;
-    transition: all .7s ease-in-out;
-    animation: none; }
-
-  .site-content-index-item-a {
-    height: 40vh;
-    animation: none; }
-
-  .site-content-index-item-a:hover #self-love {
-    transform: translate(15%, 15%);
-    opacity: 0; }
-
-  .site-content-index-item-a:hover {
-    background-color: #000000; }
-
-  .site-content-index-item-a:hover .self-love-glyph {
-    transform: translate(-50%, -50%);
-    opacity: 1; }
-
-  .site-content-index-item-a:hover .self-love-definition {
-    border: 0.2vmin solid #851902;
-    padding: 0px 10px 0px 10px;
-    opacity: 1; }
-
-  .site-content-index-item-a:hover .self-love-description {
-    transform: translate(-50%, 8vh);
-    border: 1px solid #851902;
-    padding: 0px 10px 0px 10px;
-    opacity: 1; }
-
   .site-content-index-item-b {
     height: 40vh; }
-
-  .site-content-index-item-c {
-    height: 80vh; }
 
   .site-content-index-item-d {
     height: 40vh; }
