@@ -1,47 +1,84 @@
+
 #site-content-index-wrapper {
  display: flex;   
  flex-direction: row;
- max-height: 90vh;
+ min-height: 90vh;
  flex-wrap: wrap;
  overflow: hidden;
  margin-top: 10vh;
 }
 .site-content-index {
-width: 50vw;
+width: 100vw;
 overflow: hidden;
 position: relative;
 }
 .self-love-description, .self-love-definition, .self-love-glyph {
  position: absolute; 
 }
+.site-content-index-item-a {
+height:30vh;  
+background-color: #ff5733; 
+ animation-name: self-love-bg-change;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
+}
 .self-love-glyph {
   font-size: 16vmin;
   color: #851902;
   left: 50%;
   top: 50%;
+  opacity: 0;
  transform: translate(-50%,-50%);
  transform: translate(-450%,-450%);
- transition: all .7s ease-in-out;
+  animation-name: glyph-appear;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
   }
 .self-love-definition {
 border: 0.2vmin solid #851902;
 padding: 0px 0px 0px 0px;
 left: 50%;
 top: 50%;
-transform: translate(-50%,-450%);
+transform: translate(-50%, -12vh);
 opacity: 0;
-transition: all .7s ease-in-out;
 font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
+font-size: 3vmax;
+  animation-name: self-love-definition-appear;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
 }
 .self-love-description {
+border: 0.2vmin solid transparent;
 color: #851902;
 left: 50%;
 top: 50%;
-transform: translate(-50%,650%);
-transition: all .7s ease-in-out;
+transform: translate(-50%, 18vh);
+opacity: 0;
 font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
+font-size: 3vmax;
+  animation-name: self-love-description-appear;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
 }
 
 .self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link,.self-love-description > a:visited, .self-love-definition > a:visited,.self-love-description > a:hover,  {
@@ -59,37 +96,92 @@ color: #851902;
  font-weight: 400;
   font-size: 10vmin;  
   text-shadow: 0px 2px 1px  #101713; 
- transition: all .7s ease-in-out;
+  animation-name: disappear;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
 }
-.site-content-index-item-a {
-height:30vh;  
-background-color: #ff5733; 
-transition: all .7s ease-in-out;
-
+@keyframes disappear {
+ 0%,  25% {
+     opacity: 1;
+     transform: translate(-50%,-50%);
+  }
+ 
+  50% {
+    opacity: 0;
+    transform: translate(15%,15%);  
+  }
+  100% {
+    opacity: 0;
+    transform: translate(15%,15%);  
+  }
 }
-.site-content-index-item-a:hover #self-love{
-     transform: translate(15%,15%);  
+@keyframes glyph-appear {
+ 0%, 25%{
      opacity: 0;
-   }
-.site-content-index-item-a:hover {
-  background-color: #000000;
+  }
+   50% {
+ transform: translate(-50%,-50%);  
+opacity: 1; 
+  }
+  100% {
+  transform: translate(-50%,-50%);  
+opacity: 1;  
+  }
 }
-.site-content-index-item-a:hover .self-love-glyph 
-{
-transform: translate(-50%,-50%);  
-}
-.site-content-index-item-a:hover .self-love-definition 
-{
+@keyframes self-love-definition-appear {
+ 0%, 25% {
+  opacity: 0;
+  }
+    50% {
 border: 0.2vmin solid #851902;
 padding: 0px 10px 0px 10px;
 opacity: 1; 
+  }
+  100% {
+border: 0.2vmin solid #851902;
+padding: 0px 10px 0px 10px;
+opacity: 1; 
+  }
 }
-.site-content-index-item-a:hover .self-love-description
-{
-transform: translate(-50%, 250%);   
+@keyframes self-love-description-appear {
+ 0%, 25% {
+     opacity: 0;
+  }
+  25% {
+     opacity: 0;
+  }
+    50% {
+transform: translate(-50%, 4vh);   
 border: 1px solid #851902;
 padding: 0px 10px 0px 10px;
+opacity: 1;
+  }
+  100% {
+transform: translate(-50%,4vh);   
+border: 1px solid #851902;
+padding: 0px 10px 0px 10px;
+opacity: 1;
+  }
 }
+@keyframes self-love-bg-change {
+ 0%, 25% {
+    background-color: #ff5733; 
+  }
+    50% {
+  background-color: #000000;
+  }
+  100% {
+  background-color: #000000;
+  }
+}
+
+
+
 
 .my-december-description, .my-december-definition, .my-december-glyph {
  position: absolute; 
@@ -421,18 +513,96 @@ padding: 0px 10px 0px 10px;
 
 @media(min-width: $screen-md-min) {
 #site-content-index-wrapper {
-   flex-direction: column;
-   max-height: 80vh;
- margin-top: 20vh;
+flex-direction: column;
+max-height: 80vh;
+min-height: 80vh;
+margin-top: 20vh;
 }
 .site-content-index {
 width: 33.33vw;
 
 }
+.self-love-glyph {
+  font-size: 16vmin;
+  color: #851902;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+ transform: translate(-50%,-50%);
+ transform: translate(-450%,-450%);
+ transition: all .7s ease-in-out;
+ animation: none;
+  }
+.self-love-definition {
+border: 0.2vmin solid #851902;
+padding: 0px 0px 0px 0px;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-450%);
+opacity: 0;
+transition: all .7s ease-in-out;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size: 2.6vmin;
+ animation: none;
+}
+.self-love-description {
+color: #851902;
+left: 50%;
+top: 50%;
+transform: translate(-50%, 18vh);
+opacity: 1;
+transition: all .7s ease-in-out;
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size: 2.6vmin;
+ animation: none;
+}
+.self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link,.self-love-description > a:visited, .self-love-definition > a:visited,.self-love-description > a:hover,  {
+text-decoration: none;
+color: #851902;
+}
+.site-content-index #self-love {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ color: #de2b04;
+ font-family: 'Oleo Script', cursive;
+ font-weight: 400;
+  font-size: 10vmin;  
+  text-shadow: 0px 2px 1px  #101713; 
+ transition: all .7s ease-in-out;
+  animation: none;
+}
 .site-content-index-item-a {
 height:40vh;  
-
+animation: none;
 }
+.site-content-index-item-a:hover #self-love{
+     transform: translate(15%,15%);  
+     opacity: 0;
+   }
+.site-content-index-item-a:hover {
+  background-color: #000000;
+}
+.site-content-index-item-a:hover .self-love-glyph 
+{
+transform: translate(-50%,-50%);  
+opacity: 1;
+}
+.site-content-index-item-a:hover .self-love-definition 
+{
+border: 0.2vmin solid #851902;
+padding: 0px 10px 0px 10px;
+opacity: 1; 
+}
+.site-content-index-item-a:hover .self-love-description
+{
+transform: translate(-50%,8vh);   
+border: 1px solid #851902;
+padding: 0px 10px 0px 10px;
+opacity: 1; 
+}
+
 
 .site-content-index-item-b {
 height:40vh; 
