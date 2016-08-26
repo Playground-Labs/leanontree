@@ -17,87 +17,7 @@ position: relative;
 @import 'section_overview_modules/self-love';
 
 
-.my-december-description, .my-december-definition, .my-december-glyph {
- position: absolute; 
-}
-
-.my-december-glyph {
-  font-size: 16vmin;
-  color: #A41840;
-  left: 50%;
-  top: 50%;
- transform: translate(-50%,-50%);
- transform: translate(-450%,-450%);
- transition: all .9s ease-in-out;
-  }
-.my-december-definition {
-border: 0.2vmin solid #A41840;
-padding: 0px 0px 0px 0px;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-450%);
-opacity: 0;
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
-}
-.my-december-description {
-color: #A41840;
-left: 50%;
-top: 50%;
-transform: translate(-50%,650%);
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
-}
-
-.my-december-description > a, .my-december-definition > a, .my-december-description > a:link, .my-december-definition > a:link,.my-december-description > a:visited, .my-december-definition > a:visited,.my-december-description > a:hover, .my-december-definition > a:hover {
-text-decoration: none;
-color: #A41840;
-
-}
-
-.site-content-index #my-december {
-   position: absolute;
-  top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
-    color: #fac1d1;
-  font-family: 'Fredericka the Great', cursive;
-  font-weight: 400;
-  font-size: 10vmin;
-  transition: all .7s ease-in-out;
-}
-
-.site-content-index-item-b {
-height:30vh;   
- background-color:#C70039;
-}
-
-.site-content-index-item-b:hover #my-december{
-     transform: translate(15%,15%);  
-     opacity: 0;
-   }
-.site-content-index-item-b:hover {
-  background-color: #000000;
-}
-.site-content-index-item-b:hover .my-december-glyph 
-{
-transform: translate(-50%,-50%);  
-}
-.site-content-index-item-b:hover .my-december-definition 
-{
-border: 0.2vmin solid #A41840;
-padding: 0px 10px 0px 10px;
-opacity: 1; 
-}
-.site-content-index-item-b:hover .my-december-description
-{
-transform: translate(-50%, 250%);   
-border: 1px solid #A41840;
-padding: 0px 10px 0px 10px;
-}
-
+@import 'section_overview_modules/my-december';
 
 @import 'section_overview_modules/story-hour';
 
@@ -278,10 +198,6 @@ margin-top: 20vh;
 }
 .site-content-index {
 width: 33.33vw;
-
-}
-.site-content-index-item-b {
-height:40vh; 
 
 }
 

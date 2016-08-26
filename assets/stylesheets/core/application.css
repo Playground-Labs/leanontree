@@ -806,41 +806,73 @@ ul.site-navigation-menu-responsive li a {
     border: 1px solid #851902;
     padding: 0px 10px 0px 10px;
     opacity: 1; } }
-.my-december-description, .my-december-definition, .my-december-glyph {
+.my-december-description,
+.my-december-definition,
+.my-december-glyph {
   position: absolute; }
+
+.site-content-index-item-b {
+  height: 30vh;
+  background-color: #C70039;
+  -webkit-animation: my-december-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: my-december-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: my-december-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: my-december-bg-change 5s ease-in-out 0s alternate infinite none running;
+  animation: my-december-bg-change 5s ease-in-out 0s alternate infinite none running; }
 
 .my-december-glyph {
   font-size: 16vmin;
-  color: #A41840;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-450%, -450%);
-  transition: all .9s ease-in-out; }
+  color: #ecc4e0;
+  font-size: 16vmin;
+  left: -10%;
+  top: -10%;
+  opacity: 1;
+  -webkit-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: glyph-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .my-december-definition {
-  border: 0.2vmin solid #A41840;
+  border: 0.2vmin solid #ecc4e0;
+  top: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -450%);
+  transform: translateX(-50%);
   opacity: 0;
-  transition: all .7s ease-in-out;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: my-december-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: my-december-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: my-december-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: my-december-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: my-december-definition-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .my-december-description {
-  color: #A41840;
+  border: 0.2vmin solid #ecc4e0;
+  bottom: -10%;
+  padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, 650%);
-  transition: all .7s ease-in-out;
+  transform: translateX(-50%);
+  opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: my-december-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: my-december-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: my-december-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: my-december-description-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: my-december-description-appear 5s ease-in-out 0s alternate infinite none running; }
 
-.my-december-description > a, .my-december-definition > a, .my-december-description > a:link, .my-december-definition > a:link, .my-december-description > a:visited, .my-december-definition > a:visited, .my-december-description > a:hover, .my-december-definition > a:hover {
+.my-december-description > a,
+.my-december-definition > a,
+.my-december-description > a:link,
+.my-december-definition > a:link,
+.my-december-description > a:visited,
+.my-december-definition > a:visited,
+.my-december-description > a:hover,
+.my-december-definition > a:hover {
   text-decoration: none;
-  color: #A41840; }
+  color: #ecc4e0; }
 
 .site-content-index #my-december {
   position: absolute;
@@ -848,36 +880,132 @@ ul.site-navigation-menu-responsive li a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fac1d1;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Fredericka the Great', sans-serif;
   font-weight: 400;
   font-size: 10vmin;
-  transition: all .7s ease-in-out; }
+  transition: all .7s ease-in-out;
+  -webkit-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  animation: disappear 5s ease-in-out 0s alternate infinite none running; }
 
-.site-content-index-item-b {
-  height: 30vh;
-  background-color: #C70039; }
+@keyframes my-december-bg-change {
+  0%,
+  25% {
+    background-color: #C70039; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@keyframes my-december-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@keyframes my-december-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@media (min-width: 992px) {
+  .my-december-glyph {
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none; }
 
-.site-content-index-item-b:hover #my-december {
-  transform: translate(15%, 15%);
-  opacity: 0; }
+  .my-december-definition {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-b:hover {
-  background-color: #000000; }
+  .my-december-description {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-b:hover .my-december-glyph {
-  transform: translate(-50%, -50%); }
+  .site-content-index #my-december {
+    animation: none; }
 
-.site-content-index-item-b:hover .my-december-definition {
-  border: 0.2vmin solid #A41840;
-  padding: 0px 10px 0px 10px;
-  opacity: 1; }
+  .site-content-index-item-b {
+    height: 40vh;
+    background-color: #C70039;
+    animation: none; }
 
-.site-content-index-item-b:hover .my-december-description {
-  transform: translate(-50%, 250%);
-  border: 1px solid #A41840;
-  padding: 0px 10px 0px 10px; }
+  .site-content-index-item-b:hover #my-december {
+    transform: translate(15%, 15%);
+    opacity: 0; }
 
-.story-hour-description, .story-hour-definition, .story-hour-glyph {
+  .site-content-index-item-b:hover {
+    background-color: #000000; }
+
+  .site-content-index-item-b:hover .my-december-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+
+  .site-content-index-item-b:hover .my-december-definition {
+    top: 15%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; }
+
+  .site-content-index-item-b:hover .my-december-description {
+    bottom: 15%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; } }
+.story-hour-description,
+.story-hour-definition,
+.story-hour-glyph {
   position: absolute; }
 
 .site-content-index-item-c {
@@ -891,6 +1019,7 @@ ul.site-navigation-menu-responsive li a {
 
 .story-hour-glyph {
   font-size: 16vmin;
+  color: #de029c;
   font-size: 16vmin;
   left: -10%;
   top: -10%;
@@ -902,7 +1031,7 @@ ul.site-navigation-menu-responsive li a {
   animation: glyph-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .story-hour-definition {
-  border: 0.2vmin solid #3D0721;
+  border: 0.2vmin solid #de029c;
   top: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
@@ -910,14 +1039,14 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
-  -moz-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
-  -ms-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
-  -o-animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running;
-  animation: self-love-definition-appear 5s ease-in-out 0s alternate infinite none running; }
+  -webkit-animation: story-hour-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: story-hour-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: story-hour-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: story-hour-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: story-hour-definition-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .story-hour-description {
-  border: 0.2vmin solid #3D0721;
+  border: 0.2vmin solid #de029c;
   bottom: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
@@ -925,15 +1054,22 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
-  -moz-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
-  -ms-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
-  -o-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
-  animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running; }
+  -webkit-animation: story-hour-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: story-hour-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: story-hour-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: story-hour-description-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: story-hour-description-appear 5s ease-in-out 0s alternate infinite none running; }
 
-.story-hour-description > a, .story-hour-definition > a, .story-hour-description > a:link, .story-hour-definition > a:link, .story-hour-description > a:visited, .story-hour-definition > a:visited, .story-hour-description > a:hover, .story-hour-definition > a:hover {
+.story-hour-description > a,
+.story-hour-definition > a,
+.story-hour-description > a:link,
+.story-hour-definition > a:link,
+.story-hour-description > a:visited,
+.story-hour-definition > a:visited,
+.story-hour-description > a:hover,
+.story-hour-definition > a:hover {
   text-decoration: none;
-  color: #3D0721; }
+  color: #de029c; }
 
 .site-content-index #story-hour {
   position: absolute;
@@ -952,14 +1088,16 @@ ul.site-navigation-menu-responsive li a {
   animation: disappear 5s ease-in-out 0s alternate infinite none running; }
 
 @keyframes story-hour-bg-change {
-  0%, 25% {
+  0%,
+  25% {
     background-color: #480828; }
   50% {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
 @keyframes disappear {
-  0%,  25% {
+  0%,
+  25% {
     opacity: 1;
     transform: translate(-50%, -50%); }
   50% {
@@ -969,7 +1107,8 @@ ul.site-navigation-menu-responsive li a {
     opacity: 0;
     transform: translate(15%, 15%); } }
 @keyframes glyph-appear {
-  0%, 25% {
+  0%,
+  25% {
     opacity: 0; }
   50% {
     top: 50%;
@@ -982,37 +1121,37 @@ ul.site-navigation-menu-responsive li a {
     transform: translate(-50%, -50%);
     opacity: 1; } }
 @keyframes story-hour-definition-appear {
-  0%, 25% {
+  0%,
+  25% {
     opacity: 0;
     padding: 0px 0px 0px 0px; }
   50% {
     top: 10%;
-    border: 0.2vmin solid #3D0721;
+    border: 0.2vmin solid #de029c;
     padding: 0px 20px 0px 20px;
     opacity: 1; }
   100% {
     top: 10%;
-    border: 0.2vmin solid #3D0721;
+    border: 0.2vmin solid #de029c;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes story-hour-description-appear {
-  0%, 25% {
+  0%,
+  25% {
     opacity: 0;
     padding: 0px 0px 0px 0px; }
   50% {
     bottom: 10%;
-    border: 1px solid #3D0721;
+    border: 1px solid #de029c;
     padding: 0px 20px 0px 20px;
     opacity: 1; }
   100% {
     bottom: 10%;
-    border: 1px solid #3D0721;
+    border: 1px solid #de029c;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @media (min-width: 992px) {
   .story-hour-glyph {
-    font-size: 16vmin;
-    color: #3D0721;
     left: -10%;
     top: -10%;
     opacity: 0;
@@ -1020,15 +1159,11 @@ ul.site-navigation-menu-responsive li a {
     animation: none; }
 
   .story-hour-definition {
-    border: 0.2vmin solid #3D0721;
-    top: -10%;
     transition: all .7s ease-in-out;
     font-size: 2.6vmin;
     animation: none; }
 
   .story-hour-description {
-    border: 0.2vmin solid #3D0721;
-    bottom: -10%;
     transition: all .7s ease-in-out;
     font-size: 2.6vmin;
     animation: none; }
@@ -1055,14 +1190,14 @@ ul.site-navigation-menu-responsive li a {
     opacity: 1; }
 
   .site-content-index-item-c:hover .story-hour-definition {
-    top: 15%;
-    border: 0.2vmin solid #3D0721;
+    top: 30%;
+    border: 0.2vmin solid #de029c;
     padding: 0px 10px 0px 10px;
     opacity: 1; }
 
   .site-content-index-item-c:hover .story-hour-description {
-    bottom: 15%;
-    border: 0.2vmin solid #3D0721;
+    bottom: 30%;
+    border: 0.2vmin solid #de029c;
     padding: 0px 10px 0px 10px;
     opacity: 1; } }
 .child-sexual-abuse-description, .child-sexual-abuse-definition, .child-sexual-abuse-glyph {
@@ -1217,9 +1352,6 @@ ul.site-navigation-menu-responsive li a {
 
   .site-content-index {
     width: 33.33vw; }
-
-  .site-content-index-item-b {
-    height: 40vh; }
 
   .site-content-index-item-d {
     height: 40vh; }

@@ -1,90 +1,198 @@
-.site-content-index-item-b {
-height:30vh;   
- background-color:#C70039;
- animation-name: my-december-bg-change;
-  animation-duration: 5s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; 
+.my-december-description,
+.my-december-definition,
+.my-december-glyph {
+  position: absolute;
 }
+
+.site-content-index-item-b {
+  height: 30vh;
+  background-color: #C70039;
+  @include animation(my-december-bg-change 5s ease-in-out 0s alternate infinite none running);
+}
+
 .my-december-glyph {
   font-size: 16vmin;
-  color: #A41840;
-  left: 50%;
-  top: 50%;
- transform: translate(-50%,-50%);
- transform: translate(-450%,-450%);
- transition: all .9s ease-in-out;
-  }
-.my-december-description, .my-december-definition, .my-december-glyph {
- position: absolute; 
+  color: #ecc4e0;
+  @include glyph-common();
+  @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
 }
-
 
 .my-december-definition {
-border: 0.2vmin solid #A41840;
-padding: 0px 0px 0px 0px;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-450%);
-opacity: 0;
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
+  border: 0.2vmin solid #ecc4e0;
+  top: -10%;
+  @include theme-description-definition-common();
+  @include animation(my-december-definition-appear 5s ease-in-out 0s alternate infinite none running);
 }
+
 .my-december-description {
-color: #A41840;
-left: 50%;
-top: 50%;
-transform: translate(-50%,650%);
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
+  border: 0.2vmin solid #ecc4e0;
+  bottom: -10%;
+  @include theme-description-definition-common();
+  @include animation(my-december-description-appear 5s ease-in-out 0s alternate infinite none running);
 }
 
-.my-december-description > a, .my-december-definition > a, .my-december-description > a:link, .my-december-definition > a:link,.my-december-description > a:visited, .my-december-definition > a:visited,.my-december-description > a:hover, .my-december-definition > a:hover {
-text-decoration: none;
-color: #A41840;
-
+.my-december-description> a,
+.my-december-definition> a,
+.my-december-description> a:link,
+.my-december-definition> a:link,
+.my-december-description> a:visited,
+.my-december-definition> a:visited,
+.my-december-description> a:hover,
+.my-december-definition> a:hover {
+  text-decoration: none;
+  color: #ecc4e0;
 }
 
 .site-content-index #my-december {
-   position: absolute;
+  position: absolute;
   top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
-    color: #fac1d1;
-  font-family: 'Fredericka the Great', cursive;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fac1d1;
+  font-family: 'Fredericka the Great', sans-serif;
   font-weight: 400;
   font-size: 10vmin;
   transition: all .7s ease-in-out;
+  @include animation(disappear 5s ease-in-out 0s alternate infinite none running);
 }
 
+@keyframes my-december-bg-change {
+  0%,
+  25% {
+    background-color: #C70039;
+  }
+  50% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
 
+@keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%);
+  }
+}
 
-.site-content-index-item-b:hover #my-december{
-     transform: translate(15%,15%);  
-     opacity: 0;
-   }
-.site-content-index-item-b:hover {
-  background-color: #000000;
+@keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
 }
-.site-content-index-item-b:hover .my-december-glyph 
-{
-transform: translate(-50%,-50%);  
+
+@keyframes my-december-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px;
+  }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
 }
-.site-content-index-item-b:hover .my-december-definition 
-{
-border: 0.2vmin solid #A41840;
-padding: 0px 10px 0px 10px;
-opacity: 1; 
+
+@keyframes my-december-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px;
+  }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
 }
-.site-content-index-item-b:hover .my-december-description
-{
-transform: translate(-50%, 250%);   
-border: 1px solid #A41840;
-padding: 0px 10px 0px 10px;
+
+@media(min-width: $screen-md-min) {
+  .my-december-glyph {
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none;
+  }
+  .my-december-definition {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none;
+  }
+  .my-december-description {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none;
+  }
+  .site-content-index #my-december {
+    animation: none;
+  }
+  .site-content-index-item-b {
+    height: 40vh;
+    background-color: #C70039;
+    animation: none;
+  }
+  .site-content-index-item-b:hover #my-december {
+    transform: translate(15%, 15%);
+    opacity: 0;
+  }
+  .site-content-index-item-b:hover {
+    background-color: #000000;
+  }
+  .site-content-index-item-b:hover .my-december-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .site-content-index-item-b:hover .my-december-definition {
+    top: 15%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 10px 0px 10px;
+    opacity: 1;
+  }
+  .site-content-index-item-b:hover .my-december-description {
+    bottom: 15%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 10px 0px 10px;
+    opacity: 1;
+  }
 }
