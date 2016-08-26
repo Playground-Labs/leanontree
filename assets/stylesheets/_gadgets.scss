@@ -11,17 +11,23 @@ font-family: 'Fjalla One', sans-serif;
 font-size: 10vmax;
 text-align: left;
 }
-.gadget-title a:link
+.gadget-title-sidebar
+{
+font-family: 'Fjalla One', sans-serif;
+font-size: 2vmax;
+text-align: left; 
+}
+.gadget-title a:link, .gadget-title-sidebar a:link
 {
 color: #3B4343 !important;
 text-decoration: none;
 }
-.gadget-title a:visited
+.gadget-title a:visited, .gadget-title-sidebar a:visited
 {
 color: #3B4343 !important;
 text-decoration: none;
 }
-.gadget-title a:hover
+.gadget-title a:hover, .gadget-title-sidebar a:hover
 {
 color: #1B1B1B !important;
 text-decoration: none;
@@ -30,6 +36,12 @@ text-decoration: none;
 {
 font-family: 'Josefin Slab', sans-serif;
 font-size: 4vmax;
+}
+.gadget-content-sidebar
+{
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 2vmax;
+vertical-align: middle;
 }
 .gadget-content blockquote 
 {
