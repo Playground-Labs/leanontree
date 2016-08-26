@@ -596,7 +596,9 @@ ul.site-navigation-menu-responsive li a {
   overflow: hidden;
   position: relative; }
 
-.self-love-description, .self-love-definition, .self-love-glyph {
+.self-love-description,
+.self-love-definition,
+.self-love-glyph {
   position: absolute; }
 
 .site-content-index-item-a {
@@ -650,7 +652,13 @@ ul.site-navigation-menu-responsive li a {
   -o-animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running;
   animation: self-love-description-appear 5s ease-in-out 0s alternate infinite none running; }
 
-.self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link, .self-love-description > a:visited, .self-love-definition > a:visited, .self-love-description > a:hover {
+.self-love-description > a,
+.self-love-definition > a,
+.self-love-description > a:link,
+.self-love-definition > a:link,
+.self-love-description > a:visited,
+.self-love-definition > a:visited,
+.self-love-description > a:hover {
   text-decoration: none;
   color: #851902; }
 
@@ -663,7 +671,7 @@ ul.site-navigation-menu-responsive li a {
   font-family: 'Oleo Script', cursive;
   font-weight: 400;
   font-size: 10vmin;
-  text-shadow: 0px 2px 1px  #101713;
+  text-shadow: 0px 2px 1px #101713;
   -webkit-animation: disappear 5s ease-in-out 0s alternate infinite none running;
   -moz-animation: disappear 5s ease-in-out 0s alternate infinite none running;
   -ms-animation: disappear 5s ease-in-out 0s alternate infinite none running;
@@ -671,14 +679,16 @@ ul.site-navigation-menu-responsive li a {
   animation: disappear 5s ease-in-out 0s alternate infinite none running; }
 
 @keyframes self-love-bg-change {
-  0%, 25% {
+  0%,
+  25% {
     background-color: #ff5733; }
   50% {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
 @keyframes disappear {
-  0%,  25% {
+  0%,
+  25% {
     opacity: 1;
     transform: translate(-50%, -50%); }
   50% {
@@ -688,7 +698,8 @@ ul.site-navigation-menu-responsive li a {
     opacity: 0;
     transform: translate(15%, 15%); } }
 @keyframes glyph-appear {
-  0%, 25% {
+  0%,
+  25% {
     opacity: 0; }
   50% {
     top: 50%;
@@ -701,7 +712,8 @@ ul.site-navigation-menu-responsive li a {
     transform: translate(-50%, -50%);
     opacity: 1; } }
 @keyframes self-love-definition-appear {
-  0%, 25% {
+  0%,
+  25% {
     opacity: 0;
     padding: 0px 0px 0px 0px; }
   50% {
@@ -715,7 +727,8 @@ ul.site-navigation-menu-responsive li a {
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes self-love-description-appear {
-  0%, 25% {
+  0%,
+  25% {
     opacity: 0;
     padding: 0px 0px 0px 0px; }
   50% {
@@ -730,51 +743,21 @@ ul.site-navigation-menu-responsive li a {
     opacity: 1; } }
 @media (min-width: 992px) {
   .self-love-glyph {
-    font-size: 16vmin;
-    color: #851902;
-    left: -10%;
-    top: -10%;
     opacity: 0;
     transition: all .7s ease-in-out;
     animation: none; }
 
   .self-love-definition {
-    border: 0.2vmin solid #851902;
-    padding: 0px 0px 0px 0px;
-    left: 50%;
-    top: -10%;
-    transform: translateX(-50%);
-    opacity: 0;
     transition: all .7s ease-in-out;
-    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 2.6vmin;
     animation: none; }
 
   .self-love-description {
-    color: #851902;
-    left: 50%;
-    bottom: -10%;
-    transform: translateX(-50%);
-    opacity: 0;
     transition: all .7s ease-in-out;
-    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 2.6vmin;
     animation: none; }
 
-  .self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link, .self-love-description > a:visited, .self-love-definition > a:visited, .self-love-description > a:hover {
-    text-decoration: none;
-    color: #851902; }
-
   .site-content-index #self-love {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #de2b04;
-    font-family: 'Oleo Script', cursive;
-    font-weight: 400;
-    font-size: 10vmin;
-    text-shadow: 0px 2px 1px  #101713;
     transition: all .7s ease-in-out;
     animation: none; }
 
@@ -1200,39 +1183,71 @@ ul.site-navigation-menu-responsive li a {
     border: 0.2vmin solid #de029c;
     padding: 0px 10px 0px 10px;
     opacity: 1; } }
-.child-sexual-abuse-description, .child-sexual-abuse-definition, .child-sexual-abuse-glyph {
+.child-sexual-abuse-description,
+.child-sexual-abuse-definition,
+.child-sexual-abuse-glyph {
   position: absolute; }
+
+.site-content-index-item-d {
+  height: 30vh;
+  background-color: #26DCC4;
+  -webkit-animation: child-sexual-abuse-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: child-sexual-abuse-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: child-sexual-abuse-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: child-sexual-abuse-bg-change 5s ease-in-out 0s alternate infinite none running;
+  animation: child-sexual-abuse-bg-change 5s ease-in-out 0s alternate infinite none running; }
 
 .child-sexual-abuse-glyph {
   font-size: 16vmin;
   color: #3FB0A1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-450%, -450%);
-  transition: all .7s ease-in-out; }
+  font-size: 16vmin;
+  left: -10%;
+  top: -10%;
+  opacity: 1;
+  -webkit-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: glyph-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .child-sexual-abuse-definition {
   border: 0.2vmin solid #3FB0A1;
+  top: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -450%);
+  transform: translateX(-50%);
   opacity: 0;
-  transition: all .7s ease-in-out;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: child-sexual-abuse-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: child-sexual-abuse-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: child-sexual-abuse-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: child-sexual-abuse-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: child-sexual-abuse-definition-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .child-sexual-abuse-description {
-  color: #3FB0A1;
+  border: 0.2vmin solid #3FB0A1;
+  bottom: -10%;
+  padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, 650%);
-  transition: all .7s ease-in-out;
+  transform: translateX(-50%);
+  opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: child-sexual-abuse-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: child-sexual-abuse-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: child-sexual-abuse-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: child-sexual-abuse-description-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: child-sexual-abuse-description-appear 5s ease-in-out 0s alternate infinite none running; }
 
-.child-sexual-abuse-description > a, .child-sexual-abuse-definition > a, .child-sexual-abuse-description > a:link, .child-sexual-abuse-definition > a:link, .child-sexual-abuse-description > a:visited, .child-sexual-abuse-definition > a:visited, .child-sexual-abuse-description > a:hover, .child-sexual-abuse-definition > a:hover {
+.child-sexual-abuse-description > a,
+.child-sexual-abuse-definition > a,
+.child-sexual-abuse-description > a:link,
+.child-sexual-abuse-definition > a:link,
+.child-sexual-abuse-description > a:visited,
+.child-sexual-abuse-definition > a:visited,
+.child-sexual-abuse-description > a:hover,
+.child-sexual-abuse-definition > a:hover {
   text-decoration: none;
   color: #3FB0A1; }
 
@@ -1245,66 +1260,191 @@ ul.site-navigation-menu-responsive li a {
   font-family: 'Cutive Mono', monospace;
   font-weight: 700;
   font-size: 8vmin;
-  text-shadow: 1px 1px 0 #019B87;
-  transition: all .7s ease-in-out; }
+  transition: all .7s ease-in-out;
+  -webkit-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  animation: disappear 5s ease-in-out 0s alternate infinite none running; }
 
-.site-content-index-item-d {
-  height: 30vh;
-  background-color: #26DCC4; }
+@keyframes child-sexual-abuse-bg-change {
+  0%,
+  25% {
+    background-color: #26DCC4; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@keyframes child-sexual-abuse-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@keyframes child-sexual-abuse-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@media (min-width: 992px) {
+  .child-sexual-abuse-glyph {
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none; }
 
-.site-content-index-item-d:hover #child-sexual-abuse {
-  transform: translate(15%, 15%);
-  opacity: 0; }
+  .child-sexual-abuse-definition {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-d:hover {
-  background-color: #000000; }
+  .child-sexual-abuse-description {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-d:hover .child-sexual-abuse-glyph {
-  transform: translate(-50%, -50%); }
+  .site-content-index #child-sexual-abuse {
+    animation: none; }
 
-.site-content-index-item-d:hover .child-sexual-abuse-definition {
-  border: 0.2vmin solid #3FB0A1;
-  padding: 0px 10px 0px 10px;
-  opacity: 1; }
+  .site-content-index-item-d {
+    height: 40vh;
+    background-color: #26DCC4;
+    animation: none; }
 
-.site-content-index-item-d:hover .child-sexual-abuse-description {
-  transform: translate(-50%, 250%);
-  border: 1px solid #3FB0A1;
-  padding: 0px 10px 0px 10px; }
+  .site-content-index-item-d:hover #child-sexual-abuse {
+    transform: translate(15%, 15%);
+    opacity: 0; }
 
-.twisted-pov-description, .twisted-pov-definition, .twisted-pov-glyph {
+  .site-content-index-item-d:hover {
+    background-color: #000000; }
+
+  .site-content-index-item-d:hover .child-sexual-abuse-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+
+  .site-content-index-item-d:hover .child-sexual-abuse-definition {
+    top: 15%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; }
+
+  .site-content-index-item-d:hover .child-sexual-abuse-description {
+    bottom: 15%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; } }
+.twisted-pov-description,
+.twisted-pov-definition,
+.twisted-pov-glyph {
   position: absolute; }
+
+.site-content-index-item-e {
+  height: 30vh;
+  background-color: #02b04c;
+  -webkit-animation: twisted-pov-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: twisted-pov-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: twisted-pov-bg-change 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: twisted-pov-bg-change 5s ease-in-out 0s alternate infinite none running;
+  animation: twisted-pov-bg-change 5s ease-in-out 0s alternate infinite none running; }
 
 .twisted-pov-glyph {
   font-size: 16vmin;
   color: #02A547;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-450%, -450%);
-  transition: all .7s ease-in-out; }
+  font-size: 16vmin;
+  left: -10%;
+  top: -10%;
+  opacity: 1;
+  -webkit-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: glyph-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: glyph-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .twisted-pov-definition {
   border: 0.2vmin solid #02A547;
+  top: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -450%);
+  transform: translateX(-50%);
   opacity: 0;
-  transition: all .7s ease-in-out;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: twisted-pov-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: twisted-pov-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: twisted-pov-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: twisted-pov-definition-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: twisted-pov-definition-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .twisted-pov-description {
-  color: #02A547;
+  border: 0.2vmin solid #02A547;
+  bottom: -10%;
+  padding: 0px 0px 0px 0px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, 650%);
-  transition: all .7s ease-in-out;
+  transform: translateX(-50%);
+  opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.6vmin; }
+  font-size: 3vmax;
+  -webkit-animation: twisted-pov-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: twisted-pov-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: twisted-pov-description-appear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: twisted-pov-description-appear 5s ease-in-out 0s alternate infinite none running;
+  animation: twisted-pov-description-appear 5s ease-in-out 0s alternate infinite none running; }
 
-.twisted-pov-description > a, .twisted-pov-definition > a, .twisted-pov-description > a:link, .twisted-pov-definition > a:link, .twisted-pov-description > a:visited, .twisted-pov-definition > a:visited, .twisted-pov-description > a:hover, .twisted-pov-definition > a:hover {
+.twisted-pov-description > a,
+.twisted-pov-definition > a,
+.twisted-pov-description > a:link,
+.twisted-pov-definition > a:link,
+.twisted-pov-description > a:visited,
+.twisted-pov-definition > a:visited,
+.twisted-pov-description > a:hover,
+.twisted-pov-definition > a:hover {
   text-decoration: none;
   color: #02A547; }
 
@@ -1317,32 +1457,126 @@ ul.site-navigation-menu-responsive li a {
   font-weight: 400;
   font-size: 10vmin;
   text-shadow: 3px 3px 3px  #101713;
-  transition: all .7s ease-in-out; }
+  transition: all .7s ease-in-out;
+  -webkit-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -moz-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -ms-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  -o-animation: disappear 5s ease-in-out 0s alternate infinite none running;
+  animation: disappear 5s ease-in-out 0s alternate infinite none running; }
 
-.site-content-index-item-e {
-  height: 30vh;
-  background-color: #02b04c; }
+@keyframes twisted-pov-bg-change {
+  0%,
+  25% {
+    background-color: #02b04c; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@keyframes twisted-pov-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@keyframes twisted-pov-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@media (min-width: 992px) {
+  .twisted-pov-glyph {
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none; }
 
-.site-content-index-item-e:hover #twisted-pov {
-  transform: translate(15%, 15%);
-  opacity: 0; }
+  .twisted-pov-definition {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-e:hover {
-  background-color: #000000; }
+  .twisted-pov-description {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none; }
 
-.site-content-index-item-e:hover .twisted-pov-glyph {
-  transform: translate(-50%, -50%); }
+  .site-content-index #twisted-pov {
+    animation: none; }
 
-.site-content-index-item-e:hover .twisted-pov-definition {
-  border: 0.2vmin solid #02A547;
-  padding: 0px 10px 0px 10px;
-  opacity: 1; }
+  .site-content-index-item-e {
+    height: 40vh;
+    background-color: #02b04c;
+    animation: none; }
 
-.site-content-index-item-e:hover .twisted-pov-description {
-  transform: translate(-50%, 250%);
-  border: 1px solid #02A547;
-  padding: 0px 10px 0px 10px; }
+  .site-content-index-item-e:hover #twisted-pov {
+    transform: translate(15%, 15%);
+    opacity: 0; }
 
+  .site-content-index-item-e:hover {
+    background-color: #000000; }
+
+  .site-content-index-item-e:hover .twisted-pov-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+
+  .site-content-index-item-e:hover .twisted-pov-definition {
+    top: 15%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; }
+
+  .site-content-index-item-e:hover .twisted-pov-description {
+    bottom: 15%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 10px 0px 10px;
+    opacity: 1; } }
 @media (min-width: 992px) {
   #site-content-index-wrapper {
     flex-direction: column;
@@ -1351,13 +1585,7 @@ ul.site-navigation-menu-responsive li a {
     margin-top: 20vh; }
 
   .site-content-index {
-    width: 33.33vw; }
-
-  .site-content-index-item-d {
-    height: 40vh; }
-
-  .site-content-index-item-e {
-    height: 40vh; } }
+    width: 33.33vw; } }
 .jumbotron {
   background-position: 0% 30%;
   background-image: url(/img/lot/lotblogheader.jpg);

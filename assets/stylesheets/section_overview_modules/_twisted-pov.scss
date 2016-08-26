@@ -1,197 +1,198 @@
-.twisted-pov-description, .twisted-pov-definition, .twisted-pov-glyph {
- position: absolute; 
+.twisted-pov-description,
+.twisted-pov-definition,
+.twisted-pov-glyph {
+  position: absolute;
+}
+
+.site-content-index-item-e {
+  height: 30vh;
+  background-color: #02b04c;
+  @include animation(twisted-pov-bg-change 5s ease-in-out 0s alternate infinite none running);
 }
 
 .twisted-pov-glyph {
   font-size: 16vmin;
   color: #02A547;
-  left: 50%;
-  top: 50%;
- transform: translate(-50%,-50%);
- transform: translate(-450%,-450%);
- transition: all .7s ease-in-out;
-  }
+  @include glyph-common();
+  @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
+}
+
 .twisted-pov-definition {
-border: 0.2vmin solid #02A547;
-padding: 0px 0px 0px 0px;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-450%);
-opacity: 0;
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
+  border: 0.2vmin solid #02A547;
+  top: -10%;
+  @include theme-description-definition-common();
+  @include animation(twisted-pov-definition-appear 5s ease-in-out 0s alternate infinite none running);
 }
+
 .twisted-pov-description {
-color: #02A547;
-left: 50%;
-top: 50%;
-transform: translate(-50%,650%);
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
+  border: 0.2vmin solid #02A547;
+  bottom: -10%;
+  @include theme-description-definition-common();
+  @include animation(twisted-pov-description-appear 5s ease-in-out 0s alternate infinite none running);
 }
 
-.twisted-pov-description > a, .twisted-pov-definition > a, .twisted-pov-description > a:link, .twisted-pov-definition > a:link,.twisted-pov-description > a:visited, .twisted-pov-definition > a:visited,.twisted-pov-description > a:hover, .twisted-pov-definition > a:hover {
-text-decoration: none;
-color: #02A547;
-
+.twisted-pov-description> a,
+.twisted-pov-definition> a,
+.twisted-pov-description> a:link,
+.twisted-pov-definition> a:link,
+.twisted-pov-description> a:visited,
+.twisted-pov-definition> a:visited,
+.twisted-pov-description> a:hover,
+.twisted-pov-definition> a:hover {
+  text-decoration: none;
+  color: #02A547;
 }
-
 
 .site-content-index #twisted-pov {
-   position: absolute;
+  position: absolute;
   top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Henny Penny', cursive;
   font-weight: 400;
   font-size: 10vmin;
-    text-shadow: 3px 3px 3px  #101713;
- transition: all .7s ease-in-out;
+      text-shadow: 3px 3px 3px  #101713;
+  transition: all .7s ease-in-out;
+  @include animation(disappear 5s ease-in-out 0s alternate infinite none running);
 }
 
-.site-content-index-item-e {
+@keyframes twisted-pov-bg-change {
+  0%,
+  25% {
+    background-color: #02b04c;
+  }
+  50% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
 
-  height:30vh;  
-  
-background-color:#02b04c;
+@keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%);
+  }
 }
-.site-content-index-item-e:hover #twisted-pov{
-     transform: translate(15%,15%);  
-     opacity: 0;
-   }
-.site-content-index-item-e:hover {
-  background-color: #000000;
+
+@keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
 }
-.site-content-index-item-e:hover .twisted-pov-glyph 
-{
-transform: translate(-50%,-50%);  
+
+@keyframes twisted-pov-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px;
+  }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
 }
-.site-content-index-item-e:hover .twisted-pov-definition 
-{
-border: 0.2vmin solid #02A547;
-padding: 0px 10px 0px 10px;
-opacity: 1; 
-}
-.site-content-index-item-e:hover .twisted-pov-description
-{
-transform: translate(-50%, 250%);   
-border: 1px solid #02A547;
-padding: 0px 10px 0px 10px;
+
+@keyframes twisted-pov-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px;
+  }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
 }
 
 @media(min-width: $screen-md-min) {
-#site-content-index-wrapper {
-flex-direction: column;
-max-height: 80vh;
-min-height: 80vh;
-margin-top: 20vh;
-}
-.site-content-index {
-width: 33.33vw;
-
-}
-.self-love-glyph {
-  font-size: 16vmin;
-  color: #851902;
-  left: 50%;
-  top: 50%;
-  opacity: 0;
- transform: translate(-50%,-50%);
- transform: translate(-450%,-450%);
- transition: all .7s ease-in-out;
- animation: none;
+  .twisted-pov-glyph {
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none;
   }
-.self-love-definition {
-border: 0.2vmin solid #851902;
-padding: 0px 0px 0px 0px;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-450%);
-opacity: 0;
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
- animation: none;
-}
-.self-love-description {
-color: #851902;
-left: 50%;
-top: 50%;
-transform: translate(-50%, 18vh);
-opacity: 1;
-transition: all .7s ease-in-out;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-size: 2.6vmin;
- animation: none;
-}
-.self-love-description > a, .self-love-definition > a, .self-love-description > a:link, .self-love-definition > a:link,.self-love-description > a:visited, .self-love-definition > a:visited,.self-love-description > a:hover,  {
-text-decoration: none;
-color: #851902;
-}
-.site-content-index #self-love {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
- color: #de2b04;
- font-family: 'Oleo Script', cursive;
- font-weight: 400;
-  font-size: 10vmin;  
-  text-shadow: 0px 2px 1px  #101713; 
- transition: all .7s ease-in-out;
-  animation: none;
-}
-.site-content-index-item-a {
-height:40vh;  
-animation: none;
-}
-.site-content-index-item-a:hover #self-love{
-     transform: translate(15%,15%);  
-     opacity: 0;
-   }
-.site-content-index-item-a:hover {
-  background-color: #000000;
-}
-.site-content-index-item-a:hover .self-love-glyph 
-{
-transform: translate(-50%,-50%);  
-opacity: 1;
-}
-.site-content-index-item-a:hover .self-love-definition 
-{
-border: 0.2vmin solid #851902;
-padding: 0px 10px 0px 10px;
-opacity: 1; 
-}
-.site-content-index-item-a:hover .self-love-description
-{
-transform: translate(-50%,8vh);   
-border: 1px solid #851902;
-padding: 0px 10px 0px 10px;
-opacity: 1; 
-}
-
-
-.site-content-index-item-b {
-height:40vh; 
-
-}
-
-.site-content-index-item-c {
-
-height:80vh; 
-
-}
-.site-content-index-item-d {
- 
-  height:40vh; 
-
-}
-.site-content-index-item-e {
-
-  height:40vh; 
-  
-}
+  .twisted-pov-definition {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none;
+  }
+  .twisted-pov-description {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none;
+  }
+  .site-content-index #twisted-pov {
+    animation: none;
+  }
+  .site-content-index-item-e {
+    height: 40vh;
+    background-color: #02b04c;
+    animation: none;
+  }
+  .site-content-index-item-e:hover #twisted-pov {
+    transform: translate(15%, 15%);
+    opacity: 0;
+  }
+  .site-content-index-item-e:hover {
+    background-color: #000000;
+  }
+  .site-content-index-item-e:hover .twisted-pov-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .site-content-index-item-e:hover .twisted-pov-definition {
+    top: 15%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 10px 0px 10px;
+    opacity: 1;
+  }
+  .site-content-index-item-e:hover .twisted-pov-description {
+    bottom: 15%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 10px 0px 10px;
+    opacity: 1;
+  }
 }
