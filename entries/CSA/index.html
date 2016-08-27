@@ -10,19 +10,21 @@ layout: default
 <div id="main-text-id" class="col-md-8 col-xs-12 col-sm-12 main-text">
 <div class="post-title">
   <a href="{{ postWithSpecificTag.url }}">
-    <h2>
+    <p>
 	<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>&nbsp;&nbsp;
-	{{ postWithSpecificTag.title }}</h2></a>
+	{{ postWithSpecificTag.title }}</p></a>
 
 	</div>
 	<div class="post-body ">
 	{{ postWithSpecificTag.excerpt | strip_html }}
 	</div>
-		<div class="post-date"><h3><span class="label label-default">Posted on
-    {{ postWithSpecificTag.date | date_to_long_string }}</span></h3>
+  <div class="main-text-child-c">
+		<div class="post-date"><p><span class="label label-default">Posted on
+    {{ postWithSpecificTag.date | date_to_long_string }}</span></p>
 	</div>
     <div class="read-post-link">
-      <a href="{{ postWithSpecificTag.url }}"  style="text-decoration: none;"><h3><span class="label label-danger">Read More &raquo;</span></h3></a>
+      <a href="{{ postWithSpecificTag.url }}"  style="text-decoration: none;"><p><span class="label label-danger">Read More &raquo;</span></p></a>
+    </div>
     </div>
 	</div>
 

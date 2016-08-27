@@ -1,9 +1,11 @@
 #sidebar-v1
 {
-border-radius: 40px;
+border-radius: 1px;
 border: 2px solid #334C58;
 background : url('/img/lot/graphy.png');
 padding: 15px;
+margin-top: 20vh;
+margin-bottom: 10vh;
 }
 .gadget-title
 {
@@ -37,12 +39,7 @@ text-decoration: none;
 font-family: 'Josefin Slab', sans-serif;
 font-size: 4vmax;
 }
-.gadget-content-sidebar
-{
-font-family: 'Open Sans Condensed', sans-serif;
-font-size: 2vmax;
-vertical-align: middle;
-}
+
 .gadget-content blockquote 
 {
     font-size: 2.8vmax;
@@ -61,9 +58,20 @@ text-decoration: none;
 overflow: hidden;
 display: inline-block;
 }
+.gadget-content-list-items a, .gadget-content-list-items a:link, .gadget-content-list-items a:visited
+{
+text-decoration: none;
+font-family: 'Economica', sans-serif;
+font-weight: 400 !important;
+font-size: 2vmin;
+}
 
+.gadget-content-list-items a:hover span{
+    text-decoration: none;
+font-weight: 700 !important;
+background-color: #0bbe4f !important;
+}
 @media(min-width: $screen-md-min) {
-
 
 .gadget-title
 {

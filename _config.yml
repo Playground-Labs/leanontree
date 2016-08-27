@@ -10,7 +10,6 @@ paginate_path: "/page:num/"
 markdown: rdiscount
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 excerpt_separator: <!--more-->
-exclude: [vendor]
 timezone: IN
 defaults:
  -
@@ -26,5 +25,5 @@ analytics :
   provider : google
   google :
       tracking_id : 'UA-65359714-1'
-exclude: ['tag', 'build_script', 'Gemfile','Gemfile.lock','README.md','assets/stylesheets/*.scss','assets/stylesheets/*.map','assets/stylesheets/core/*.map' ]
+exclude: ['vendor','build_script', 'Gemfile','Gemfile.lock','README.md','assets/stylesheets/*.scss','assets/stylesheets/*.map','assets/stylesheets/core/*.map' ]
  

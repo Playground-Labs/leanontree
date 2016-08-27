@@ -1,5 +1,5 @@
-<div id="sidebar-v1">
 
+<div id="sidebar-v1">
 <div class="tags-random">
 <p class="gadget-title-sidebar"><i class="glyphicon glyphicon-tags"></i>&nbsp;&nbsp;Site Tags</p>
 <div class="gadget-content-sidebar">
@@ -7,7 +7,7 @@
 {% assign tag_words = site_tags | split:',' | sort %}
 <ul class="gadget-content-list">
 {% for elements in tag_words %}
-<li class="gadget-content-list-items"><a href="/tag/{{ elements }}" id="tag-listing" value="{{ elements }}" style="text-decoration:none;"><span class="label label-bleed-blue" style="font-size: 12pt;">{{ elements }}</span></a></li>
+<li class="gadget-content-list-items"><a href="/tag/{{ elements }}" id="tag-listing" value="{{ elements }}" ><span class="label label-bleed-blue" style="font-size: 12pt;">{{ elements }}</span></a></li>
 {% endfor %}
 </ul>
 </div></div>

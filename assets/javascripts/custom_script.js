@@ -4,6 +4,7 @@ function imgError(image) {
     image.src = "/img/lot/no-picture.jpg";
     return true;
 }
+
 function socialSharePopup(url) {
 var newwindow = window.open(url,'name','height=250,width=500');
 	if (window.focus)
@@ -21,6 +22,7 @@ var newwindow = window.open(url,'name','height=250,width=500');
     }
  }   
 $(document).ready(function(){
+
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
     $(this).parent().find('li').toggle();

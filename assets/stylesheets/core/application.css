@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Bungee|Dosis|Noto+Sans|Oxygen|Passion+One|Rubik|Cantora+One|Bungee+Shade|Hammersmith+One|Fredericka+the+Great|Henny+Penny|Oleo+Script+Swash+Caps|Oleo+Script|Alegreya+Sans+SC|Chathura|Rubik|News+Cycle|Josefin+Slab|Baloo+Tamma|Open+Sans+Condensed:300";
+@import "https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Bungee|Dosis|Noto+Sans|Oxygen|Passion+One|Rubik|Cantora+One|Bungee+Shade|Hammersmith+One|Fredericka+the+Great|Henny+Penny|Oleo+Script+Swash+Caps|Oleo+Script|Alegreya+Sans+SC|Chathura|Rubik|News+Cycle|Josefin+Slab|Baloo+Tamma|Open+Sans+Condensed:300,700|Economica:400,700";
 @import "http://fonts.googleapis.com/css?family=Droid+Sans|Roboto:400,300italic,300,400italic|Cookie|Lobster|Fjalla+One|Yanone+Kaffeesatz:400,300,700|Grand+Hotel|Delius+Unicase";
 @import "http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Ubuntu:400,500,700|Quicksand:400,700|Roboto+Condensed:300italic,400italic,400,300|Oswald:400,700,300|Ubuntu+Condensed:400|Archivo+Narrow|Cuprum|Abel|Pacifico";
 @import "http://fonts.googleapis.com/css?family=Bangers|Righteous|Montserrat|Francois+One|Source+Sans+Pro|Playball|Maiden+Orange|Rancho|Walter+Turncoat|Homenaje|Arvo";
@@ -328,17 +328,18 @@ a.twitter-hashtag-button:focus {
 * {
   box-sizing: border-box; }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 .site {
   display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
   min-height: 100vh;
-  min-width: 100vw !important;
-  max-width: 100vw !important;
   flex-direction: column;
-  background-color: #FFC300;
-  overflow-x: hidden; }
+  background-color: #FFC300; }
 
 .main-content {
   margin-top: 10vh; }
@@ -1594,7 +1595,7 @@ ul.site-navigation-menu-responsive li a {
     margin-top: 20vh; }
 
   .site-content-index {
-    width: 33.33vw; } }
+    width: 33.3vw; } }
 .jumbotron {
   background-position: 0% 30%;
   background-image: url(/img/lot/lotblogheader.jpg);
@@ -1710,21 +1711,35 @@ ul.site-navigation-menu-responsive li a {
     padding-top: 2em;
     padding-bottom: 2em;
     margin-top: 20vh; } }
+.main-content-item {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  min-height: 44.5vh;
+  max-height: 44.5vh;
+  overflow: hidden; }
+
+.main-image {
+  overflow: hidden; }
+
+.main-text {
+  overflow: hiddden;
+  text-align: justify;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 2vw !important; }
+
 .post-title {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 32pt;
-  position: relative;
-  bottom: 25px;
+  font-size: 2.2vmax;
   text-align: left; }
 
-@media (min-width: 768px) {
-  .post-title {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 32pt;
-    position: relative;
-    bottom: 25px; } }
 .post-title a:link {
   color: #3B4343 !important;
   text-decoration: none; }
@@ -1740,50 +1755,68 @@ ul.site-navigation-menu-responsive li a {
 .post-body {
   font-family: 'Droid Sans', sans-serif;
   font-weight: 400;
-  font-size: 12pt;
-  position: relative;
-  bottom: 25px; }
+  font-size: 12pt; }
 
-.main-content-item {
+.main-text-child-c {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding-top: 15px; }
-
-@media (min-width: 992px) {
-  .main-content-item {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px; } }
-.main-image {
-  overflow: hidden;
-  float: left; }
-
-.main-text {
-  overflow: hiddden;
-  float: right;
-  text-align: justify; }
-
-@media (min-width: 992px) {
-  .main-text {
-    padding-left: 15px !important; } }
-.read-post-link, .post-date {
-  font-family: 'Ubuntu Condensed', sans-serif;
-  float: left;
-  font-size: 25px;
+  flex-direction: row;
   position: relative;
-  bottom: 25px; }
+  height: 8vh; }
+
+.read-post-link {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 2vmax;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
 
 .post-date {
-  color: #FFFFFF; }
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 2vmax;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
 
+/*
 @media (min-width: 768px) {
-  .post-date {
-    float: left; }
+    .post-title
+  {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 32pt;
+  position: relative;
+  bottom: 25px;
 
-  .read-post-link, .post-date {
-    float: right; } }
+  }
+  .post-date {
+  float: left;
+  }
+  .read-post-link {
+  float: right;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+.main-content-item
+{
+padding-top: 15px;
+padding-bottom: 15px;
+padding-right: 15px;
+padding-left: 15px;
+position: relative;
+height: 100%;
+}
+  .main-text
+  {
+  padding-left: 15px !important;
+  position: absolute;
+  right: 0;
+  }
+}  */
 .page-header {
   background: url("/img/lot/px_by_Gre3g.png");
   padding-bottom: 0px !important;
@@ -2016,10 +2049,12 @@ a.post-page-link:hover {
   border-radius: 4px 4px 0 0; }
 
 #sidebar-v1 {
-  border-radius: 40px;
+  border-radius: 1px;
   border: 2px solid #334C58;
   background: url("/img/lot/graphy.png");
-  padding: 15px; }
+  padding: 15px;
+  margin-top: 20vh;
+  margin-bottom: 10vh; }
 
 .gadget-title {
   font-family: 'Fjalla One', sans-serif;
@@ -2047,11 +2082,6 @@ a.post-page-link:hover {
   font-family: 'Josefin Slab', sans-serif;
   font-size: 4vmax; }
 
-.gadget-content-sidebar {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2vmax;
-  vertical-align: middle; }
-
 .gadget-content blockquote {
   font-size: 2.8vmax;
   font-family: 'News Cycle', sans-serif; }
@@ -2065,6 +2095,17 @@ a.post-page-link:hover {
   text-decoration: none;
   overflow: hidden;
   display: inline-block; }
+
+.gadget-content-list-items a, .gadget-content-list-items a:link, .gadget-content-list-items a:visited {
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  font-weight: 400 !important;
+  font-size: 2vmin; }
+
+.gadget-content-list-items a:hover span {
+  text-decoration: none;
+  font-weight: 700 !important;
+  background-color: #0bbe4f !important; }
 
 @media (min-width: 992px) {
   .gadget-title {
@@ -2126,12 +2167,14 @@ ul.footer-elements li {
     display: inline-block;
     padding: .2em 1em; } }
 .footer-section-a {
-  background: #000000; }
+  background: #000000;
+  height: 100%; }
 
 .footer-section-b {
   background: #121212;
   font-family: 'Ubuntu Condensed', sans-serif;
-  font-size: 12pt; }
+  font-size: 12pt;
+  height: 100%; }
 
 .footer-section-b-elements {
   color: #8F8F8F; }
@@ -2158,7 +2201,7 @@ a.footer-section-b-elements:hover {
   display: table;
   margin: 0 auto;
   text-align: center;
-  width: 100vw; }
+  width: 100%; }
 
 .socialmediaiconlinksextended {
   font-family: 'Socialico Plus', sans-serif;

@@ -1,23 +1,36 @@
-
+.main-content-item
+{
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-direction: row;
+min-height:44.5vh;
+max-height:44.5vh;
+overflow: hidden;
+}
+.main-image
+{
+overflow: hidden;
+}
+.main-text
+{
+overflow: hiddden;
+text-align: justify;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: hidden;
+padding-left: 2vw !important;
+}
 .post-title
 {
+
 font-family: 'Oswald', sans-serif;
 font-weight: 400;
-font-size: 32pt;
-position: relative;
-bottom: 25px;
+font-size: 2.2vmax;
 text-align: left;
-}
-@media (min-width: 768px) {
-  .post-title
-  {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 32pt;
-  position: relative;
-  bottom: 25px;
-
-  }
 }
 .post-title a:link
 {
@@ -38,58 +51,44 @@ text-decoration: none;
 font-family: 'Droid Sans', sans-serif;
 font-weight: 400 ;
 font-size: 12pt ;
-position: relative;
-bottom: 25px;
 }
+.main-text-child-c{
 
-.main-content-item
-{
 display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
-padding-top: 15px;
+flex-direction: row;
+position: relative;
+height: 8vh;
 }
-@media (min-width: 992px) {
-.main-content-item
-{
-padding-top: 15px;
-padding-bottom: 15px;
-padding-right: 15px;
-padding-left: 15px;
-}
-}
-.main-image
-{
-overflow: hidden;
-float: left;
-}
-.main-text
-{
-overflow: hiddden;
-float: right;
-text-align: justify;
-}
-@media (min-width: 992px) {
-  .main-text
-  {
-  padding-left: 15px !important;
-  }
-
-}
-
 
 .read-post-link {
 font-family: 'Ubuntu Condensed', sans-serif;
-float: left;
-font-size : 25px;
-position: relative;
-bottom: 25px;
+font-size : 2vmax;
+position: absolute;
+right: 0;
+bottom: 0;
 }
 .post-date {
-@extend .read-post-link;
-color: #FFFFFF;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size : 2vmax;
+position: absolute;
+left: 0;
+bottom: 0;
 }
+
+
+/*
 @media (min-width: 768px) {
+    .post-title
+  {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 32pt;
+  position: relative;
+  bottom: 25px;
+
+  }
   .post-date {
   float: left;
   }
@@ -97,3 +96,23 @@ color: #FFFFFF;
   float: right;
   }
 }
+
+
+
+@media (min-width: 992px) {
+.main-content-item
+{
+padding-top: 15px;
+padding-bottom: 15px;
+padding-right: 15px;
+padding-left: 15px;
+position: relative;
+height: 100%;
+}
+  .main-text
+  {
+  padding-left: 15px !important;
+  position: absolute;
+  right: 0;
+  }
+}  */
