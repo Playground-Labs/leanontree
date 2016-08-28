@@ -25,5 +25,5 @@ analytics :
   provider : google
   google :
       tracking_id : 'UA-65359714-1'
-exclude: ['vendor','build_script', 'Gemfile','Gemfile.lock','README.md','assets/stylesheets/*.scss','assets/stylesheets/*.map','assets/stylesheets/core/*.map' ]
+exclude: ['vendor','build_script', 'Gemfile','Gemfile.lock','README.md','assets/stylesheets/*.scss','assets/stylesheets/*.map','assets/stylesheets/core/*.map','tag/tag_template_generator.py','tag/index.html' ]
  

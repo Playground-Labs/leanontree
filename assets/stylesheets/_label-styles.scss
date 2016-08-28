@@ -1,3 +1,25 @@
+.label-flat-lot {
+display: inline;
+padding: .2em .6em .3em;
+font-size: 75%;
+font-weight: 700;
+ line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+
+}
+a.label-flat-lot:focus,
+a.label-flat-lot:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.label-flat-lot:empty {
+    display: none
+}
 .label
 {
 font-weight: normal !important;

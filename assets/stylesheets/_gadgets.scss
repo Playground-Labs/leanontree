@@ -4,7 +4,7 @@ border-radius: 1px;
 border: 2px solid #334C58;
 background : url('/img/lot/graphy.png');
 padding: 15px;
-margin-top: 20vh;
+margin-top: 0vh;
 margin-bottom: 10vh;
 }
 .gadget-title
@@ -72,7 +72,10 @@ font-weight: 700 !important;
 background-color: #0bbe4f !important;
 }
 @media(min-width: $screen-md-min) {
-
+#sidebar-v1
+{
+margin-top: 20vh;
+}
 .gadget-title
 {
 text-align: center;

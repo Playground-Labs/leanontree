@@ -30,8 +30,7 @@ deploy:
     region: us-west-2
     local-dir: _site
     detect_encoding: true
-    cache_control: "max-age=31536000"
-    expires: "2020-12-21 00:00:00 -0000"
+    cache_control: "max-age=1200"
     on:
       branch: master
   - provider: s3
@@ -41,7 +40,6 @@ deploy:
     skip_cleanup: true
     local-dir: _site
     detect_encoding: true
-    cache_control: "max-age=31536000"
-    expires: "2020-12-21 00:00:00 -0000"
+    cache_control: "max-age=1200"
     on:
       all_branches: true

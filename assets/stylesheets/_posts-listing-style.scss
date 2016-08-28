@@ -4,8 +4,10 @@ display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
 flex-direction: row;
+justify-content: center;
+align-items: center;
 min-height:44.5vh;
-max-height:44.5vh;
+
 overflow: hidden;
 }
 .main-image
@@ -26,10 +28,9 @@ padding-left: 2vw !important;
 }
 .post-title
 {
-
 font-family: 'Oswald', sans-serif;
 font-weight: 400;
-font-size: 2.2vmax;
+font-size: 7vmin;
 text-align: left;
 }
 .post-title a:link
@@ -50,7 +51,8 @@ text-decoration: none;
 .post-body {
 font-family: 'Droid Sans', sans-serif;
 font-weight: 400 ;
-font-size: 12pt ;
+
+overflow: hiddden;
 }
 .main-text-child-c{
 
@@ -58,61 +60,62 @@ display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
 flex-direction: row;
-position: relative;
-height: 8vh;
-}
-
-.read-post-link {
+justify-content: space-between;
 font-family: 'Ubuntu Condensed', sans-serif;
-font-size : 2vmax;
-position: absolute;
-right: 0;
-bottom: 0;
-}
-.post-date {
-font-family: 'Ubuntu Condensed', sans-serif;
-font-size : 2vmax;
-position: absolute;
-left: 0;
-bottom: 0;
+font-size : 5.5vmin;
 }
 
-
-/*
-@media (min-width: 768px) {
-    .post-title
-  {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 32pt;
-  position: relative;
-  bottom: 25px;
-
-  }
-  .post-date {
-  float: left;
-  }
-  .read-post-link {
-  float: right;
-  }
+.post-date span,  .read-post-link span {
+  border-width: 0.1vmin;
+  border-style: solid;
+  color: #3B4343;
 }
+ .read-post-link a:hover span {
+  background-color: #9b3b57;
+  color: white;
 
-
-
-@media (min-width: 992px) {
+}
+@media(min-width: $screen-sm-min) {
 .main-content-item
 {
-padding-top: 15px;
-padding-bottom: 15px;
-padding-right: 15px;
-padding-left: 15px;
-position: relative;
-height: 100%;
+  min-height: 0vh;
+  max-height: auto;
 }
-  .main-text
-  {
-  padding-left: 15px !important;
-  position: absolute;
-  right: 0;
-  }
-}  */
+.post-title
+{
+font-size: 3vmin;
+}
+.post-body {
+font-size: 2vmin;
+
+}
+
+.main-text-child-c {
+font-size : 2.5vmin;
+}
+}
+
+@media(min-width: $screen-md-min) {
+
+.main-content-item
+{
+max-height:44.5vh;
+}
+.post-title
+{
+
+font-size: 2.2vmax;
+
+}
+.post-body
+{
+font-size: 2.5vmin;
+}
+.read-post-link {
+font-size : 2vmax;
+}
+.post-date {
+font-size : 2vmax;
+
+}
+}
