@@ -5,27 +5,26 @@ padding-bottom: 0px !important; /*overidding the default value in template which
 }
 .post-heading
 {
-  padding-bottom: 10px;
+  padding-bottom: 2vh;
   color: #000000;
   background: #FFCC00;
-  text-shadow: 0px 2px 3px #FFFF33;
+  text-shadow: 0px 0.1vmin 0.3vmin #FFFF33;
   }
 .post-title-post-layout
 {
-  margin-top: 30px;
-  margin-bottom: 0px;
-
-  font-family: 'Oswald', sans-serif;
- font-size: 10vmin;
+margin-top: 3vh;
+margin-bottom: 0vh;
+font-family: 'Oswald', sans-serif;
+font-size: 10vmin;
 text-align: center;
 }
 
 .post-body-post-layout {
 font-family: 'Droid Sans', sans-serif;
 font-weight: 400;
-font-size: 12pt;
-margin-left: 5px;
-margin-right: 5px;
+font-size: 5vmin;
+margin-left: 2vw;
+margin-right: 2vw;
 color: #FFFFFF;
 }
 
@@ -34,11 +33,11 @@ color: #FFFFFF;
   padding-top: 1em;
 }
 .contributor_picture{
-  width: 90px;
-	height: 90px;
-  border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
+  width: 20vw;
+	height: 20vw;
+  border-radius: 20vw;
+	-webkit-border-radius: 20vw;
+	-moz-border-radius: 20vw;
 	background-repeat: no-repeat !important;
   background-position: 50% 50% !important;
   float:left;
@@ -70,7 +69,7 @@ margin: 0px;
 #tag-container ul
 {
   font-family: 'Oswald', sans-serif;
-  font-size: 20px;
+  font-size: 6vmin;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -78,13 +77,13 @@ margin: 0px;
 #tag-container li
 {
 display: inline-block;
-margin-bottom: 8px;
+margin-bottom: 2vmin;
 }
 
 #social-sharing-request{
   text-align:center;
   font-family:'Pacifico',sans-serif;
-  font-size:1.5em;
+  font-size:4.8vmin;
   color:#FF9933;
 }
 .post-body .separator .img-responsive {
@@ -93,44 +92,21 @@ margin-bottom: 8px;
 
 @media(min-width: $screen-sm-min) {
 
-  .post-heading
+    .post-title-post-layout
   {
-    padding-bottom: 2vh;
-    color: #000000;
-    background: #FFCC00;
-    text-shadow: 0px 2px 3px #FFFF33;
+   margin-top: 1vh;
+   font-size: 8vmin;
   }
-  .post-title-post-layout
-  {
-    margin-top: 1vh;
-    margin-bottom: 0vh;
-    font-family: 'Oswald', sans-serif;
-   font-size: 10vmin;
-  text-align: center;
-  }
-
-
   .post-body-post-layout {
-  font-family: 'Droid Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14pt;
-  color: #FFFFFF;
+  font-size: 2.5vmin;
   }
 #post-sub-text{
     padding-bottom: 4em;
-    padding-top: 1em;
   }
   .contributor_picture{
     width: 100px;
   	height: 100px;
 
-  	border-radius: 150px;
-  	-webkit-border-radius: 150px;
-  	-moz-border-radius: 150px;
-  	background-repeat: no-repeat !important;
-    background-position: 50% 50% !important;
-
-    float:left;
   }
   .post-author {
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -149,26 +125,23 @@ margin-bottom: 8px;
   }
     #tag-container ul
   {
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    
+    font-size: 3.5vmin;
+
   }
   #tag-container li
   {
-  display: inline-block;
-  padding-top: 0.1em;
+   padding-top: 0.1em;
 
   }
 
-   #social-sharing-request{
-    text-align:center;
-    font-family:'Pacifico',sans-serif;
-    font-size:2em;
-    color:#FF9933;
-  }
+
 }
 
 @media(min-width: $screen-md-min) {
+     .post-title-post-layout
+  {
+   
+   font-size: 10vmin;
+  }
 }

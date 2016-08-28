@@ -1,0 +1,198 @@
+.general-lot-description,
+.general-lot-definition,
+.general-lot-glyph {
+  position: absolute;
+}
+
+.site-content-index-item-f {
+  height: 30vh;
+  background-color: #02b04c;
+  @include animation(general-lot-bg-change 5s ease-in-out 0s alternate infinite none running);
+}
+
+.general-lot-glyph {
+  font-size: 16vmin;
+  color: #02A547;
+  @include glyph-common();
+  @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
+}
+
+.general-lot-definition {
+  border: 0.2vmin solid #02A547;
+  top: -10%;
+  @include theme-description-definition-common();
+  @include animation(general-lot-definition-appear 5s ease-in-out 0s alternate infinite none running);
+}
+
+.general-lot-description {
+  border: 0.2vmin solid #02A547;
+  bottom: -10%;
+  @include theme-description-definition-common();
+  @include animation(general-lot-description-appear 5s ease-in-out 0s alternate infinite none running);
+}
+
+.general-lot-description> a,
+.general-lot-definition> a,
+.general-lot-description> a:link,
+.general-lot-definition> a:link,
+.general-lot-description> a:visited,
+.general-lot-definition> a:visited,
+.general-lot-description> a:hover,
+.general-lot-definition> a:hover {
+  text-decoration: none;
+  color: #02A547;
+}
+
+.site-content-index #general-lot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Henny Penny', cursive;
+  font-weight: 400;
+  font-size: 10vmin;
+      text-shadow: 3px 3px 3px  #101713;
+  transition: all .7s ease-in-out;
+  @include animation(disappear 5s ease-in-out 0s alternate infinite none running);
+}
+
+@keyframes general-lot-bg-change {
+  0%,
+  25% {
+    background-color: #02b04c;
+  }
+  50% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+
+@keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%);
+  }
+}
+
+@keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes general-lot-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px;
+  }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes general-lot-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px;
+  }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1;
+  }
+}
+
+@media(min-width: $screen-md-min) {
+  .general-lot-glyph {
+    left: -10%;
+    top: -10%;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation: none;
+  }
+  .general-lot-definition {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none;
+  }
+  .general-lot-description {
+    transition: all .7s ease-in-out;
+    font-size: 2.6vmin;
+    animation: none;
+  }
+  .site-content-index #general-lot {
+    animation: none;
+  }
+  .site-content-index-item-f {
+    height: 40vh;
+    background-color: #02b04c;
+    animation: none;
+  }
+  .site-content-index-item-f:hover #general-lot {
+    transform: translate(15%, 15%);
+    opacity: 0;
+  }
+  .site-content-index-item-f:hover {
+    background-color: #000000;
+  }
+  .site-content-index-item-f:hover .general-lot-glyph {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .site-content-index-item-f:hover .general-lot-definition {
+    top: 15%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 10px 0px 10px;
+    opacity: 1;
+  }
+  .site-content-index-item-f:hover .general-lot-description {
+    bottom: 15%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 10px 0px 10px;
+    opacity: 1;
+  }
+}

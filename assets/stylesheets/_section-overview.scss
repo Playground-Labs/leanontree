@@ -1,13 +1,18 @@
 
-#site-content-index-wrapper {
+#first-site-content-index-wrapper {
  display: flex;   
  flex-direction: row;
  min-height: 90vh;
  flex-wrap: wrap;
  overflow-x: hidden;
-
- 
  margin-top: 10vh;
+}
+#second-site-content-index-wrapper {
+ display: flex;   
+ flex-direction: row;
+ min-height: 40vh;
+ flex-wrap: wrap;
+ overflow-x: hidden;
 }
 .site-content-index {
 width: 100vw;
@@ -27,12 +32,19 @@ position: relative;
 
 @import 'section_overview_modules/twisted-pov';
 
+@import 'section_overview_modules/general-lot';
+
 @media(min-width: $screen-md-min) {
-#site-content-index-wrapper {
+#first-site-content-index-wrapper {
 flex-direction: column;
 max-height: 80vh;
 min-height: 80vh;
 margin-top: 20vh;
+}
+#second-site-content-index-wrapper {
+flex-direction: column;
+max-height: 40vh;
+min-height: 40vh;
 }
 .site-content-index {
 width: 33.3vw;

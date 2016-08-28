@@ -62,7 +62,14 @@ ul.brand-mast-head-content li {
     flex-direction: row !important;
     transition: all .9s ease-in-out;
 }
+.brand-name #LEAN:after,.brand-name #ON:after  {
 
+    content: '\00a0';
+}
+.brand-name-dynamic #LEAN:after,.brand-name-dynamic #ON:after  {
+
+    content: '\00a0' !important;
+}
 #brand-tag-line,
 .brand-tag-line {
     font-family: 'Amatic SC', cursive;
@@ -180,7 +187,14 @@ ul.site-navigation-menu-responsive li a {
     text-shadow: none !important;
 }
  
- 
+ @media(min-width: $screen-sm-min) {
+       #brand-name,.brand-name {
+     font-size: 4vmin;
+       }
+        ul.site-navigation-menu {
+        font-size: 2.5vmin;
+    }
+ }
 
 @media(min-width: $screen-md-min) {
     header.masthead-and-navigation-links {
@@ -197,6 +211,10 @@ ul.site-navigation-menu-responsive li a {
         display: flex;
         flex-direction: column;
     }
+    .brand-name #LEAN:after,.brand-name #ON:after  {
+
+    content: '';
+}
     #brand-tag-line,
     .brand-tag-line {
         opacity: 1;
