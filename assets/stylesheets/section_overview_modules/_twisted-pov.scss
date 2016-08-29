@@ -7,28 +7,28 @@
 .site-content-index-item-e {
   height: 30vh;
   background-color: #02b04c;
-  @include animation(twisted-pov-bg-change 5s ease-in-out 0s alternate infinite none running);
+  @include animation(twisted-pov-bg-change 5s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-glyph {
   font-size: 16vmin;
   color: #02A547;
   @include glyph-common();
-  @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(glyph-appear 5s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-definition {
   border: 0.2vmin solid #02A547;
   top: -10%;
   @include theme-description-definition-common();
-  @include animation(twisted-pov-definition-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(twisted-pov-definition-appear 5s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-description {
   border: 0.2vmin solid #02A547;
   bottom: -10%;
   @include theme-description-definition-common();
-  @include animation(twisted-pov-description-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(twisted-pov-description-appear 5s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-description> a,
@@ -52,8 +52,8 @@
   font-weight: 400;
   font-size: 10vmin;
       text-shadow: 3px 3px 3px  #101713;
-  transition: all .7s ease-in-out;
-  @include animation(disappear 5s ease-in-out 0s alternate infinite none running);
+  transition: all .7s linear;
+  @include animation(disappear 5s linear 0s alternate infinite none running);
 }
 
 @keyframes twisted-pov-bg-change {
@@ -149,16 +149,16 @@
     left: -10%;
     top: -10%;
     opacity: 0;
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     animation: none;
   }
   .twisted-pov-definition {
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     font-size: 2.6vmin;
     animation: none;
   }
   .twisted-pov-description {
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     font-size: 2.6vmin;
     animation: none;
   }

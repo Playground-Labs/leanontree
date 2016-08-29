@@ -7,28 +7,28 @@
 .site-content-index-item-d {
   height: 30vh;
   background-color: #26DCC4;
-  @include animation(child-sexual-abuse-bg-change 5s ease-in-out 0s alternate infinite none running);
+  @include animation(child-sexual-abuse-bg-change 5s linear 0s alternate infinite none running);
 }
 
 .child-sexual-abuse-glyph {
   font-size: 16vmin;
   color: #3FB0A1;
   @include glyph-common();
-  @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(glyph-appear 5s linear 0s alternate infinite none running);
 }
 
 .child-sexual-abuse-definition {
   border: 0.2vmin solid #3FB0A1;
   top: -10%;
   @include theme-description-definition-common();
-  @include animation(child-sexual-abuse-definition-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(child-sexual-abuse-definition-appear 5s linear 0s alternate infinite none running);
 }
 
 .child-sexual-abuse-description {
   border: 0.2vmin solid #3FB0A1;
   bottom: -10%;
   @include theme-description-definition-common();
-  @include animation(child-sexual-abuse-description-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(child-sexual-abuse-description-appear 5s linear 0s alternate infinite none running);
 }
 
 .child-sexual-abuse-description> a,
@@ -52,8 +52,8 @@
   font-family: 'Cutive Mono', monospace;
   font-weight: 700;
   font-size: 8vmin;
-  transition: all .7s ease-in-out;
-  @include animation(disappear 5s ease-in-out 0s alternate infinite none running);
+  transition: all .7s linear;
+  @include animation(disappear 5s linear 0s alternate infinite none running);
 }
 
 @keyframes child-sexual-abuse-bg-change {
@@ -149,16 +149,16 @@
     left: -10%;
     top: -10%;
     opacity: 0;
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     animation: none;
   }
   .child-sexual-abuse-definition {
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     font-size: 2.6vmin;
     animation: none;
   }
   .child-sexual-abuse-description {
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     font-size: 2.6vmin;
     animation: none;
   }

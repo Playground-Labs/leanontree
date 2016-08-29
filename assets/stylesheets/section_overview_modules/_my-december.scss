@@ -7,28 +7,28 @@
 .site-content-index-item-b {
   height: 30vh;
   background-color: #C70039;
-  @include animation(my-december-bg-change 5s ease-in-out 0s alternate infinite none running);
+  @include animation(my-december-bg-change 5s linear 0s alternate infinite none running);
 }
 
 .my-december-glyph {
   font-size: 16vmin;
   color: #ecc4e0;
   @include glyph-common();
-  @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(glyph-appear 5s linear 0s alternate infinite none running);
 }
 
 .my-december-definition {
   border: 0.2vmin solid #ecc4e0;
   top: -10%;
   @include theme-description-definition-common();
-  @include animation(my-december-definition-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(my-december-definition-appear 5s linear 0s alternate infinite none running);
 }
 
 .my-december-description {
   border: 0.2vmin solid #ecc4e0;
   bottom: -10%;
   @include theme-description-definition-common();
-  @include animation(my-december-description-appear 5s ease-in-out 0s alternate infinite none running);
+  @include animation(my-december-description-appear 5s linear 0s alternate infinite none running);
 }
 
 .my-december-description> a,
@@ -52,8 +52,8 @@
   font-family: 'Fredericka the Great', sans-serif;
   font-weight: 400;
   font-size: 10vmin;
-  transition: all .7s ease-in-out;
-  @include animation(disappear 5s ease-in-out 0s alternate infinite none running);
+  transition: all .7s linear;
+  @include animation(disappear 5s linear 0s alternate infinite none running);
 }
 
 @keyframes my-december-bg-change {
@@ -149,16 +149,16 @@
     left: -10%;
     top: -10%;
     opacity: 0;
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     animation: none;
   }
   .my-december-definition {
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     font-size: 2.6vmin;
     animation: none;
   }
   .my-december-description {
-    transition: all .7s ease-in-out;
+    transition: all .7s linear;
     font-size: 2.6vmin;
     animation: none;
   }
