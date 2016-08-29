@@ -55,8 +55,7 @@
   transition: all .7s linear;
   @include animation(disappear 5s linear 0s alternate infinite none running);
 }
-
-@keyframes my-december-bg-change {
+@include keyframes(my-december-bg-change) {
   0%,
   25% {
     background-color: #C70039;
@@ -68,8 +67,7 @@
     background-color: #000000;
   }
 }
-
-@keyframes disappear {
+@include keyframes(disappear) {
   0%,
   25% {
     opacity: 1;
@@ -84,8 +82,7 @@
     transform: translate(15%, 15%);
   }
 }
-
-@keyframes glyph-appear {
+@include keyframes(glyph-appear) {
   0%,
   25% {
     opacity: 0;
@@ -103,8 +100,7 @@
     opacity: 1;
   }
 }
-
-@keyframes my-december-definition-appear {
+@include keyframes(my-december-definition-appear) {
   0%,
   25% {
     opacity: 0;
@@ -123,8 +119,7 @@
     opacity: 1;
   }
 }
-
-@keyframes my-december-description-appear {
+@include keyframes(my-december-description-appear) {
   0%,
   25% {
     opacity: 0;

@@ -56,8 +56,7 @@
   transition: all .7s linear;
   @include animation(disappear 5s linear 0s alternate infinite none running);
 }
-
-@keyframes general-lot-bg-change {
+@include keyframes(general-lot-bg-change) {
   0%,
   25% {
     background-color: #0e556b;
@@ -69,8 +68,7 @@
     background-color: #000000;
   }
 }
-
-@keyframes disappear {
+@include keyframes(disappear) {
   0%,
   25% {
     opacity: 1;
@@ -85,8 +83,7 @@
     transform: translate(15%, 15%);
   }
 }
-
-@keyframes glyph-appear {
+@include keyframes(glyph-appear) {
   0%,
   25% {
     opacity: 0;
@@ -104,8 +101,7 @@
     opacity: 1;
   }
 }
-
-@keyframes general-lot-definition-appear {
+@include keyframes(general-lot-definition-appear) {
   0%,
   25% {
     opacity: 0;
@@ -124,8 +120,7 @@
     opacity: 1;
   }
 }
-
-@keyframes general-lot-description-appear {
+@include keyframes(general-lot-description-appear) {
   0%,
   25% {
     opacity: 0;

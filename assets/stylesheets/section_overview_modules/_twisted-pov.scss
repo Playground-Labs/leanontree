@@ -55,8 +55,7 @@
   transition: all .7s linear;
   @include animation(disappear 5s linear 0s alternate infinite none running);
 }
-
-@keyframes twisted-pov-bg-change {
+@include keyframes(twisted-pov-bg-change) {
   0%,
   25% {
     background-color: #02b04c;
@@ -69,7 +68,7 @@
   }
 }
 
-@keyframes disappear {
+@include keyframes(disappear) {
   0%,
   25% {
     opacity: 1;
@@ -85,7 +84,7 @@
   }
 }
 
-@keyframes glyph-appear {
+@include keyframes(glyph-appear) {
   0%,
   25% {
     opacity: 0;
@@ -103,8 +102,7 @@
     opacity: 1;
   }
 }
-
-@keyframes twisted-pov-definition-appear {
+@include keyframes(twisted-pov-definition-appear) {
   0%,
   25% {
     opacity: 0;
@@ -123,8 +121,7 @@
     opacity: 1;
   }
 }
-
-@keyframes twisted-pov-description-appear {
+@include keyframes(twisted-pov-description-appear) {
   0%,
   25% {
     opacity: 0;

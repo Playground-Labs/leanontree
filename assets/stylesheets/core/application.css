@@ -732,6 +732,38 @@ ul.site-navigation-menu-responsive li a {
   -o-animation: disappear 5s linear 0s alternate infinite none running;
   animation: disappear 5s linear 0s alternate infinite none running; }
 
+@-webkit-keyframes self-love-bg-change {
+  0%,
+  25% {
+    background-color: #ff5733; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-moz-keyframes self-love-bg-change {
+  0%,
+  25% {
+    background-color: #ff5733; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-o-keyframes self-love-bg-change {
+  0%,
+  25% {
+    background-color: #ff5733; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-ms-keyframes self-love-bg-change {
+  0%,
+  25% {
+    background-color: #ff5733; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
 @keyframes self-love-bg-change {
   0%,
   25% {
@@ -740,6 +772,50 @@ ul.site-navigation-menu-responsive li a {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
+@-webkit-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-moz-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-o-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-ms-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
 @keyframes disappear {
   0%,
   25% {
@@ -751,6 +827,62 @@ ul.site-navigation-menu-responsive li a {
   100% {
     opacity: 0;
     transform: translate(15%, 15%); } }
+@-webkit-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-moz-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-o-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-ms-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
 @keyframes glyph-appear {
   0%,
   25% {
@@ -765,6 +897,66 @@ ul.site-navigation-menu-responsive li a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; } }
+@-webkit-keyframes self-love-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes self-love-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes self-love-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes self-love-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
 @keyframes self-love-definition-appear {
   0%,
   25% {
@@ -778,6 +970,66 @@ ul.site-navigation-menu-responsive li a {
   100% {
     top: 10%;
     border: 0.2vmin solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-webkit-keyframes self-love-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes self-love-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes self-love-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes self-love-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #851902;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #851902;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes self-love-description-appear {
@@ -927,6 +1179,38 @@ ul.site-navigation-menu-responsive li a {
   -o-animation: disappear 5s linear 0s alternate infinite none running;
   animation: disappear 5s linear 0s alternate infinite none running; }
 
+@-webkit-keyframes my-december-bg-change {
+  0%,
+  25% {
+    background-color: #C70039; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-moz-keyframes my-december-bg-change {
+  0%,
+  25% {
+    background-color: #C70039; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-o-keyframes my-december-bg-change {
+  0%,
+  25% {
+    background-color: #C70039; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-ms-keyframes my-december-bg-change {
+  0%,
+  25% {
+    background-color: #C70039; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
 @keyframes my-december-bg-change {
   0%,
   25% {
@@ -935,6 +1219,50 @@ ul.site-navigation-menu-responsive li a {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
+@-webkit-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-moz-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-o-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-ms-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
 @keyframes disappear {
   0%,
   25% {
@@ -946,6 +1274,62 @@ ul.site-navigation-menu-responsive li a {
   100% {
     opacity: 0;
     transform: translate(15%, 15%); } }
+@-webkit-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-moz-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-o-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-ms-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
 @keyframes glyph-appear {
   0%,
   25% {
@@ -960,6 +1344,66 @@ ul.site-navigation-menu-responsive li a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; } }
+@-webkit-keyframes my-december-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes my-december-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes my-december-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes my-december-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
 @keyframes my-december-definition-appear {
   0%,
   25% {
@@ -973,6 +1417,66 @@ ul.site-navigation-menu-responsive li a {
   100% {
     top: 10%;
     border: 0.2vmin solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-webkit-keyframes my-december-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes my-december-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes my-december-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes my-december-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #ecc4e0;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes my-december-description-appear {
@@ -1124,6 +1628,38 @@ ul.site-navigation-menu-responsive li a {
   -o-animation: disappear 5s linear 0s alternate infinite none running;
   animation: disappear 5s linear 0s alternate infinite none running; }
 
+@-webkit-keyframes story-hour-bg-change {
+  0%,
+  25% {
+    background-color: #480828; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-moz-keyframes story-hour-bg-change {
+  0%,
+  25% {
+    background-color: #480828; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-o-keyframes story-hour-bg-change {
+  0%,
+  25% {
+    background-color: #480828; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-ms-keyframes story-hour-bg-change {
+  0%,
+  25% {
+    background-color: #480828; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
 @keyframes story-hour-bg-change {
   0%,
   25% {
@@ -1132,6 +1668,50 @@ ul.site-navigation-menu-responsive li a {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
+@-webkit-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-moz-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-o-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-ms-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
 @keyframes disappear {
   0%,
   25% {
@@ -1143,6 +1723,62 @@ ul.site-navigation-menu-responsive li a {
   100% {
     opacity: 0;
     transform: translate(15%, 15%); } }
+@-webkit-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-moz-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-o-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-ms-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
 @keyframes glyph-appear {
   0%,
   25% {
@@ -1157,6 +1793,66 @@ ul.site-navigation-menu-responsive li a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; } }
+@-webkit-keyframes story-hour-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes story-hour-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes story-hour-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes story-hour-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
 @keyframes story-hour-definition-appear {
   0%,
   25% {
@@ -1170,6 +1866,66 @@ ul.site-navigation-menu-responsive li a {
   100% {
     top: 10%;
     border: 0.2vmin solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-webkit-keyframes story-hour-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes story-hour-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes story-hour-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes story-hour-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #de029c;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #de029c;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes story-hour-description-appear {
@@ -1321,6 +2077,38 @@ ul.site-navigation-menu-responsive li a {
   -o-animation: disappear 5s linear 0s alternate infinite none running;
   animation: disappear 5s linear 0s alternate infinite none running; }
 
+@-webkit-keyframes child-sexual-abuse-bg-change {
+  0%,
+  25% {
+    background-color: #26DCC4; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-moz-keyframes child-sexual-abuse-bg-change {
+  0%,
+  25% {
+    background-color: #26DCC4; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-o-keyframes child-sexual-abuse-bg-change {
+  0%,
+  25% {
+    background-color: #26DCC4; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-ms-keyframes child-sexual-abuse-bg-change {
+  0%,
+  25% {
+    background-color: #26DCC4; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
 @keyframes child-sexual-abuse-bg-change {
   0%,
   25% {
@@ -1329,6 +2117,50 @@ ul.site-navigation-menu-responsive li a {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
+@-webkit-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-moz-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-o-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-ms-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
 @keyframes disappear {
   0%,
   25% {
@@ -1340,6 +2172,62 @@ ul.site-navigation-menu-responsive li a {
   100% {
     opacity: 0;
     transform: translate(15%, 15%); } }
+@-webkit-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-moz-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-o-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-ms-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
 @keyframes glyph-appear {
   0%,
   25% {
@@ -1354,6 +2242,66 @@ ul.site-navigation-menu-responsive li a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; } }
+@-webkit-keyframes child-sexual-abuse-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes child-sexual-abuse-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes child-sexual-abuse-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes child-sexual-abuse-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
 @keyframes child-sexual-abuse-definition-appear {
   0%,
   25% {
@@ -1367,6 +2315,66 @@ ul.site-navigation-menu-responsive li a {
   100% {
     top: 10%;
     border: 0.2vmin solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-webkit-keyframes child-sexual-abuse-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes child-sexual-abuse-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes child-sexual-abuse-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes child-sexual-abuse-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #3FB0A1;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes child-sexual-abuse-description-appear {
@@ -1518,6 +2526,38 @@ ul.site-navigation-menu-responsive li a {
   -o-animation: disappear 5s linear 0s alternate infinite none running;
   animation: disappear 5s linear 0s alternate infinite none running; }
 
+@-webkit-keyframes twisted-pov-bg-change {
+  0%,
+  25% {
+    background-color: #02b04c; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-moz-keyframes twisted-pov-bg-change {
+  0%,
+  25% {
+    background-color: #02b04c; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-o-keyframes twisted-pov-bg-change {
+  0%,
+  25% {
+    background-color: #02b04c; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-ms-keyframes twisted-pov-bg-change {
+  0%,
+  25% {
+    background-color: #02b04c; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
 @keyframes twisted-pov-bg-change {
   0%,
   25% {
@@ -1526,6 +2566,50 @@ ul.site-navigation-menu-responsive li a {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
+@-webkit-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-moz-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-o-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-ms-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
 @keyframes disappear {
   0%,
   25% {
@@ -1537,6 +2621,62 @@ ul.site-navigation-menu-responsive li a {
   100% {
     opacity: 0;
     transform: translate(15%, 15%); } }
+@-webkit-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-moz-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-o-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-ms-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
 @keyframes glyph-appear {
   0%,
   25% {
@@ -1551,6 +2691,66 @@ ul.site-navigation-menu-responsive li a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; } }
+@-webkit-keyframes twisted-pov-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes twisted-pov-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes twisted-pov-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes twisted-pov-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
 @keyframes twisted-pov-definition-appear {
   0%,
   25% {
@@ -1564,6 +2764,66 @@ ul.site-navigation-menu-responsive li a {
   100% {
     top: 10%;
     border: 0.2vmin solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-webkit-keyframes twisted-pov-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes twisted-pov-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes twisted-pov-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes twisted-pov-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #02A547;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #02A547;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes twisted-pov-description-appear {
@@ -1716,6 +2976,38 @@ ul.site-navigation-menu-responsive li a {
   -o-animation: disappear 5s linear 0s alternate infinite none running;
   animation: disappear 5s linear 0s alternate infinite none running; }
 
+@-webkit-keyframes general-lot-bg-change {
+  0%,
+  25% {
+    background-color: #0e556b; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-moz-keyframes general-lot-bg-change {
+  0%,
+  25% {
+    background-color: #0e556b; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-o-keyframes general-lot-bg-change {
+  0%,
+  25% {
+    background-color: #0e556b; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
+@-ms-keyframes general-lot-bg-change {
+  0%,
+  25% {
+    background-color: #0e556b; }
+  50% {
+    background-color: #000000; }
+  100% {
+    background-color: #000000; } }
 @keyframes general-lot-bg-change {
   0%,
   25% {
@@ -1724,6 +3016,50 @@ ul.site-navigation-menu-responsive li a {
     background-color: #000000; }
   100% {
     background-color: #000000; } }
+@-webkit-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-moz-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-o-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
+@-ms-keyframes disappear {
+  0%,
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  50% {
+    opacity: 0;
+    transform: translate(15%, 15%); }
+  100% {
+    opacity: 0;
+    transform: translate(15%, 15%); } }
 @keyframes disappear {
   0%,
   25% {
@@ -1735,6 +3071,62 @@ ul.site-navigation-menu-responsive li a {
   100% {
     opacity: 0;
     transform: translate(15%, 15%); } }
+@-webkit-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-moz-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-o-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
+@-ms-keyframes glyph-appear {
+  0%,
+  25% {
+    opacity: 0; }
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; } }
 @keyframes glyph-appear {
   0%,
   25% {
@@ -1749,6 +3141,66 @@ ul.site-navigation-menu-responsive li a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1; } }
+@-webkit-keyframes general-lot-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes general-lot-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes general-lot-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes general-lot-definition-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    top: 10%;
+    border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
 @keyframes general-lot-definition-appear {
   0%,
   25% {
@@ -1762,6 +3214,66 @@ ul.site-navigation-menu-responsive li a {
   100% {
     top: 10%;
     border: 0.2vmin solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-webkit-keyframes general-lot-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-moz-keyframes general-lot-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-o-keyframes general-lot-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; } }
+@-ms-keyframes general-lot-description-appear {
+  0%,
+  25% {
+    opacity: 0;
+    padding: 0px 0px 0px 0px; }
+  50% {
+    bottom: 10%;
+    border: 1px solid #14649f;
+    padding: 0px 20px 0px 20px;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    border: 1px solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes general-lot-description-appear {
