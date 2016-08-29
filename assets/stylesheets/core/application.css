@@ -641,11 +641,11 @@ ul.site-navigation-menu-responsive li a {
 #second-site-content-index-wrapper {
   display: flex;
   flex-direction: row;
-  min-height: 40vh;
+  min-height: 30vh;
   flex-wrap: wrap;
   overflow-x: hidden; }
 
-.site-content-index {
+.site-content-index, .site-content-index-episode-02 {
   width: 100vw;
   overflow: hidden;
   position: relative; }
@@ -1573,12 +1573,12 @@ ul.site-navigation-menu-responsive li a {
     padding: 0px 0px 0px 0px; }
   50% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 1px solid #02A547;
     padding: 0px 20px 0px 20px;
     opacity: 1; }
   100% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 1px solid #02A547;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @media (min-width: 992px) {
@@ -1638,7 +1638,7 @@ ul.site-navigation-menu-responsive li a {
 
 .site-content-index-item-f {
   height: 30vh;
-  background-color: #02b04c;
+  background-color: #0e556b;
   -webkit-animation: general-lot-bg-change 5s ease-in-out 0s alternate infinite none running;
   -moz-animation: general-lot-bg-change 5s ease-in-out 0s alternate infinite none running;
   -ms-animation: general-lot-bg-change 5s ease-in-out 0s alternate infinite none running;
@@ -1647,7 +1647,7 @@ ul.site-navigation-menu-responsive li a {
 
 .general-lot-glyph {
   font-size: 16vmin;
-  color: #02A547;
+  color: #14649f;
   font-size: 16vmin;
   left: -10%;
   top: -10%;
@@ -1659,7 +1659,7 @@ ul.site-navigation-menu-responsive li a {
   animation: glyph-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .general-lot-definition {
-  border: 0.2vmin solid #02A547;
+  border: 0.2vmin solid #14649f;
   top: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
@@ -1674,7 +1674,7 @@ ul.site-navigation-menu-responsive li a {
   animation: general-lot-definition-appear 5s ease-in-out 0s alternate infinite none running; }
 
 .general-lot-description {
-  border: 0.2vmin solid #02A547;
+  border: 0.2vmin solid #14649f;
   bottom: -10%;
   padding: 0px 0px 0px 0px;
   left: 50%;
@@ -1697,13 +1697,14 @@ ul.site-navigation-menu-responsive li a {
 .general-lot-description > a:hover,
 .general-lot-definition > a:hover {
   text-decoration: none;
-  color: #02A547; }
+  color: #14649f; }
 
-.site-content-index #general-lot {
+.site-content-index-episode-02 #general-lot {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #04549b;
   font-family: 'Henny Penny', cursive;
   font-weight: 400;
   font-size: 10vmin;
@@ -1718,7 +1719,7 @@ ul.site-navigation-menu-responsive li a {
 @keyframes general-lot-bg-change {
   0%,
   25% {
-    background-color: #02b04c; }
+    background-color: #0e556b; }
   50% {
     background-color: #000000; }
   100% {
@@ -1755,12 +1756,12 @@ ul.site-navigation-menu-responsive li a {
     padding: 0px 0px 0px 0px; }
   50% {
     top: 10%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1; }
   100% {
     top: 10%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @keyframes general-lot-description-appear {
@@ -1770,12 +1771,12 @@ ul.site-navigation-menu-responsive li a {
     padding: 0px 0px 0px 0px; }
   50% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 1px solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1; }
   100% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 1px solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1; } }
 @media (min-width: 992px) {
@@ -1796,12 +1797,12 @@ ul.site-navigation-menu-responsive li a {
     font-size: 2.6vmin;
     animation: none; }
 
-  .site-content-index #general-lot {
+  .site-content-index-episode-02 #general-lot {
     animation: none; }
 
   .site-content-index-item-f {
     height: 40vh;
-    background-color: #02b04c;
+    background-color: #0e556b;
     animation: none; }
 
   .site-content-index-item-f:hover #general-lot {
@@ -1819,13 +1820,13 @@ ul.site-navigation-menu-responsive li a {
 
   .site-content-index-item-f:hover .general-lot-definition {
     top: 15%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 10px 0px 10px;
     opacity: 1; }
 
   .site-content-index-item-f:hover .general-lot-description {
     bottom: 15%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 10px 0px 10px;
     opacity: 1; } }
 @media (min-width: 992px) {
@@ -1841,7 +1842,10 @@ ul.site-navigation-menu-responsive li a {
     min-height: 40vh; }
 
   .site-content-index {
-    width: 33.3vw; } }
+    width: 33.3vw; }
+
+  .site-content-index-episode-02 {
+    width: 100vw; } }
 .jumbotron {
   background-position: 0% 30%;
   background-image: url(/img/lot/lotblogheader.jpg);

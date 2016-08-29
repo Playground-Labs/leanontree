@@ -6,26 +6,26 @@
 
 .site-content-index-item-f {
   height: 30vh;
-  background-color: #02b04c;
+  background-color: #0e556b;
   @include animation(general-lot-bg-change 5s ease-in-out 0s alternate infinite none running);
 }
 
 .general-lot-glyph {
   font-size: 16vmin;
-  color: #02A547;
+  color: #14649f;
   @include glyph-common();
   @include animation(glyph-appear 5s ease-in-out 0s alternate infinite none running);
 }
 
 .general-lot-definition {
-  border: 0.2vmin solid #02A547;
+  border: 0.2vmin solid #14649f;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(general-lot-definition-appear 5s ease-in-out 0s alternate infinite none running);
 }
 
 .general-lot-description {
-  border: 0.2vmin solid #02A547;
+  border: 0.2vmin solid #14649f;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(general-lot-description-appear 5s ease-in-out 0s alternate infinite none running);
@@ -40,14 +40,15 @@
 .general-lot-description> a:hover,
 .general-lot-definition> a:hover {
   text-decoration: none;
-  color: #02A547;
+  color: #14649f;
 }
 
-.site-content-index #general-lot {
+.site-content-index-episode-02 #general-lot {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #04549b;
   font-family: 'Henny Penny', cursive;
   font-weight: 400;
   font-size: 10vmin;
@@ -59,7 +60,7 @@
 @keyframes general-lot-bg-change {
   0%,
   25% {
-    background-color: #02b04c;
+    background-color: #0e556b;
   }
   50% {
     background-color: #000000;
@@ -112,13 +113,13 @@
   }
   50% {
     top: 10%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     top: 10%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -132,13 +133,13 @@
   }
   50% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 1px solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 1px solid #14649f;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -162,12 +163,12 @@
     font-size: 2.6vmin;
     animation: none;
   }
-  .site-content-index #general-lot {
+  .site-content-index-episode-02 #general-lot {
     animation: none;
   }
   .site-content-index-item-f {
     height: 40vh;
-    background-color: #02b04c;
+    background-color: #0e556b;
     animation: none;
   }
   .site-content-index-item-f:hover #general-lot {
@@ -185,13 +186,13 @@
   }
   .site-content-index-item-f:hover .general-lot-definition {
     top: 15%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
   .site-content-index-item-f:hover .general-lot-description {
     bottom: 15%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #14649f;
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
