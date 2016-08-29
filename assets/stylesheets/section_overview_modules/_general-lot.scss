@@ -7,28 +7,28 @@
 .site-content-index-item-f {
   height: 30vh;
   background-color: #0e556b;
-  @include animation(general-lot-bg-change 5s linear 0s alternate infinite none running);
+  @include animation(general-lot-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .general-lot-glyph {
   font-size: 16vmin;
   color: #14649f;
   @include glyph-common();
-  @include animation(glyph-appear 5s linear 0s alternate infinite none running);
+  @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .general-lot-definition {
   border: 0.2vmin solid #14649f;
   top: -10%;
   @include theme-description-definition-common();
-  @include animation(general-lot-definition-appear 5s linear 0s alternate infinite none running);
+  @include animation(general-lot-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .general-lot-description {
   border: 0.2vmin solid #14649f;
   bottom: -10%;
   @include theme-description-definition-common();
-  @include animation(general-lot-description-appear 5s linear 0s alternate infinite none running);
+  @include animation(general-lot-description-appear 3s linear 0s alternate infinite none running);
 }
 
 .general-lot-description> a,
@@ -47,14 +47,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #04549b;
   font-family: 'Lobster', cursive;
   font-weight: 400;
   font-size: 10vmin;
   text-shadow: 3px 3px 3px  #101713;
   transition: all .7s linear;
-  @include animation(disappear 5s linear 0s alternate infinite none running);
+  @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(general-lot-bg-change) {
   0%,
@@ -72,15 +72,15 @@
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
   }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
 }
 @include keyframes(glyph-appear) {
@@ -91,13 +91,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
 }
@@ -167,7 +167,7 @@
     animation: none;
   }
   .site-content-index-item-f:hover #general-lot {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0;
   }
   .site-content-index-item-f:hover {
@@ -176,7 +176,7 @@
   .site-content-index-item-f:hover .general-lot-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   .site-content-index-item-f:hover .general-lot-definition {

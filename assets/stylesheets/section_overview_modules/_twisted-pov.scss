@@ -7,28 +7,28 @@
 .site-content-index-item-e {
   height: 30vh;
   background-color: #02b04c;
-  @include animation(twisted-pov-bg-change 5s linear 0s alternate infinite none running);
+  @include animation(twisted-pov-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-glyph {
   font-size: 16vmin;
   color: #02A547;
   @include glyph-common();
-  @include animation(glyph-appear 5s linear 0s alternate infinite none running);
+  @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-definition {
   border: 0.2vmin solid #02A547;
   top: -10%;
   @include theme-description-definition-common();
-  @include animation(twisted-pov-definition-appear 5s linear 0s alternate infinite none running);
+  @include animation(twisted-pov-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-description {
   border: 0.2vmin solid #02A547;
   bottom: -10%;
   @include theme-description-definition-common();
-  @include animation(twisted-pov-description-appear 5s linear 0s alternate infinite none running);
+  @include animation(twisted-pov-description-appear 3s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-description> a,
@@ -47,13 +47,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   font-family: 'Henny Penny', cursive;
   font-weight: 400;
   font-size: 10vmin;
       text-shadow: 3px 3px 3px  #101713;
   transition: all .7s linear;
-  @include animation(disappear 5s linear 0s alternate infinite none running);
+  @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(twisted-pov-bg-change) {
   0%,
@@ -72,15 +72,15 @@
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
   }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
 }
 
@@ -92,13 +92,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
 }
@@ -168,7 +168,7 @@
     animation: none;
   }
   .site-content-index-item-e:hover #twisted-pov {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0;
   }
   .site-content-index-item-e:hover {
@@ -177,7 +177,7 @@
   .site-content-index-item-e:hover .twisted-pov-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   .site-content-index-item-e:hover .twisted-pov-definition {

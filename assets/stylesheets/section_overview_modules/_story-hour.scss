@@ -7,28 +7,28 @@
 .site-content-index-item-c {
   height: 30vh;
   background-color: #480828;
-  @include animation(story-hour-bg-change 5s linear 0s alternate infinite none running);
+  @include animation(story-hour-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .story-hour-glyph {
   font-size: 16vmin;
   color: #de029c;
   @include glyph-common();
-  @include animation(glyph-appear 5s linear 0s alternate infinite none running);
+  @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .story-hour-definition {
   border: 0.2vmin solid #de029c;
   top: -10%;
   @include theme-description-definition-common();
-  @include animation(story-hour-definition-appear 5s linear 0s alternate infinite none running);
+  @include animation(story-hour-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .story-hour-description {
   border: 0.2vmin solid #de029c;
   bottom: -10%;
   @include theme-description-definition-common();
-  @include animation(story-hour-description-appear 5s linear 0s alternate infinite none running);
+  @include animation(story-hour-description-appear 3s linear 0s alternate infinite none running);
 }
 
 .story-hour-description> a,
@@ -47,13 +47,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #923d67;
   font-family: 'Bungee Shade', cursive;
   font-weight: 400;
   font-size: 14vmin;
   transition: all .7s linear;
-  @include animation(disappear 5s linear 0s alternate infinite none running);
+  @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(story-hour-bg-change) {
   0%,
@@ -71,15 +71,15 @@
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
   }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
 }
 @include keyframes(glyph-appear) {
@@ -90,13 +90,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
 }
@@ -166,7 +166,7 @@
     animation: none;
   }
   .site-content-index-item-c:hover #story-hour {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0;
   }
   .site-content-index-item-c:hover {
@@ -175,7 +175,7 @@
   .site-content-index-item-c:hover .story-hour-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   .site-content-index-item-c:hover .story-hour-definition {

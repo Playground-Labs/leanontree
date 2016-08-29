@@ -658,11 +658,11 @@ ul.site-navigation-menu-responsive li a {
 .site-content-index-item-a {
   height: 30vh;
   background-color: #ff5733;
-  -webkit-animation: self-love-bg-change 5s linear 0s alternate infinite none running;
-  -moz-animation: self-love-bg-change 5s linear 0s alternate infinite none running;
-  -ms-animation: self-love-bg-change 5s linear 0s alternate infinite none running;
-  -o-animation: self-love-bg-change 5s linear 0s alternate infinite none running;
-  animation: self-love-bg-change 5s linear 0s alternate infinite none running; }
+  -webkit-animation: self-love-bg-change 3s linear 0s alternate infinite none running;
+  -moz-animation: self-love-bg-change 3s linear 0s alternate infinite none running;
+  -ms-animation: self-love-bg-change 3s linear 0s alternate infinite none running;
+  -o-animation: self-love-bg-change 3s linear 0s alternate infinite none running;
+  animation: self-love-bg-change 3s linear 0s alternate infinite none running; }
 
 .self-love-glyph {
   color: #851902;
@@ -670,11 +670,11 @@ ul.site-navigation-menu-responsive li a {
   left: -10%;
   top: -10%;
   opacity: 1;
-  -webkit-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -o-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  animation: glyph-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -o-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  animation: glyph-appear 3s linear 0s alternate infinite none running; }
 
 .self-love-definition {
   border: 0.2vmin solid #851902;
@@ -685,11 +685,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: self-love-definition-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: self-love-definition-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: self-love-definition-appear 5s linear 0s alternate infinite none running;
-  -o-animation: self-love-definition-appear 5s linear 0s alternate infinite none running;
-  animation: self-love-definition-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: self-love-definition-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: self-love-definition-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: self-love-definition-appear 3s linear 0s alternate infinite none running;
+  -o-animation: self-love-definition-appear 3s linear 0s alternate infinite none running;
+  animation: self-love-definition-appear 3s linear 0s alternate infinite none running; }
 
 .self-love-description {
   border: 0.2vmin solid #851902;
@@ -700,11 +700,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: self-love-description-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: self-love-description-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: self-love-description-appear 5s linear 0s alternate infinite none running;
-  -o-animation: self-love-description-appear 5s linear 0s alternate infinite none running;
-  animation: self-love-description-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: self-love-description-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: self-love-description-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: self-love-description-appear 3s linear 0s alternate infinite none running;
+  -o-animation: self-love-description-appear 3s linear 0s alternate infinite none running;
+  animation: self-love-description-appear 3s linear 0s alternate infinite none running; }
 
 .self-love-description > a,
 .self-love-definition > a,
@@ -720,17 +720,17 @@ ul.site-navigation-menu-responsive li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #de2b04;
   font-family: 'Oleo Script', cursive;
   font-weight: 400;
   font-size: 10vmin;
   text-shadow: 0px 2px 1px #101713;
-  -webkit-animation: disappear 5s linear 0s alternate infinite none running;
-  -moz-animation: disappear 5s linear 0s alternate infinite none running;
-  -ms-animation: disappear 5s linear 0s alternate infinite none running;
-  -o-animation: disappear 5s linear 0s alternate infinite none running;
-  animation: disappear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: disappear 3s linear 0s alternate infinite none running;
+  -moz-animation: disappear 3s linear 0s alternate infinite none running;
+  -ms-animation: disappear 3s linear 0s alternate infinite none running;
+  -o-animation: disappear 3s linear 0s alternate infinite none running;
+  animation: disappear 3s linear 0s alternate infinite none running; }
 
 @-webkit-keyframes self-love-bg-change {
   0%,
@@ -776,57 +776,57 @@ ul.site-navigation-menu-responsive li a {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-moz-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-o-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-ms-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-webkit-keyframes glyph-appear {
   0%,
   25% {
@@ -834,12 +834,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-moz-keyframes glyph-appear {
   0%,
@@ -848,12 +848,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-o-keyframes glyph-appear {
   0%,
@@ -862,12 +862,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-ms-keyframes glyph-appear {
   0%,
@@ -876,12 +876,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @keyframes glyph-appear {
   0%,
@@ -890,12 +890,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-webkit-keyframes self-love-definition-appear {
   0%,
@@ -1072,7 +1072,7 @@ ul.site-navigation-menu-responsive li a {
     animation: none; }
 
   .site-content-index-item-a:hover #self-love {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0; }
 
   .site-content-index-item-a:hover {
@@ -1081,7 +1081,7 @@ ul.site-navigation-menu-responsive li a {
   .site-content-index-item-a:hover .self-love-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
 
   .site-content-index-item-a:hover .self-love-definition {
@@ -1103,11 +1103,11 @@ ul.site-navigation-menu-responsive li a {
 .site-content-index-item-b {
   height: 30vh;
   background-color: #C70039;
-  -webkit-animation: my-december-bg-change 5s linear 0s alternate infinite none running;
-  -moz-animation: my-december-bg-change 5s linear 0s alternate infinite none running;
-  -ms-animation: my-december-bg-change 5s linear 0s alternate infinite none running;
-  -o-animation: my-december-bg-change 5s linear 0s alternate infinite none running;
-  animation: my-december-bg-change 5s linear 0s alternate infinite none running; }
+  -webkit-animation: my-december-bg-change 3s linear 0s alternate infinite none running;
+  -moz-animation: my-december-bg-change 3s linear 0s alternate infinite none running;
+  -ms-animation: my-december-bg-change 3s linear 0s alternate infinite none running;
+  -o-animation: my-december-bg-change 3s linear 0s alternate infinite none running;
+  animation: my-december-bg-change 3s linear 0s alternate infinite none running; }
 
 .my-december-glyph {
   font-size: 16vmin;
@@ -1116,11 +1116,11 @@ ul.site-navigation-menu-responsive li a {
   left: -10%;
   top: -10%;
   opacity: 1;
-  -webkit-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -o-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  animation: glyph-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -o-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  animation: glyph-appear 3s linear 0s alternate infinite none running; }
 
 .my-december-definition {
   border: 0.2vmin solid #ecc4e0;
@@ -1131,11 +1131,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: my-december-definition-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: my-december-definition-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: my-december-definition-appear 5s linear 0s alternate infinite none running;
-  -o-animation: my-december-definition-appear 5s linear 0s alternate infinite none running;
-  animation: my-december-definition-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: my-december-definition-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: my-december-definition-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: my-december-definition-appear 3s linear 0s alternate infinite none running;
+  -o-animation: my-december-definition-appear 3s linear 0s alternate infinite none running;
+  animation: my-december-definition-appear 3s linear 0s alternate infinite none running; }
 
 .my-december-description {
   border: 0.2vmin solid #ecc4e0;
@@ -1146,11 +1146,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: my-december-description-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: my-december-description-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: my-december-description-appear 5s linear 0s alternate infinite none running;
-  -o-animation: my-december-description-appear 5s linear 0s alternate infinite none running;
-  animation: my-december-description-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: my-december-description-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: my-december-description-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: my-december-description-appear 3s linear 0s alternate infinite none running;
+  -o-animation: my-december-description-appear 3s linear 0s alternate infinite none running;
+  animation: my-december-description-appear 3s linear 0s alternate infinite none running; }
 
 .my-december-description > a,
 .my-december-definition > a,
@@ -1167,17 +1167,17 @@ ul.site-navigation-menu-responsive li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #fac1d1;
   font-family: 'Fredericka the Great', sans-serif;
   font-weight: 400;
   font-size: 10vmin;
   transition: all .7s linear;
-  -webkit-animation: disappear 5s linear 0s alternate infinite none running;
-  -moz-animation: disappear 5s linear 0s alternate infinite none running;
-  -ms-animation: disappear 5s linear 0s alternate infinite none running;
-  -o-animation: disappear 5s linear 0s alternate infinite none running;
-  animation: disappear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: disappear 3s linear 0s alternate infinite none running;
+  -moz-animation: disappear 3s linear 0s alternate infinite none running;
+  -ms-animation: disappear 3s linear 0s alternate infinite none running;
+  -o-animation: disappear 3s linear 0s alternate infinite none running;
+  animation: disappear 3s linear 0s alternate infinite none running; }
 
 @-webkit-keyframes my-december-bg-change {
   0%,
@@ -1223,57 +1223,57 @@ ul.site-navigation-menu-responsive li a {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-moz-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-o-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-ms-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-webkit-keyframes glyph-appear {
   0%,
   25% {
@@ -1281,12 +1281,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-moz-keyframes glyph-appear {
   0%,
@@ -1295,12 +1295,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-o-keyframes glyph-appear {
   0%,
@@ -1309,12 +1309,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-ms-keyframes glyph-appear {
   0%,
@@ -1323,12 +1323,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @keyframes glyph-appear {
   0%,
@@ -1337,12 +1337,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-webkit-keyframes my-december-definition-appear {
   0%,
@@ -1521,7 +1521,7 @@ ul.site-navigation-menu-responsive li a {
     animation: none; }
 
   .site-content-index-item-b:hover #my-december {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0; }
 
   .site-content-index-item-b:hover {
@@ -1530,7 +1530,7 @@ ul.site-navigation-menu-responsive li a {
   .site-content-index-item-b:hover .my-december-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
 
   .site-content-index-item-b:hover .my-december-definition {
@@ -1552,11 +1552,11 @@ ul.site-navigation-menu-responsive li a {
 .site-content-index-item-c {
   height: 30vh;
   background-color: #480828;
-  -webkit-animation: story-hour-bg-change 5s linear 0s alternate infinite none running;
-  -moz-animation: story-hour-bg-change 5s linear 0s alternate infinite none running;
-  -ms-animation: story-hour-bg-change 5s linear 0s alternate infinite none running;
-  -o-animation: story-hour-bg-change 5s linear 0s alternate infinite none running;
-  animation: story-hour-bg-change 5s linear 0s alternate infinite none running; }
+  -webkit-animation: story-hour-bg-change 3s linear 0s alternate infinite none running;
+  -moz-animation: story-hour-bg-change 3s linear 0s alternate infinite none running;
+  -ms-animation: story-hour-bg-change 3s linear 0s alternate infinite none running;
+  -o-animation: story-hour-bg-change 3s linear 0s alternate infinite none running;
+  animation: story-hour-bg-change 3s linear 0s alternate infinite none running; }
 
 .story-hour-glyph {
   font-size: 16vmin;
@@ -1565,11 +1565,11 @@ ul.site-navigation-menu-responsive li a {
   left: -10%;
   top: -10%;
   opacity: 1;
-  -webkit-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -o-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  animation: glyph-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -o-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  animation: glyph-appear 3s linear 0s alternate infinite none running; }
 
 .story-hour-definition {
   border: 0.2vmin solid #de029c;
@@ -1580,11 +1580,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: story-hour-definition-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: story-hour-definition-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: story-hour-definition-appear 5s linear 0s alternate infinite none running;
-  -o-animation: story-hour-definition-appear 5s linear 0s alternate infinite none running;
-  animation: story-hour-definition-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: story-hour-definition-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: story-hour-definition-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: story-hour-definition-appear 3s linear 0s alternate infinite none running;
+  -o-animation: story-hour-definition-appear 3s linear 0s alternate infinite none running;
+  animation: story-hour-definition-appear 3s linear 0s alternate infinite none running; }
 
 .story-hour-description {
   border: 0.2vmin solid #de029c;
@@ -1595,11 +1595,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: story-hour-description-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: story-hour-description-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: story-hour-description-appear 5s linear 0s alternate infinite none running;
-  -o-animation: story-hour-description-appear 5s linear 0s alternate infinite none running;
-  animation: story-hour-description-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: story-hour-description-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: story-hour-description-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: story-hour-description-appear 3s linear 0s alternate infinite none running;
+  -o-animation: story-hour-description-appear 3s linear 0s alternate infinite none running;
+  animation: story-hour-description-appear 3s linear 0s alternate infinite none running; }
 
 .story-hour-description > a,
 .story-hour-definition > a,
@@ -1616,17 +1616,17 @@ ul.site-navigation-menu-responsive li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #923d67;
   font-family: 'Bungee Shade', cursive;
   font-weight: 400;
   font-size: 14vmin;
   transition: all .7s linear;
-  -webkit-animation: disappear 5s linear 0s alternate infinite none running;
-  -moz-animation: disappear 5s linear 0s alternate infinite none running;
-  -ms-animation: disappear 5s linear 0s alternate infinite none running;
-  -o-animation: disappear 5s linear 0s alternate infinite none running;
-  animation: disappear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: disappear 3s linear 0s alternate infinite none running;
+  -moz-animation: disappear 3s linear 0s alternate infinite none running;
+  -ms-animation: disappear 3s linear 0s alternate infinite none running;
+  -o-animation: disappear 3s linear 0s alternate infinite none running;
+  animation: disappear 3s linear 0s alternate infinite none running; }
 
 @-webkit-keyframes story-hour-bg-change {
   0%,
@@ -1672,57 +1672,57 @@ ul.site-navigation-menu-responsive li a {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-moz-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-o-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-ms-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-webkit-keyframes glyph-appear {
   0%,
   25% {
@@ -1730,12 +1730,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-moz-keyframes glyph-appear {
   0%,
@@ -1744,12 +1744,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-o-keyframes glyph-appear {
   0%,
@@ -1758,12 +1758,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-ms-keyframes glyph-appear {
   0%,
@@ -1772,12 +1772,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @keyframes glyph-appear {
   0%,
@@ -1786,12 +1786,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-webkit-keyframes story-hour-definition-appear {
   0%,
@@ -1970,7 +1970,7 @@ ul.site-navigation-menu-responsive li a {
     animation: none; }
 
   .site-content-index-item-c:hover #story-hour {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0; }
 
   .site-content-index-item-c:hover {
@@ -1979,7 +1979,7 @@ ul.site-navigation-menu-responsive li a {
   .site-content-index-item-c:hover .story-hour-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
 
   .site-content-index-item-c:hover .story-hour-definition {
@@ -2001,11 +2001,11 @@ ul.site-navigation-menu-responsive li a {
 .site-content-index-item-d {
   height: 30vh;
   background-color: #26DCC4;
-  -webkit-animation: child-sexual-abuse-bg-change 5s linear 0s alternate infinite none running;
-  -moz-animation: child-sexual-abuse-bg-change 5s linear 0s alternate infinite none running;
-  -ms-animation: child-sexual-abuse-bg-change 5s linear 0s alternate infinite none running;
-  -o-animation: child-sexual-abuse-bg-change 5s linear 0s alternate infinite none running;
-  animation: child-sexual-abuse-bg-change 5s linear 0s alternate infinite none running; }
+  -webkit-animation: child-sexual-abuse-bg-change 3s linear 0s alternate infinite none running;
+  -moz-animation: child-sexual-abuse-bg-change 3s linear 0s alternate infinite none running;
+  -ms-animation: child-sexual-abuse-bg-change 3s linear 0s alternate infinite none running;
+  -o-animation: child-sexual-abuse-bg-change 3s linear 0s alternate infinite none running;
+  animation: child-sexual-abuse-bg-change 3s linear 0s alternate infinite none running; }
 
 .child-sexual-abuse-glyph {
   font-size: 16vmin;
@@ -2014,11 +2014,11 @@ ul.site-navigation-menu-responsive li a {
   left: -10%;
   top: -10%;
   opacity: 1;
-  -webkit-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -o-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  animation: glyph-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -o-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  animation: glyph-appear 3s linear 0s alternate infinite none running; }
 
 .child-sexual-abuse-definition {
   border: 0.2vmin solid #3FB0A1;
@@ -2029,11 +2029,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: child-sexual-abuse-definition-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: child-sexual-abuse-definition-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: child-sexual-abuse-definition-appear 5s linear 0s alternate infinite none running;
-  -o-animation: child-sexual-abuse-definition-appear 5s linear 0s alternate infinite none running;
-  animation: child-sexual-abuse-definition-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: child-sexual-abuse-definition-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: child-sexual-abuse-definition-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: child-sexual-abuse-definition-appear 3s linear 0s alternate infinite none running;
+  -o-animation: child-sexual-abuse-definition-appear 3s linear 0s alternate infinite none running;
+  animation: child-sexual-abuse-definition-appear 3s linear 0s alternate infinite none running; }
 
 .child-sexual-abuse-description {
   border: 0.2vmin solid #3FB0A1;
@@ -2044,11 +2044,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: child-sexual-abuse-description-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: child-sexual-abuse-description-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: child-sexual-abuse-description-appear 5s linear 0s alternate infinite none running;
-  -o-animation: child-sexual-abuse-description-appear 5s linear 0s alternate infinite none running;
-  animation: child-sexual-abuse-description-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: child-sexual-abuse-description-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: child-sexual-abuse-description-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: child-sexual-abuse-description-appear 3s linear 0s alternate infinite none running;
+  -o-animation: child-sexual-abuse-description-appear 3s linear 0s alternate infinite none running;
+  animation: child-sexual-abuse-description-appear 3s linear 0s alternate infinite none running; }
 
 .child-sexual-abuse-description > a,
 .child-sexual-abuse-definition > a,
@@ -2065,17 +2065,17 @@ ul.site-navigation-menu-responsive li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #02A591;
   font-family: 'Cutive Mono', monospace;
   font-weight: 700;
   font-size: 8vmin;
   transition: all .7s linear;
-  -webkit-animation: disappear 5s linear 0s alternate infinite none running;
-  -moz-animation: disappear 5s linear 0s alternate infinite none running;
-  -ms-animation: disappear 5s linear 0s alternate infinite none running;
-  -o-animation: disappear 5s linear 0s alternate infinite none running;
-  animation: disappear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: disappear 3s linear 0s alternate infinite none running;
+  -moz-animation: disappear 3s linear 0s alternate infinite none running;
+  -ms-animation: disappear 3s linear 0s alternate infinite none running;
+  -o-animation: disappear 3s linear 0s alternate infinite none running;
+  animation: disappear 3s linear 0s alternate infinite none running; }
 
 @-webkit-keyframes child-sexual-abuse-bg-change {
   0%,
@@ -2121,57 +2121,57 @@ ul.site-navigation-menu-responsive li a {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-moz-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-o-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-ms-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-webkit-keyframes glyph-appear {
   0%,
   25% {
@@ -2179,12 +2179,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-moz-keyframes glyph-appear {
   0%,
@@ -2193,12 +2193,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-o-keyframes glyph-appear {
   0%,
@@ -2207,12 +2207,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-ms-keyframes glyph-appear {
   0%,
@@ -2221,12 +2221,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @keyframes glyph-appear {
   0%,
@@ -2235,12 +2235,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-webkit-keyframes child-sexual-abuse-definition-appear {
   0%,
@@ -2419,7 +2419,7 @@ ul.site-navigation-menu-responsive li a {
     animation: none; }
 
   .site-content-index-item-d:hover #child-sexual-abuse {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0; }
 
   .site-content-index-item-d:hover {
@@ -2428,7 +2428,7 @@ ul.site-navigation-menu-responsive li a {
   .site-content-index-item-d:hover .child-sexual-abuse-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
 
   .site-content-index-item-d:hover .child-sexual-abuse-definition {
@@ -2450,11 +2450,11 @@ ul.site-navigation-menu-responsive li a {
 .site-content-index-item-e {
   height: 30vh;
   background-color: #02b04c;
-  -webkit-animation: twisted-pov-bg-change 5s linear 0s alternate infinite none running;
-  -moz-animation: twisted-pov-bg-change 5s linear 0s alternate infinite none running;
-  -ms-animation: twisted-pov-bg-change 5s linear 0s alternate infinite none running;
-  -o-animation: twisted-pov-bg-change 5s linear 0s alternate infinite none running;
-  animation: twisted-pov-bg-change 5s linear 0s alternate infinite none running; }
+  -webkit-animation: twisted-pov-bg-change 3s linear 0s alternate infinite none running;
+  -moz-animation: twisted-pov-bg-change 3s linear 0s alternate infinite none running;
+  -ms-animation: twisted-pov-bg-change 3s linear 0s alternate infinite none running;
+  -o-animation: twisted-pov-bg-change 3s linear 0s alternate infinite none running;
+  animation: twisted-pov-bg-change 3s linear 0s alternate infinite none running; }
 
 .twisted-pov-glyph {
   font-size: 16vmin;
@@ -2463,11 +2463,11 @@ ul.site-navigation-menu-responsive li a {
   left: -10%;
   top: -10%;
   opacity: 1;
-  -webkit-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -o-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  animation: glyph-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -o-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  animation: glyph-appear 3s linear 0s alternate infinite none running; }
 
 .twisted-pov-definition {
   border: 0.2vmin solid #02A547;
@@ -2478,11 +2478,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: twisted-pov-definition-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: twisted-pov-definition-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: twisted-pov-definition-appear 5s linear 0s alternate infinite none running;
-  -o-animation: twisted-pov-definition-appear 5s linear 0s alternate infinite none running;
-  animation: twisted-pov-definition-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: twisted-pov-definition-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: twisted-pov-definition-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: twisted-pov-definition-appear 3s linear 0s alternate infinite none running;
+  -o-animation: twisted-pov-definition-appear 3s linear 0s alternate infinite none running;
+  animation: twisted-pov-definition-appear 3s linear 0s alternate infinite none running; }
 
 .twisted-pov-description {
   border: 0.2vmin solid #02A547;
@@ -2493,11 +2493,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: twisted-pov-description-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: twisted-pov-description-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: twisted-pov-description-appear 5s linear 0s alternate infinite none running;
-  -o-animation: twisted-pov-description-appear 5s linear 0s alternate infinite none running;
-  animation: twisted-pov-description-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: twisted-pov-description-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: twisted-pov-description-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: twisted-pov-description-appear 3s linear 0s alternate infinite none running;
+  -o-animation: twisted-pov-description-appear 3s linear 0s alternate infinite none running;
+  animation: twisted-pov-description-appear 3s linear 0s alternate infinite none running; }
 
 .twisted-pov-description > a,
 .twisted-pov-definition > a,
@@ -2514,17 +2514,17 @@ ul.site-navigation-menu-responsive li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   font-family: 'Henny Penny', cursive;
   font-weight: 400;
   font-size: 10vmin;
   text-shadow: 3px 3px 3px  #101713;
   transition: all .7s linear;
-  -webkit-animation: disappear 5s linear 0s alternate infinite none running;
-  -moz-animation: disappear 5s linear 0s alternate infinite none running;
-  -ms-animation: disappear 5s linear 0s alternate infinite none running;
-  -o-animation: disappear 5s linear 0s alternate infinite none running;
-  animation: disappear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: disappear 3s linear 0s alternate infinite none running;
+  -moz-animation: disappear 3s linear 0s alternate infinite none running;
+  -ms-animation: disappear 3s linear 0s alternate infinite none running;
+  -o-animation: disappear 3s linear 0s alternate infinite none running;
+  animation: disappear 3s linear 0s alternate infinite none running; }
 
 @-webkit-keyframes twisted-pov-bg-change {
   0%,
@@ -2570,57 +2570,57 @@ ul.site-navigation-menu-responsive li a {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-moz-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-o-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-ms-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-webkit-keyframes glyph-appear {
   0%,
   25% {
@@ -2628,12 +2628,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-moz-keyframes glyph-appear {
   0%,
@@ -2642,12 +2642,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-o-keyframes glyph-appear {
   0%,
@@ -2656,12 +2656,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-ms-keyframes glyph-appear {
   0%,
@@ -2670,12 +2670,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @keyframes glyph-appear {
   0%,
@@ -2684,12 +2684,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-webkit-keyframes twisted-pov-definition-appear {
   0%,
@@ -2868,7 +2868,7 @@ ul.site-navigation-menu-responsive li a {
     animation: none; }
 
   .site-content-index-item-e:hover #twisted-pov {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0; }
 
   .site-content-index-item-e:hover {
@@ -2877,7 +2877,7 @@ ul.site-navigation-menu-responsive li a {
   .site-content-index-item-e:hover .twisted-pov-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
 
   .site-content-index-item-e:hover .twisted-pov-definition {
@@ -2899,11 +2899,11 @@ ul.site-navigation-menu-responsive li a {
 .site-content-index-item-f {
   height: 30vh;
   background-color: #0e556b;
-  -webkit-animation: general-lot-bg-change 5s linear 0s alternate infinite none running;
-  -moz-animation: general-lot-bg-change 5s linear 0s alternate infinite none running;
-  -ms-animation: general-lot-bg-change 5s linear 0s alternate infinite none running;
-  -o-animation: general-lot-bg-change 5s linear 0s alternate infinite none running;
-  animation: general-lot-bg-change 5s linear 0s alternate infinite none running; }
+  -webkit-animation: general-lot-bg-change 3s linear 0s alternate infinite none running;
+  -moz-animation: general-lot-bg-change 3s linear 0s alternate infinite none running;
+  -ms-animation: general-lot-bg-change 3s linear 0s alternate infinite none running;
+  -o-animation: general-lot-bg-change 3s linear 0s alternate infinite none running;
+  animation: general-lot-bg-change 3s linear 0s alternate infinite none running; }
 
 .general-lot-glyph {
   font-size: 16vmin;
@@ -2912,11 +2912,11 @@ ul.site-navigation-menu-responsive li a {
   left: -10%;
   top: -10%;
   opacity: 1;
-  -webkit-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  -o-animation: glyph-appear 5s linear 0s alternate infinite none running;
-  animation: glyph-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  -o-animation: glyph-appear 3s linear 0s alternate infinite none running;
+  animation: glyph-appear 3s linear 0s alternate infinite none running; }
 
 .general-lot-definition {
   border: 0.2vmin solid #14649f;
@@ -2927,11 +2927,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: general-lot-definition-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: general-lot-definition-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: general-lot-definition-appear 5s linear 0s alternate infinite none running;
-  -o-animation: general-lot-definition-appear 5s linear 0s alternate infinite none running;
-  animation: general-lot-definition-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: general-lot-definition-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: general-lot-definition-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: general-lot-definition-appear 3s linear 0s alternate infinite none running;
+  -o-animation: general-lot-definition-appear 3s linear 0s alternate infinite none running;
+  animation: general-lot-definition-appear 3s linear 0s alternate infinite none running; }
 
 .general-lot-description {
   border: 0.2vmin solid #14649f;
@@ -2942,11 +2942,11 @@ ul.site-navigation-menu-responsive li a {
   opacity: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 3vmax;
-  -webkit-animation: general-lot-description-appear 5s linear 0s alternate infinite none running;
-  -moz-animation: general-lot-description-appear 5s linear 0s alternate infinite none running;
-  -ms-animation: general-lot-description-appear 5s linear 0s alternate infinite none running;
-  -o-animation: general-lot-description-appear 5s linear 0s alternate infinite none running;
-  animation: general-lot-description-appear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: general-lot-description-appear 3s linear 0s alternate infinite none running;
+  -moz-animation: general-lot-description-appear 3s linear 0s alternate infinite none running;
+  -ms-animation: general-lot-description-appear 3s linear 0s alternate infinite none running;
+  -o-animation: general-lot-description-appear 3s linear 0s alternate infinite none running;
+  animation: general-lot-description-appear 3s linear 0s alternate infinite none running; }
 
 .general-lot-description > a,
 .general-lot-definition > a,
@@ -2963,18 +2963,18 @@ ul.site-navigation-menu-responsive li a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #04549b;
   font-family: 'Lobster', cursive;
   font-weight: 400;
   font-size: 10vmin;
   text-shadow: 3px 3px 3px  #101713;
   transition: all .7s linear;
-  -webkit-animation: disappear 5s linear 0s alternate infinite none running;
-  -moz-animation: disappear 5s linear 0s alternate infinite none running;
-  -ms-animation: disappear 5s linear 0s alternate infinite none running;
-  -o-animation: disappear 5s linear 0s alternate infinite none running;
-  animation: disappear 5s linear 0s alternate infinite none running; }
+  -webkit-animation: disappear 3s linear 0s alternate infinite none running;
+  -moz-animation: disappear 3s linear 0s alternate infinite none running;
+  -ms-animation: disappear 3s linear 0s alternate infinite none running;
+  -o-animation: disappear 3s linear 0s alternate infinite none running;
+  animation: disappear 3s linear 0s alternate infinite none running; }
 
 @-webkit-keyframes general-lot-bg-change {
   0%,
@@ -3020,57 +3020,57 @@ ul.site-navigation-menu-responsive li a {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-moz-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-o-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-ms-keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @keyframes disappear {
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%); }
+    transform: translate3d(-50%, -50%, 0); }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%); }
+    transform: translate3d(15%, 15%, 0); }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%); } }
+    transform: translate3d(15%, 15%, 0); } }
 @-webkit-keyframes glyph-appear {
   0%,
   25% {
@@ -3078,12 +3078,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-moz-keyframes glyph-appear {
   0%,
@@ -3092,12 +3092,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-o-keyframes glyph-appear {
   0%,
@@ -3106,12 +3106,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-ms-keyframes glyph-appear {
   0%,
@@ -3120,12 +3120,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @keyframes glyph-appear {
   0%,
@@ -3134,12 +3134,12 @@ ul.site-navigation-menu-responsive li a {
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; } }
 @-webkit-keyframes general-lot-definition-appear {
   0%,
@@ -3318,7 +3318,7 @@ ul.site-navigation-menu-responsive li a {
     animation: none; }
 
   .site-content-index-item-f:hover #general-lot {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0; }
 
   .site-content-index-item-f:hover {
@@ -3327,7 +3327,7 @@ ul.site-navigation-menu-responsive li a {
   .site-content-index-item-f:hover .general-lot-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1; }
 
   .site-content-index-item-f:hover .general-lot-definition {

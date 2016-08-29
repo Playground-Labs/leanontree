@@ -7,28 +7,28 @@
 .site-content-index-item-b {
   height: 30vh;
   background-color: #C70039;
-  @include animation(my-december-bg-change 5s linear 0s alternate infinite none running);
+  @include animation(my-december-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .my-december-glyph {
   font-size: 16vmin;
   color: #ecc4e0;
   @include glyph-common();
-  @include animation(glyph-appear 5s linear 0s alternate infinite none running);
+  @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .my-december-definition {
   border: 0.2vmin solid #ecc4e0;
   top: -10%;
   @include theme-description-definition-common();
-  @include animation(my-december-definition-appear 5s linear 0s alternate infinite none running);
+  @include animation(my-december-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .my-december-description {
   border: 0.2vmin solid #ecc4e0;
   bottom: -10%;
   @include theme-description-definition-common();
-  @include animation(my-december-description-appear 5s linear 0s alternate infinite none running);
+  @include animation(my-december-description-appear 3s linear 0s alternate infinite none running);
 }
 
 .my-december-description> a,
@@ -47,13 +47,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   color: #fac1d1;
   font-family: 'Fredericka the Great', sans-serif;
   font-weight: 400;
   font-size: 10vmin;
   transition: all .7s linear;
-  @include animation(disappear 5s linear 0s alternate infinite none running);
+  @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(my-december-bg-change) {
   0%,
@@ -71,15 +71,15 @@
   0%,
   25% {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
   }
   50% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
   100% {
     opacity: 0;
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
   }
 }
 @include keyframes(glyph-appear) {
@@ -90,13 +90,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
 }
@@ -166,7 +166,7 @@
     animation: none;
   }
   .site-content-index-item-b:hover #my-december {
-    transform: translate(15%, 15%);
+    transform: translate3d(15%, 15%, 0);
     opacity: 0;
   }
   .site-content-index-item-b:hover {
@@ -175,7 +175,7 @@
   .site-content-index-item-b:hover .my-december-glyph {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
   .site-content-index-item-b:hover .my-december-definition {
