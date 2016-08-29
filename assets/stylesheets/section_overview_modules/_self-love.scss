@@ -46,12 +46,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  @include transform(translate3d(-50%, -50%, 0));
   color: #de2b04;
   font-family: 'Oleo Script', cursive;
   font-weight: 400;
   font-size: 10vmin;
-  text-shadow: 0px 2px 1px #101713;
+ text-shadow: 0px 2px 1px #101713;
   @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(self-love-bg-change) {
@@ -70,15 +70,15 @@
   0%,
   25% {
     opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
   }
   50% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+    @include transform(translate3d(15%, 15%, 0));
   }
   100% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+    @include transform(translate3d(15%, 15%, 0));
   }
 }
 @include keyframes(glyph-appear) {
@@ -89,13 +89,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
 }
@@ -141,29 +141,29 @@
 @media(min-width: $screen-md-min) {
   .self-love-glyph {
     opacity: 0;
-    transition: all .7s linear;
-    animation: none;
+      @include transition(all .7s linear); 
+     @include animation(none);
   }
   .self-love-definition {
-    transition: all .7s linear;
+       @include transition(all .7s linear); 
     font-size: 2.6vmin;
-    animation: none;
+     @include animation(none);
   }
   .self-love-description {
-    transition: all .7s linear;
+      @include transition(all .7s linear); 
     font-size: 2.6vmin;
-    animation: none;
+     @include animation(none);
   }
   .site-content-index #self-love {
-    transition: all .7s linear;
-    animation: none;
+      @include transition(all .7s linear); 
+     @include animation(none);
   }
   .site-content-index-item-a {
     height: 40vh;
-    animation: none;
+     @include animation(none);
   }
   .site-content-index-item-a:hover #self-love {
-    transform: translate3d(15%, 15%, 0);
+    @include transform(translate3d(15%, 15%, 0));
     opacity: 0;
   }
   .site-content-index-item-a:hover {
@@ -172,7 +172,7 @@
   .site-content-index-item-a:hover .self-love-glyph {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   .site-content-index-item-a:hover .self-love-definition {

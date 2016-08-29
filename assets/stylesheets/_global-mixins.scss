@@ -23,3 +23,19 @@ animation: $animation_argments;
         @content;
     }
 }
+
+@mixin transform($transformstyle) {
+-webkit-transform: $transformstyle; 
+-moz-transform: $transformstyle; 
+-ms-transform: $transformstyle; 
+-o-transform: $transformstyle;
+transform: $transformstyle;
+}
+
+@mixin transition($transition_arguments...) {
+-webkit-transition: $transition_arguments; 
+-moz-transition: $transition_arguments; 
+-ms-transition: $transition_arguments; 
+-o-transition: $transition_arguments; 
+transition: $transition_arguments; 
+}
