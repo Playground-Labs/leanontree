@@ -5,26 +5,26 @@
 }
 
 .site-content-index-item-a {
-  height: 30vh;
-  background-color: #ff5733;
+  height: 30vh; 
+  background-color: #056363;
   @include animation(self-love-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .self-love-glyph {
-  color: #851902;
+  color: #056363;
   @include glyph-common();
   @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .self-love-definition {
-  border: 0.2vmin solid #851902;
+  border: 0.2vmin solid #056363;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(self-love-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .self-love-description {
-  border: 0.2vmin solid #851902;
+  border: 0.2vmin solid #056363;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(self-love-description-appear 3s linear 0s alternate infinite none running);
@@ -39,7 +39,7 @@
 .self-love-description> a:hover,
 {
   text-decoration: none;
-  color: #851902;
+  color: #056363;
 }
 
 .site-content-index #self-love {
@@ -47,23 +47,31 @@
   top: 50%;
   left: 50%;
   @include transform(translate3d(-50%, -50%, 0));
-  color: #de2b04;
-  font-family: 'Oleo Script', cursive;
+  color: #9EDCDC;
+  font-family: 'Pattaya', cursive;
   font-weight: 400;
   font-size: 10vmin;
- text-shadow: 0px 2px 1px #101713;
+ text-shadow: 0.2vh 0.2vh 0px #049d9d,
+ 0.4vh 0.4vh 0px #049d9d,
+ 0.6vh 0.6vh 0px #049d9d,
+ 0.8vh 0.8vh 0px #049d9d,
+ 0.10vh 0.10vh 0px #049d9d,
+ 0.12vh 0.12vh 0px #049d9d,
+ 0.14vh 0.14vh 0px #049d9d,
+ 0.16vh 0.16vh 0px #049d9d;
+ 
   @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(self-love-bg-change) {
   0%,
   25% {
-    background-color: #ff5733;
+    background-color: #056363;
   }
   50% {
-    background-color: #000000;
+    background-color: #9EDCDC;
   }
   100% {
-    background-color: #000000;
+    background-color: #9EDCDC;
   }
 }
 @include keyframes(disappear) {
@@ -107,13 +115,17 @@
   }
   50% {
     top: 10%;
-    border: 0.2vmin solid #851902;
+          border: 0.2vmin solid #239797; 
+    @include border-radius(0.2vw);
+    background-color: #239797;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     top: 10%;
-    border: 0.2vmin solid #851902;
+           border: 0.2vmin solid #239797; 
+    @include border-radius(0.2vw);
+    background-color: #239797;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -126,36 +138,47 @@
   }
   50% {
     bottom: 10%;
-    border: 1px solid #851902;
+        border: 0.2vmin solid #239797; 
+    @include border-radius(0.2vw);
+    background-color: #239797;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     bottom: 10%;
-    border: 1px solid #851902;
+    border: 0.2vmin solid #239797; 
+    @include border-radius(0.2vw);
+    background-color: #239797;
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
 }
-
+.self-love-definition:hover {
+      background-color: #00B2B2 !important;
+      border-color: #00B2B2 !important;
+  }
+    .self-love-description:hover {
+      background-color: #00B2B2 !important;
+      border-color: #00B2B2 !important;
+  }
 @media(min-width: $screen-md-min) {
   .self-love-glyph {
     opacity: 0;
-      @include transition(all .7s linear); 
+      @include transition(all .3s linear); 
      @include animation(none);
   }
   .self-love-definition {
-       @include transition(all .7s linear); 
-    font-size: 2.6vmin;
+       @include transition(all .3s linear); 
+    font-size: 3vmin;
      @include animation(none);
   }
   .self-love-description {
-      @include transition(all .7s linear); 
-    font-size: 2.6vmin;
+      @include transition(all .3s linear); 
+    font-size: 3vmin;
      @include animation(none);
   }
   .site-content-index #self-love {
-      @include transition(all .7s linear); 
+      @include transition(all .3s linear); 
      @include animation(none);
   }
   .site-content-index-item-a {
@@ -163,11 +186,13 @@
      @include animation(none);
   }
   .site-content-index-item-a:hover #self-love {
+    text-shadow: 0px 1px 0px #aff9fb;
+    
     @include transform(translate3d(15%, 15%, 0));
     opacity: 0;
   }
   .site-content-index-item-a:hover {
-    background-color: #000000;
+    background-color: #9EDCDC;
   }
   .site-content-index-item-a:hover .self-love-glyph {
     top: 50%;
@@ -177,14 +202,21 @@
   }
   .site-content-index-item-a:hover .self-love-definition {
     top: 15%;
-    border: 0.2vmin solid #851902;
+    border: 0.2vmin solid #239797; 
+    @include border-radius(0.2vw);
+    background-color: #239797;
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
+
+ 
   .site-content-index-item-a:hover .self-love-description {
     bottom: 15%;
-    border: 1px solid #851902;
+    border: 0.2vmin solid #239797;
+       @include border-radius(0.2vw);
+    background-color: #239797;
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
+   
 }

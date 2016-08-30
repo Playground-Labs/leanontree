@@ -1,3 +1,27 @@
+@mixin box-shadow($box-shadow_argments...) {
+    -webkit-box-shadow: $box-shadow_argments; 
+-moz-box-shadow: $box-shadow_argments; 
+-ms-box-shadow: $box-shadow_argments; 
+-o-box-shadow: $box-shadow_argments; 
+box-shadow: $box-shadow_argments; 
+}
+
+@mixin border-radius($border-radius_argments...) {
+    -webkit-border-radius: $border-radius_argments; 
+-moz-border-radius: $border-radius_argments; 
+-ms-border-radius: $border-radius_argments; 
+-o-border-radius: $border-radius_argments; 
+border-radius: $border-radius_argments; 
+}
+
+@mixin flex($flex_argments...) {
+    -webkit-flex: $flex_argments; 
+-moz-flex: $flex_argments; 
+-ms-flex: $flex_argments; 
+-o-flex: $flex_argments; 
+flex: $flex_argments; 
+}
+
 @mixin animation($animation_argments...) {
 -webkit-animation: $animation_argments; 
 -moz-animation: $animation_argments; 
