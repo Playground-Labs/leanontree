@@ -6,26 +6,25 @@
 
 .site-content-index-item-d {
   height: 30vh;
-  background-color: #26DCC4;
+  background-color: #fb0404;
   @include animation(child-sexual-abuse-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .child-sexual-abuse-glyph {
-  font-size: 16vmin;
-  color: #3FB0A1;
+  color: #fb0404;
   @include glyph-common();
   @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .child-sexual-abuse-definition {
-  border: 0.2vmin solid #3FB0A1;
+  border: 0.2vmin solid #fb0404;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(child-sexual-abuse-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .child-sexual-abuse-description {
-  border: 0.2vmin solid #3FB0A1;
+  border: 0.2vmin solid #fb0404;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(child-sexual-abuse-description-appear 3s linear 0s alternate infinite none running);
@@ -40,31 +39,30 @@
 .child-sexual-abuse-description> a:hover,
 .child-sexual-abuse-definition> a:hover {
   text-decoration: none;
-  color: #3FB0A1;
+  color: #fb0404;
 }
 
 .site-content-index #child-sexual-abuse {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  color: #02A591;
+    @include transform(translate3d(-50%, -50%, 0));
+  color: #080000;
   font-family: 'Cutive Mono', monospace;
   font-weight: 700;
   font-size: 8vmin;
-  transition: all .7s linear;
   @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(child-sexual-abuse-bg-change) {
   0%,
   25% {
-    background-color: #26DCC4;
+    background-color: #fb0404;
   }
   50% {
-    background-color: #000000;
+    background-color: #080000;
   }
   100% {
-    background-color: #000000;
+    background-color: #080000;
   }
 }
 
@@ -72,15 +70,16 @@
   0%,
   25% {
     opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
   }
   50% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+@include transform(translate3d(15%, 15%, 0));
   }
   100% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+    @include transform(translate3d(15%, 15%, 0));
+
   }
 }
 @include keyframes(glyph-appear) {
@@ -91,13 +90,14 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+        @include transform(translate3d(-50%, -50%, 0));
+
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+ @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
 }
@@ -109,13 +109,17 @@
   }
   50% {
     top: 10%;
-    border: 0.2vmin solid #3FB0A1;
+    border: 0.2vmin solid #323131;
+    background-color: #323131;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     top: 10%;
-    border: 0.2vmin solid #3FB0A1;
+    border: 0.2vmin solid #323131;
+    background-color: #323131;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -128,66 +132,81 @@
   }
   50% {
     bottom: 10%;
-    border: 1px solid #3FB0A1;
+    border: 0.2vmin solid #323131;
+    background-color: #323131;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     bottom: 10%;
-    border: 1px solid #3FB0A1;
+       background-color: #323131;
+       border: 0.2vmin solid #323131;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
 }
-
+.child-sexual-abuse-definition:hover {
+      background-color: #272323 !important;
+      border-color: #272323 !important;
+  }
+    .child-sexual-abuse-description:hover {
+      background-color: #272323 !important;
+      border-color: #272323 !important;
+  }
 @media(min-width: $screen-md-min) {
   .child-sexual-abuse-glyph {
-    left: -10%;
-    top: -10%;
-    opacity: 0;
-    transition: all .7s linear;
-    animation: none;
+     opacity: 0;
+      @include transition(all .3s linear); 
+    @include animation(none);
   }
   .child-sexual-abuse-definition {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+   @include transition(all .3s linear); 
+    @include animation(none);
+    font-size: 3vmin;
+   
   }
   .child-sexual-abuse-description {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear); 
+    @include animation(none);
+    font-size: 3vmin;
+
   }
   .site-content-index #child-sexual-abuse {
-    animation: none;
+    @include transition(all .3s linear); 
+    @include animation(none);
   }
   .site-content-index-item-d {
     height: 40vh;
-    background-color: #26DCC4;
-    animation: none;
+    @include animation(none);
   }
   .site-content-index-item-d:hover #child-sexual-abuse {
-    transform: translate3d(15%, 15%, 0);
+     @include transform(translate3d(15%, 15%, 0));
     opacity: 0;
   }
   .site-content-index-item-d:hover {
-    background-color: #000000;
+    background-color: #080000;
   }
   .site-content-index-item-d:hover .child-sexual-abuse-glyph {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+      @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   .site-content-index-item-d:hover .child-sexual-abuse-definition {
     top: 15%;
-    border: 0.2vmin solid #3FB0A1;
-    padding: 0px 10px 0px 10px;
+    border: 0.2vmin solid #323131;
+     background-color: #323131;
+       @include border-radius(0.2vw);
+       padding: 0px 10px 0px 10px;
     opacity: 1;
   }
   .site-content-index-item-d:hover .child-sexual-abuse-description {
     bottom: 15%;
-    border: 0.2vmin solid #3FB0A1;
+    border: 0.2vmin solid #323131;
+     background-color: #323131;
+    @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }

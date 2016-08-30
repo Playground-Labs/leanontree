@@ -6,26 +6,25 @@
 
 .site-content-index-item-f {
   height: 30vh;
-  background-color: #0e556b;
+  background-color: #0E80DF;
   @include animation(general-lot-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .general-lot-glyph {
-  font-size: 16vmin;
-  color: #14649f;
+  color: #0E80DF;
   @include glyph-common();
   @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .general-lot-definition {
-  border: 0.2vmin solid #14649f;
+  border: 0.2vmin solid #0E80DF;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(general-lot-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .general-lot-description {
-  border: 0.2vmin solid #14649f;
+  border: 0.2vmin solid #0E80DF;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(general-lot-description-appear 3s linear 0s alternate infinite none running);
@@ -40,20 +39,28 @@
 .general-lot-description> a:hover,
 .general-lot-definition> a:hover {
   text-decoration: none;
-  color: #14649f;
+  color: #0E80DF;
 }
 
 .site-content-index-episode-02 #general-lot {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  color: #04549b;
-  font-family: 'Lobster', cursive;
+    @include transform(translate3d(-50%, -50%, 0));
+  color: #284660;
+  font-family: 'Londrina Solid', cursive;
   font-weight: 400;
-  font-size: 10vmin;
-  text-shadow: 3px 3px 3px  #101713;
-  transition: all .7s linear;
+  font-size: 8vmin;
+  text-shadow: 
+   0 0.6vw 0 #1F99FF,
+   0 0.5vw 0 #1F99FF,
+  0 0.4vw 0  #1F99FF,
+  0 0.3vw 0  #1F99FF,
+   0 0.2vw 0  #1F99FF,
+   0 0.1vw 0  #1F99FF,
+   0 0 0  #1F99FF
+  ;
+ 
   @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(general-lot-bg-change) {
@@ -62,25 +69,25 @@
     background-color: #0e556b;
   }
   50% {
-    background-color: #000000;
+    background-color: #284660;
   }
   100% {
-    background-color: #000000;
+    background-color: #284660;
   }
 }
 @include keyframes(disappear) {
   0%,
   25% {
     opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
   }
   50% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+     @include transform(translate3d(15%, 15%, 0));
   }
   100% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+    @include transform(translate3d(15%, 15%, 0));
   }
 }
 @include keyframes(glyph-appear) {
@@ -91,13 +98,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+     @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
 }
@@ -109,13 +116,17 @@
   }
   50% {
     top: 10%;
-    border: 0.2vmin solid #14649f;
+        border: 0.2vmin solid #32576f;
+     background-color: #32576f;
+       @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     top: 10%;
-    border: 0.2vmin solid #14649f;
+        border: 0.2vmin solid #32576f;
+     background-color: #32576f;
+       @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -128,66 +139,82 @@
   }
   50% {
     bottom: 10%;
-    border: 1px solid #14649f;
+        border: 0.2vmin solid #32576f;
+     background-color: #32576f;
+       @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     bottom: 10%;
-    border: 1px solid #14649f;
+       border: 0.2vmin solid #32576f;
+     background-color: #32576f;
+       @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
 }
+.general-lot-definition:hover {
+      background-color: #1c425b !important;
+      border-color: #1c425b !important;
+  }
+    .general-lot-description:hover {
+      background-color: #1c425b !important;
+      border-color: #1c425b !important;
+  }
 
 @media(min-width: $screen-md-min) {
   .general-lot-glyph {
     left: -10%;
     top: -10%;
     opacity: 0;
-    transition: all .7s linear;
-    animation: none;
+    @include transition(all .3s linear); 
+    @include animation(none);
   }
   .general-lot-definition {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear); 
+   font-size: 3vmin;
+    @include animation(none);
   }
   .general-lot-description {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear); 
+   font-size: 3vmin;
+    @include animation(none);
   }
   .site-content-index-episode-02 #general-lot {
-    animation: none;
+    @include animation(none);
   }
   .site-content-index-item-f {
     height: 40vh;
-    background-color: #0e556b;
-    animation: none;
+    @include animation(none);
   }
   .site-content-index-item-f:hover #general-lot {
-    transform: translate3d(15%, 15%, 0);
+   @include transform(translate3d(-50%, -50%, 0));
     opacity: 0;
   }
   .site-content-index-item-f:hover {
-    background-color: #000000;
+    background-color: #284660;
   }
   .site-content-index-item-f:hover .general-lot-glyph {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+        @include transform(translate3d(-50%, -50%, 0));
+
     opacity: 1;
   }
   .site-content-index-item-f:hover .general-lot-definition {
     top: 15%;
-    border: 0.2vmin solid #14649f;
+    border: 0.2vmin solid #32576f;
+     background-color: #32576f;
+       @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
   .site-content-index-item-f:hover .general-lot-description {
     bottom: 15%;
-    border: 0.2vmin solid #14649f;
+      border: 0.2vmin solid #32576f;
+     background-color: #32576f;
+       @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }

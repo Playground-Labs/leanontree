@@ -6,26 +6,25 @@
 
 .site-content-index-item-b {
   height: 30vh;
-  background-color: #C70039;
+  background-color: #E1E1E1;
   @include animation(my-december-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .my-december-glyph {
-  font-size: 16vmin;
-  color: #ecc4e0;
+  color: #E1E1E1;
   @include glyph-common();
   @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .my-december-definition {
-  border: 0.2vmin solid #ecc4e0;
+  border: 0.2vmin solid #E1E1E1;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(my-december-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .my-december-description {
-  border: 0.2vmin solid #ecc4e0;
+  border: 0.2vmin solid #E1E1E1;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(my-december-description-appear 3s linear 0s alternate infinite none running);
@@ -40,46 +39,45 @@
 .my-december-description> a:hover,
 .my-december-definition> a:hover {
   text-decoration: none;
-  color: #ecc4e0;
+  color: #E1E1E1;
 }
 
 .site-content-index #my-december {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  color: #fac1d1;
+    @include transform(translate3d(-50%, -50%, 0));
+  color: #BB7AAF;
   font-family: 'Fredericka the Great', sans-serif;
   font-weight: 400;
   font-size: 10vmin;
-  transition: all .7s linear;
   @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(my-december-bg-change) {
   0%,
   25% {
-    background-color: #C70039;
+    background-color: #E1E1E1;
   }
   50% {
-    background-color: #000000;
+    background-color: #BB7AAF;
   }
   100% {
-    background-color: #000000;
+    background-color: #BB7AAF;
   }
 }
 @include keyframes(disappear) {
   0%,
   25% {
     opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
+ @include transform(translate3d(-50%, -50%, 0));
   }
   50% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+    @include transform(translate3d(15%, 15%, 0));
   }
   100% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+ @include transform(translate3d(15%, 15%, 0));
   }
 }
 @include keyframes(glyph-appear) {
@@ -90,13 +88,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+  @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+  @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
 }
@@ -108,13 +106,17 @@
   }
   50% {
     top: 10%;
-    border: 0.2vmin solid #ecc4e0;
+    border: 0.2vmin solid #FF43DB;
+     background-color: #FF43DB;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     top: 10%;
-    border: 0.2vmin solid #ecc4e0;
+    border: 0.2vmin solid #FF43DB;
+     background-color: #FF43DB;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -127,66 +129,82 @@
   }
   50% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 0.2vmin solid #FF43DB;
+     background-color: #FF43DB;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     bottom: 10%;
-    border: 1px solid #ecc4e0;
+    border: 0.2vmin solid #FF43DB;
+     background-color: #FF43DB;
+     @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
 }
+.my-december-definition:hover {
+      background-color: #FF24D5 !important;
+      border-color: #FF24D5 !important;
+  }
+    .my-december-description:hover {
+      background-color: #FF24D5 !important;
+      border-color: #FF24D5 !important;
+  }
 
 @media(min-width: $screen-md-min) {
   .my-december-glyph {
-    left: -10%;
-    top: -10%;
     opacity: 0;
-    transition: all .7s linear;
-    animation: none;
+     @include transition(all .3s linear); 
+    @include animation(none);
   }
+  
   .my-december-definition {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear); 
+    font-size: 3vmin;
+   @include animation(none);
   }
   .my-december-description {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear); 
+     font-size: 3vmin;
+   @include animation(none);
   }
   .site-content-index #my-december {
-    animation: none;
+       @include transition(all .3s linear); 
+   @include animation(none);
   }
   .site-content-index-item-b {
     height: 40vh;
-    background-color: #C70039;
-    animation: none;
+    @include animation(none);
   }
   .site-content-index-item-b:hover #my-december {
-    transform: translate3d(15%, 15%, 0);
+    @include transform(translate3d(15%, 15%, 0));
     opacity: 0;
   }
   .site-content-index-item-b:hover {
-    background-color: #000000;
+    background-color: #BB7AAF;
   }
   .site-content-index-item-b:hover .my-december-glyph {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   .site-content-index-item-b:hover .my-december-definition {
     top: 15%;
-    border: 0.2vmin solid #ecc4e0;
+    border: 0.2vmin solid #FF43DB;
+     background-color: #FF43DB;
+       @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
   .site-content-index-item-b:hover .my-december-description {
     bottom: 15%;
-    border: 0.2vmin solid #ecc4e0;
+
+    border: 0.2vmin solid #FF43DB;
+     background-color: #FF43DB;
+       @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }

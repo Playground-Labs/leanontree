@@ -6,26 +6,25 @@
 
 .site-content-index-item-c {
   height: 30vh;
-  background-color: #480828;
+  background-color: #C66604;
   @include animation(story-hour-bg-change 3s linear 0s alternate infinite none running);
 }
 
 .story-hour-glyph {
-  font-size: 16vmin;
-  color: #de029c;
+  color: #C66604;
   @include glyph-common();
   @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .story-hour-definition {
-  border: 0.2vmin solid #de029c;
+  border: 0.2vmin solid #C66604;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(story-hour-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .story-hour-description {
-  border: 0.2vmin solid #de029c;
+  border: 0.2vmin solid #C66604;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(story-hour-description-appear 3s linear 0s alternate infinite none running);
@@ -40,46 +39,45 @@
 .story-hour-description> a:hover,
 .story-hour-definition> a:hover {
   text-decoration: none;
-  color: #de029c;
+  color: #C66604;
 }
 
 .site-content-index #story-hour {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  color: #923d67;
+  @include transform(translate3d(-50%, -50%, 0));
+  color: #FF8D18;
   font-family: 'Bungee Shade', cursive;
   font-weight: 400;
   font-size: 14vmin;
-  transition: all .7s linear;
   @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(story-hour-bg-change) {
   0%,
   25% {
-    background-color: #480828;
+    background-color: #C66604;
   }
   50% {
-    background-color: #000000;
+    background-color: #FF8D18;
   }
   100% {
-    background-color: #000000;
+    background-color: #FF8D18;
   }
 }
 @include keyframes(disappear) {
   0%,
   25% {
     opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
+     @include transform(translate3d(-50%, -50%, 0));
   }
   50% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+     @include transform(translate3d(15%, 15%, 0));
   }
   100% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+     @include transform(translate3d(15%, 15%, 0));
   }
 }
 @include keyframes(glyph-appear) {
@@ -90,13 +88,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+  @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+  @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
 }
@@ -108,13 +106,17 @@
   }
   50% {
     top: 10%;
-    border: 0.2vmin solid #de029c;
+    border: 0.2vmin solid #fad464;
+    background-color: #fad464;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     top: 10%;
-    border: 0.2vmin solid #de029c;
+    border: 0.2vmin solid #fad464;
+    background-color: #fad464;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -127,66 +129,80 @@
   }
   50% {
     bottom: 10%;
-    border: 1px solid #de029c;
+    border: 1px solid #fad464;
+    background-color: #fad464;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     bottom: 10%;
-    border: 1px solid #de029c;
+    border: 1px solid #fad464;
+    background-color: #fad464;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
 }
-
+.story-hour-definition:hover {
+      background-color: #fea548 !important;
+      border-color: #fea548 !important;
+  }
+    .story-hour-description:hover {
+      background-color: #fea548 !important;
+      border-color: #fea548 !important;
+  }
 @media(min-width: $screen-md-min) {
   .story-hour-glyph {
-    left: -10%;
-    top: -10%;
     opacity: 0;
-    transition: all .7s linear;
-    animation: none;
+     @include transition(all .3s linear); 
+    @include animation(none);
   }
   .story-hour-definition {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear);      @include animation(none);
+    font-size: 3vmin;
+    
   }
   .story-hour-description {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear);      @include animation(none);
+   font-size: 3vmin;
+    
   }
   .site-content-index #story-hour {
-    animation: none;
+       @include transition(all .3s linear); 
+   @include animation(none);
   }
   .site-content-index-item-c {
     height: 80vh;
-    background-color: #480828;
-    animation: none;
+    @include animation(none);
+    
   }
   .site-content-index-item-c:hover #story-hour {
-    transform: translate3d(15%, 15%, 0);
+ @include transform(translate3d(-50%, -50%, 0));
     opacity: 0;
   }
   .site-content-index-item-c:hover {
-    background-color: #000000;
+    background-color: #FF8D18;
   }
   .site-content-index-item-c:hover .story-hour-glyph {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+     @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   .site-content-index-item-c:hover .story-hour-definition {
     top: 30%;
-    border: 0.2vmin solid #de029c;
+    border: 0.2vmin solid #fad464;
+    background-color: #fad464;
+    @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
   .site-content-index-item-c:hover .story-hour-description {
     bottom: 30%;
-    border: 0.2vmin solid #de029c;
+    border: 0.2vmin solid #fad464;
+    background-color: #fad464;
+      @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }

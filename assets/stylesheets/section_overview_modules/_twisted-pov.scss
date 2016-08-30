@@ -11,21 +11,20 @@
 }
 
 .twisted-pov-glyph {
-  font-size: 16vmin;
-  color: #02A547;
+  color: #222d24;
   @include glyph-common();
   @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-definition {
-  border: 0.2vmin solid #02A547;
+  border: 0.2vmin solid #222d24;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(twisted-pov-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .twisted-pov-description {
-  border: 0.2vmin solid #02A547;
+  border: 0.2vmin solid #222d24;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(twisted-pov-description-appear 3s linear 0s alternate infinite none running);
@@ -40,19 +39,18 @@
 .twisted-pov-description> a:hover,
 .twisted-pov-definition> a:hover {
   text-decoration: none;
-  color: #02A547;
+  color: #222d24;
 }
 
 .site-content-index #twisted-pov {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+@include transform(translate3d(-50%, -50%, 0));
   font-family: 'Henny Penny', cursive;
   font-weight: 400;
   font-size: 10vmin;
       text-shadow: 3px 3px 3px  #101713;
-  transition: all .7s linear;
   @include animation(disappear 3s linear 0s alternate infinite none running);
 }
 @include keyframes(twisted-pov-bg-change) {
@@ -61,10 +59,10 @@
     background-color: #02b04c;
   }
   50% {
-    background-color: #000000;
+    background-color: #D2F917;
   }
   100% {
-    background-color: #000000;
+    background-color: #D2F917;
   }
 }
 
@@ -72,15 +70,15 @@
   0%,
   25% {
     opacity: 1;
-    transform: translate3d(-50%, -50%, 0);
+ @include transform(translate3d(-50%, -50%, 0));
   }
   50% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+  @include transform(translate3d(15%, 15%, 0));
   }
   100% {
     opacity: 0;
-    transform: translate3d(15%, 15%, 0);
+ @include transform(translate3d(15%, 15%, 0));
   }
 }
 
@@ -92,13 +90,13 @@
   50% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+@include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   100% {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+@include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
 }
@@ -110,13 +108,17 @@
   }
   50% {
     top: 10%;
-    border: 0.2vmin solid #02A547;
+ border: 0.2vmin solid #66db7b;
+     background-color: #66db7b;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     top: 10%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #66db7b;
+     background-color: #66db7b;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
@@ -129,66 +131,81 @@
   }
   50% {
     bottom: 10%;
-    border: 1px solid #02A547;
+ border: 0.2vmin solid #66db7b;
+     background-color: #66db7b;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
   100% {
     bottom: 10%;
-    border: 1px solid #02A547;
+  border: 0.2vmin solid #66db7b;
+     background-color: #66db7b;
+    @include border-radius(0.2vw);
     padding: 0px 20px 0px 20px;
     opacity: 1;
   }
 }
+.twisted-pov-definition:hover {
+      background-color: #24d945 !important;
+      border-color: #24d945 !important;
+  }
+    .twisted-pov-description:hover {
+      background-color: #24d945 !important;
+      border-color: #24d945 !important;
+  }
 
 @media(min-width: $screen-md-min) {
   .twisted-pov-glyph {
-    left: -10%;
-    top: -10%;
-    opacity: 0;
-    transition: all .7s linear;
-    animation: none;
+     opacity: 0;
+      @include transition(all .3s linear); 
+    @include animation(none);
   }
   .twisted-pov-definition {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear); 
+    font-size: 3vmin;
+     @include animation(none);
   }
   .twisted-pov-description {
-    transition: all .7s linear;
-    font-size: 2.6vmin;
-    animation: none;
+    @include transition(all .3s linear); 
+    font-size: 3vmin;
+     @include animation(none);
   }
   .site-content-index #twisted-pov {
-    animation: none;
+    @include transition(all .3s linear); 
+    @include animation(none);
   }
   .site-content-index-item-e {
     height: 40vh;
-    background-color: #02b04c;
-    animation: none;
+      @include animation(none);
+   
   }
   .site-content-index-item-e:hover #twisted-pov {
-    transform: translate3d(15%, 15%, 0);
+ @include transform(translate3d(-50%, -50%, 0));
     opacity: 0;
   }
   .site-content-index-item-e:hover {
-    background-color: #000000;
+    background-color: #D2F917;
   }
   .site-content-index-item-e:hover .twisted-pov-glyph {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    @include transform(translate3d(-50%, -50%, 0));
     opacity: 1;
   }
   .site-content-index-item-e:hover .twisted-pov-definition {
     top: 15%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #66db7b;
+      background-color: #66db7b;
+    @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
   .site-content-index-item-e:hover .twisted-pov-description {
     bottom: 15%;
-    border: 0.2vmin solid #02A547;
+    border: 0.2vmin solid #66db7b;
+     background-color: #66db7b;
+    @include border-radius(0.2vw);
     padding: 0px 10px 0px 10px;
     opacity: 1;
   }
