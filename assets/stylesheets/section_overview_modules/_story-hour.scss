@@ -6,10 +6,21 @@
 
 .site-content-index-item-c {
   height: 30vh;
-  background-color: #C66604;
+
   @include animation(story-hour-bg-change 3s linear 0s alternate infinite none running);
 }
+.site-content-index-item-c::before {
+ @include south-bar-before();
+}
 
+.site-content-index-item-c::after {
+@include south-bar-after(#ffa000);
+}
+
+.site-content-index-item-c:hover::after {
+@include south-bar-after-hover();
+
+}
 .story-hour-glyph {
   color: #C66604;
   @include glyph-common();
@@ -56,13 +67,13 @@
 @include keyframes(story-hour-bg-change) {
   0%,
   25% {
-    background-color: #C66604;
+    background-color: #183b52;
   }
   50% {
-    background-color: #FF8D18;
+    background-color: #3c637d;
   }
   100% {
-    background-color: #FF8D18;
+    background-color: #3c637d;
   }
 }
 @include keyframes(disappear) {
@@ -154,22 +165,25 @@
   }
 @media(min-width: $screen-md-min) {
   .story-hour-glyph {
-    opacity: 0;
-     @include transition(all .3s linear); 
+    opacity: 1;
+    font-size: 0vmin;
     @include animation(none);
+    @include transition(font-size 600ms cubic-bezier(.17,.71,.65,.95));
   }
   .story-hour-definition {
-    @include transition(all .3s linear);      @include animation(none);
+     @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));  
+     @include animation(none);
     font-size: 3vmin;
     
   }
   .story-hour-description {
-    @include transition(all .3s linear);      @include animation(none);
+    @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));  
+         @include animation(none);
    font-size: 3vmin;
     
   }
   .site-content-index #story-hour {
-       @include transition(all .3s linear); 
+     @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));  
    @include animation(none);
   }
   .site-content-index-item-c {
@@ -178,32 +192,19 @@
     
   }
   .site-content-index-item-c:hover #story-hour {
- @include transform(translate3d(-50%, -50%, 0));
+ @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
     opacity: 0;
   }
-  .site-content-index-item-c:hover {
-    background-color: #FF8D18;
-  }
+
   .site-content-index-item-c:hover .story-hour-glyph {
-    top: 50%;
-    left: 50%;
-     @include transform(translate3d(-50%, -50%, 0));
-    opacity: 1;
+   @include gylph-transition-common;
   }
   .site-content-index-item-c:hover .story-hour-definition {
     top: 30%;
-    border: 0.2vmin solid #fad464;
-    background-color: #fad464;
-    @include border-radius(0.2vw);
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+       @include definition-description-common( #fad464 );
   }
   .site-content-index-item-c:hover .story-hour-description {
     bottom: 30%;
-    border: 0.2vmin solid #fad464;
-    background-color: #fad464;
-      @include border-radius(0.2vw);
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+        @include definition-description-common( #fad464 );
   }
 }

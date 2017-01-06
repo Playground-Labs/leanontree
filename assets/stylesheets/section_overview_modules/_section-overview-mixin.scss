@@ -10,7 +10,55 @@
 
 @mixin glyph-common() {
   font-size: 16vmin;
-  left: -10%;
-  top: -10%;
+  left: 50%;
+ top: 50%;
+ transform: translate3d(-50%, -50%, 0);
   opacity: 1;
+}
+
+@mixin definition-description-common ($color){
+     border: 0.2vmin solid $color;
+     background-color: $color;
+       @include border-radius(0.2vw);
+    padding: 0px 10px 0px 10px;
+    opacity: 1;
+}
+
+@mixin gylph-transition-common {
+  font-size: 16vmin;
+  opacity: 1;
+}
+
+@mixin south-bar-before() {
+    content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  width: 0%;
+  min-width: 2vw;
+  height: 0.4vh;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, .25);
+}
+
+
+@mixin south-bar-after($color) {
+ content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 0%;
+  min-width: 2vw;
+  height: 0.4vh;
+  background-color:  $color  ;
+  @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
+}
+
+@mixin south-bar-after-hover() {
+  content: "";
+  width: 50%;  
+   @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
+
 }

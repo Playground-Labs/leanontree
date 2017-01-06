@@ -6,25 +6,35 @@
 
 .site-content-index-item-b {
   height: 30vh;
-  background-color: #E1E1E1;
   @include animation(my-december-bg-change 3s linear 0s alternate infinite none running);
 }
+.site-content-index-item-b::before {
+ @include south-bar-before();
+}
 
+.site-content-index-item-b::after {
+@include south-bar-after(#a569bd);
+}
+
+.site-content-index-item-b:hover::after {
+@include south-bar-after-hover();
+
+}
 .my-december-glyph {
-  color: #E1E1E1;
+  color: #e1bee7;
   @include glyph-common();
   @include animation(glyph-appear 3s linear 0s alternate infinite none running);
 }
 
 .my-december-definition {
-  border: 0.2vmin solid #E1E1E1;
+  border: 0.2vmin solid #e1bee7;
   top: -10%;
   @include theme-description-definition-common();
   @include animation(my-december-definition-appear 3s linear 0s alternate infinite none running);
 }
 
 .my-december-description {
-  border: 0.2vmin solid #E1E1E1;
+  border: 0.2vmin solid #e1bee7;
   bottom: -10%;
   @include theme-description-definition-common();
   @include animation(my-december-description-appear 3s linear 0s alternate infinite none running);
@@ -43,6 +53,7 @@
 }
 
 .site-content-index #my-december {
+  opacity: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,67 +156,53 @@
   }
 }
 .my-december-definition:hover {
-      background-color: #FF24D5 !important;
-      border-color: #FF24D5 !important;
+      background-color: #ea80fc !important;
+      border-color: #ea80fc !important;
   }
     .my-december-description:hover {
-      background-color: #FF24D5 !important;
-      border-color: #FF24D5 !important;
+      background-color: #ea80fc !important;
+      border-color: #ea80fc !important;
   }
 
 @media(min-width: $screen-md-min) {
   .my-december-glyph {
-    opacity: 0;
-     @include transition(all .3s linear); 
+   opacity: 1;
+    font-size: 0vmin;
     @include animation(none);
+    @include transition(font-size 600ms cubic-bezier(.17,.71,.65,.95));
   }
   
   .my-december-definition {
-    @include transition(all .3s linear); 
+       @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
     font-size: 3vmin;
    @include animation(none);
   }
   .my-december-description {
-    @include transition(all .3s linear); 
+       @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
      font-size: 3vmin;
    @include animation(none);
   }
   .site-content-index #my-december {
-       @include transition(all .3s linear); 
+          @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
    @include animation(none);
   }
   .site-content-index-item-b {
     height: 40vh;
     @include animation(none);
   }
-  .site-content-index-item-b:hover #my-december {
-    @include transform(translate3d(15%, 15%, 0));
+  .site-content-index-item-b:hover #my-december { 
     opacity: 0;
   }
-  .site-content-index-item-b:hover {
-    background-color: #BB7AAF;
-  }
   .site-content-index-item-b:hover .my-december-glyph {
-    top: 50%;
-    left: 50%;
-    @include transform(translate3d(-50%, -50%, 0));
-    opacity: 1;
+   @include gylph-transition-common;
   }
   .site-content-index-item-b:hover .my-december-definition {
     top: 15%;
-    border: 0.2vmin solid #FF43DB;
-     background-color: #FF43DB;
-       @include border-radius(0.2vw);
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+    @include definition-description-common( #4a235a );
   }
   .site-content-index-item-b:hover .my-december-description {
     bottom: 15%;
 
-    border: 0.2vmin solid #FF43DB;
-     background-color: #FF43DB;
-       @include border-radius(0.2vw);
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+  @include definition-description-common( #4a235a );
   }
 }

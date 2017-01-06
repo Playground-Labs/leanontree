@@ -6,14 +6,28 @@
 
 .site-content-index-item-a {
   height: 30vh; 
-  background-color: #056363;
-  @include animation(self-love-bg-change 3s linear 0s alternate infinite none running);
+ //background-color: #056363;
+ @include animation(self-love-bg-change 3s linear 0s alternate infinite none running);
+}
+
+.site-content-index-item-a::before {
+ @include south-bar-before();
+}
+
+.site-content-index-item-a::after {
+@include south-bar-after(#117864);
+}
+
+.site-content-index-item-a:hover::after {
+@include south-bar-after-hover();
+
 }
 
 .self-love-glyph {
   color: #056363;
   @include glyph-common();
-  @include animation(glyph-appear 3s linear 0s alternate infinite none running);
+   @include transition(font-size 600ms cubic-bezier(.17,.71,.65,.95));
+ // @include animation(glyph-appear 5s linear 0s alternate infinite none running);
 }
 
 .self-love-definition {
@@ -89,6 +103,7 @@
     @include transform(translate3d(15%, 15%, 0));
   }
 }
+
 @include keyframes(glyph-appear) {
   0%,
   25% {
@@ -107,6 +122,7 @@
     opacity: 1;
   }
 }
+
 @include keyframes(self-love-definition-appear) {
   0%,
   25% {
@@ -163,22 +179,24 @@
   }
 @media(min-width: $screen-md-min) {
   .self-love-glyph {
-    opacity: 0;
-      @include transition(all .3s linear); 
-     @include animation(none);
+    opacity: 1;
+    font-size: 0vmin;
+    @include animation(none);
+    @include transition(font-size 600ms cubic-bezier(.17,.71,.65,.95));
+     
   }
   .self-love-definition {
-       @include transition(all .3s linear); 
+      @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
     font-size: 3vmin;
      @include animation(none);
   }
   .self-love-description {
-      @include transition(all .3s linear); 
+      @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
     font-size: 3vmin;
      @include animation(none);
   }
   .site-content-index #self-love {
-      @include transition(all .3s linear); 
+      @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));
      @include animation(none);
   }
   .site-content-index-item-a {
@@ -187,36 +205,22 @@
   }
   .site-content-index-item-a:hover #self-love {
     text-shadow: 0px 1px 0px #aff9fb;
-    
-    @include transform(translate3d(15%, 15%, 0));
     opacity: 0;
   }
-  .site-content-index-item-a:hover {
-    background-color: #9EDCDC;
-  }
+ 
   .site-content-index-item-a:hover .self-love-glyph {
-    top: 50%;
-    left: 50%;
-    @include transform(translate3d(-50%, -50%, 0));
-    opacity: 1;
+  @include gylph-transition-common;
   }
+  
   .site-content-index-item-a:hover .self-love-definition {
     top: 15%;
-    border: 0.2vmin solid #239797; 
-    @include border-radius(0.2vw);
-    background-color: #239797;
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+    @include definition-description-common(#239797);
   }
 
  
   .site-content-index-item-a:hover .self-love-description {
     bottom: 15%;
-    border: 0.2vmin solid #239797;
-       @include border-radius(0.2vw);
-    background-color: #239797;
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+    @include definition-description-common(#239797);
   }
    
 }

@@ -6,10 +6,20 @@
 
 .site-content-index-item-f {
   height: 30vh;
-  background-color: #0E80DF;
-  @include animation(general-lot-bg-change 3s linear 0s alternate infinite none running);
+   @include animation(general-lot-bg-change 3s linear 0s alternate infinite none running);
+}
+.site-content-index-item-f::before {
+ @include south-bar-before();
 }
 
+.site-content-index-item-f::after {
+@include south-bar-after(#42a5f5);
+}
+
+.site-content-index-item-f:hover::after {
+@include south-bar-after-hover();
+
+}
 .general-lot-glyph {
   color: #0E80DF;
   @include glyph-common();
@@ -165,23 +175,23 @@
 
 @media(min-width: $screen-md-min) {
   .general-lot-glyph {
-    left: -10%;
-    top: -10%;
-    opacity: 0;
-    @include transition(all .3s linear); 
+    opacity: 1;
+    font-size: 0vmin;
     @include animation(none);
+    @include transition(font-size 600ms cubic-bezier(.17,.71,.65,.95));
   }
   .general-lot-definition {
-    @include transition(all .3s linear); 
+       @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));  
    font-size: 3vmin;
     @include animation(none);
   }
   .general-lot-description {
-    @include transition(all .3s linear); 
+     @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));  
    font-size: 3vmin;
     @include animation(none);
   }
   .site-content-index-episode-02 #general-lot {
+       @include transition(all 600ms cubic-bezier(.17,.71,.65,.95));  
     @include animation(none);
   }
   .site-content-index-item-f {
@@ -189,33 +199,21 @@
     @include animation(none);
   }
   .site-content-index-item-f:hover #general-lot {
-   @include transform(translate3d(-50%, -50%, 0));
-    opacity: 0;
+      text-shadow: 0 0.1vw 0 #FFFFFF;
+      opacity: 0;  
+   
+  
   }
-  .site-content-index-item-f:hover {
-    background-color: #284660;
-  }
-  .site-content-index-item-f:hover .general-lot-glyph {
-    top: 50%;
-    left: 50%;
-        @include transform(translate3d(-50%, -50%, 0));
 
-    opacity: 1;
+  .site-content-index-item-f:hover .general-lot-glyph {
+ @include gylph-transition-common;
   }
   .site-content-index-item-f:hover .general-lot-definition {
     top: 15%;
-    border: 0.2vmin solid #32576f;
-     background-color: #32576f;
-       @include border-radius(0.2vw);
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+   @include definition-description-common( #32576f );
   }
   .site-content-index-item-f:hover .general-lot-description {
     bottom: 15%;
-      border: 0.2vmin solid #32576f;
-     background-color: #32576f;
-       @include border-radius(0.2vw);
-    padding: 0px 10px 0px 10px;
-    opacity: 1;
+   @include definition-description-common( #32576f );
   }
 }
