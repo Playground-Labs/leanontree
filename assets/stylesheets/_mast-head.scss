@@ -46,22 +46,33 @@ ul.brand-mast-head-content li {
     float: left;
 }
 
-#brand-logo svg{
-width: 12vw;
-height: 12vh;
+.brand-logo img {
+height: 20vh;
+width: auto;
+z-index: 999;
+transition: all .9s ease-in-out;
 }
+
+.brand-logo-dynamic img {
+height: 10vh;
+width: auto;
+z-index: 999;
+transition: all .9s ease-in-out;
+}
+
 #brand-name,
 .brand-name {
     font-family: 'Dosis', sans-serif;
     font-size: 7vmin;
-    border-width: 0.5vmin;
-    border-style: solid;
+    //border-width: 0.5vmin;
+   // border-style: solid;
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 2px 2px 2px #484747;
     display: flex;
     flex-direction: row;
     transition: all .9s ease-in-out;
+   
 }
 
 .brand-name-dynamic {
@@ -76,30 +87,68 @@ height: 12vh;
 
     content: '\00a0' !important;
 }
-#brand-tag-line,
+
 .brand-tag-line {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Give You Glory', cursive;
     font-weight: 400;
-    font-size: 4.2vmin;
+    font-size: 2.5vmin;
     padding-left: 10px;
     padding-right: 10px;
-    letter-spacing: 2px;
-    opacity: 0;
+    letter-spacing: 2px;    
     transition: all .9s ease-in-out;
+ //  @include transform(translate3d(-50%, 0%, 0));
+   
 }
 
+@include keyframes(slide-animation-left-right) {
+  0%,
+  25% {
+     @include transform(translate3d(-50%, 0, 0));
+     opacity: 0;
+  }
+  50% {
+     @include transform(translate3d(0%, 0, 0));
+     opacity: 1;
+  }
+  100% {
+     @include transform(translate3d(0%, 0 0));
+     opacity: 1;
+  }
+}
+
+@include keyframes(slide-animation-right-left) {
+  0%,
+  25% {
+     @include transform(translate3d(50%, 0, 0));
+     opacity: 0;
+  }
+  50% {
+     @include transform(translate3d(0, 0, 0));
+     opacity: 1;
+  }
+  100% {
+     @include transform(translate3d(0, 0 0));
+     opacity: 1;
+  }
+}
+
+
+
 .brand-tag-line-dynamic {
-    opacity: 0 !important;
+  
+    font-size: 2vmin;
+    transition: all .9s ease-in-out;
+     // @include animation(swipe-element 3s cubic-bezier(.31,1.02,.65,.94) 0s normal 1 backwards running);  
 }
 
 ul.site-navigation-menu {
-    font-family: 'Bungee', cursive;
+    font-family: 'Special Elite', cursive;
     position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-size: 5vmin;
+    font-size: 6vmin;
     li {
         float: left;
     }
@@ -107,12 +156,13 @@ ul.site-navigation-menu {
     li a:link,
     li a:visited {
         text-decoration: none;
-        color: #ecf5ec;
-        text-shadow: 1px 1px 0 #0f0f0f;
+        color: #546e7a;
+        text-shadow: 0.1vmin 0.2vmin 0 #0f0f0f;
     }
     li a:hover {
         text-decoration: none;
-        color: #93081b;
+        color: #90a4ae;
+        text-shadow: 0.2vmin 0.2vmin 0.2vmin #0f0f0f;
     }
 }
 
@@ -211,9 +261,9 @@ ul.site-navigation-menu-responsive li a {
     #brand-name,
     .brand-name {
         font-family: 'Dosis', sans-serif;
-        font-size: 4vmin;
-        border-width: 0.5vmin;
-        border-style: solid;
+        font-size: 5vmin;
+      //  border-width: 0.5vmin;
+    //    border-style: solid;
         display: flex;
         flex-direction: column;
     }
@@ -221,20 +271,47 @@ ul.site-navigation-menu-responsive li a {
 
     content: '';
 }
-    #brand-tag-line,
-    .brand-tag-line {
-        opacity: 1;
+ .brand-name  {    
+ 
+ #LEAN {
+ @include animation(slide-animation-left-right 3s cubic-bezier(.31,1.02,.65,.94) 0s normal 1 backwards running);    
+}
+ #ON {
+ @include animation(slide-animation-left-right 3s cubic-bezier(.31,1.02,.65,.94) 0.3s normal 1 backwards running);    
+ }
+  #TREE {
+ @include animation(slide-animation-left-right 3s cubic-bezier(.31,1.02,.65,.94) 0.6s normal 1 backwards running);    
+  }
+ }
+
+.brand-tag-line {
+
+   #lineA {
+   @include animation(slide-animation-right-left 3s cubic-bezier(.31,1.02,.65,.94) 0s alternate 1 forwards running);    
     }
+    #lineB {
+@include animation(slide-animation-right-left 3s cubic-bezier(.31,1.02,.65,.94) 0.3s alternate 1 backwards running);   
+   }
+   #lineC {
+@include animation(slide-animation-right-left 3s cubic-bezier(.31,1.02,.65,.94) 0.6s alternate 1 backwards running); 
+   }
+   ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+}
+   
     ul.site-navigation-menu {
         font-size: 2.8vmin;
     }
     ul.site-navigation-menu li a {
         display: inline-block;
     }
-    ul.site-navigation-menu li a:after {
-        content:"\00a0/\00a0";
+   ul.site-navigation-menu li a:after {
+        content:"\00a0\00a0\00a0\00a0";
     }
-     ul.site-navigation-menu li:last-child a:after {
+      ul.site-navigation-menu li:last-child a:after {
         content:"";
     }
     a.icon,
