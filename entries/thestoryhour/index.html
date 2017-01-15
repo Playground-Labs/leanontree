@@ -3,26 +3,26 @@ title: "The Story Hour - Posts"
 layout: default
 ---
 {% for postWithSpecificTag in site.tags.theStoryHour %}
-<div class="no-gutter main-content-item">
-	<div class="col-md-4 hidden-xs hidden-sm main-image" id="main-img-id">
-  <img class="img-responsive" src="/img/{{ postWithSpecificTag.contributors }}/index.jpg"  onerror="imgError(this);" />
+<div class="no-gutter card-container">
+	<div class="hidden-xs hidden-sm " id="main-img-id">
+  <img class="card-main-image" src="/img/{{ postWithSpecificTag.contributors }}/index.jpg"  onerror="imgError(this);" />
    </div>
-<div id="main-text-id" class="col-md-8 col-xs-12 col-sm-12 main-text">
-<div class="post-title">
+<div id="card-main-text-id" class="col-xs-12 col-sm-12 card-main-text">
+<div class="card-post-title">
   <a href="{{ postWithSpecificTag.url }}">
     <p>
-	<span class="glyphicon glyphicon-lamp" aria-hidden="true"></span>&nbsp;&nbsp;
 	{{ postWithSpecificTag.title }}</p></a>
 
 	</div>
-	<div class="post-body ">
+  <div class="card-main-text-child-b">
+		<div class="card-post-date"><p>{{ postWithSpecificTag.date | date_to_long_string }}</p></div>
+    <div class="card-post-glyph"><span class="glyphicon glyphicon-lamp" aria-hidden="true"></span></div>
+  	</div>
+	<div class="card-post-body ">
 	{{ postWithSpecificTag.excerpt | strip_html }}
 	</div>
-   <div class="main-text-child-c">
-		<div class="post-date"><p><span class="label-flat-lot">Posted on
-    {{ postWithSpecificTag.date | date_to_long_string }}</span></p>
-	</div>
-    <div class="read-post-link">
+   <div class="card-main-text-child-d">
+		 <div class="card-read-post-link">
       <a href="{{ postWithSpecificTag.url }}"  style="text-decoration: none;"><p><span class="label-flat-lot">Read More &raquo;</span></p></a>
     </div>
     </div>

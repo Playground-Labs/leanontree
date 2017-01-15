@@ -1,3 +1,9 @@
+.default-layout-wrapper{
+margin-right: 10vw;
+margin-left: 10vw;
+
+}
+
 .main-content-item
 {
 display: -ms-flexbox;
@@ -32,6 +38,7 @@ font-family: 'Oswald', sans-serif;
 font-weight: 400;
 font-size: 7vmin;
 text-align: left;
+
 }
 .post-title a:link
 {
@@ -53,6 +60,16 @@ font-family: 'Droid Sans', sans-serif;
 font-weight: 400 ;
 
 overflow: hiddden;
+}
+.main-text-child-b{
+
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size : 5.5vmin;
 }
 .main-text-child-c{
 
