@@ -8,16 +8,21 @@ layout: default
   <img class="card-main-image" src="/img/{{ postWithSpecificTag.contributors }}/index.jpg"  onerror="imgError(this);" />
    </div>
 <div id="card-main-text-id" class="col-xs-12 col-sm-12 card-main-text">
+  <div id="card-main-text-parent-of-b-and-c">
+  <div class="card-main-text-child-b">
 <div class="card-post-title">
   <a href="{{ postWithSpecificTag.url }}">
     <p>
 	{{ postWithSpecificTag.title }}</p></a>
 
 	</div>
-  <div class="card-main-text-child-b">
+  
 		<div class="card-post-date"><p>{{ postWithSpecificTag.date | date_to_long_string }}</p></div>
+     	</div>
+        <div class="card-main-text-child-c">
     <div class="card-post-glyph"><span class="glyphicon glyphicon-lamp" aria-hidden="true"></span></div>
-  	</div>
+ </div>
+ </div>
 	<div class="card-post-body ">
 	{{ postWithSpecificTag.excerpt | strip_html }}
 	</div>

@@ -5,18 +5,17 @@ display: -webkit-flex;
 display: flex;
 flex-direction: row;
 max-height: 250px;
+width: auto;
 background-color: #ff6f00;
 overflow: hidden;
 position: relative;
 }
 .card-main-image
 {
-overflow: hidden;
-min-height: 250px;
-
-overflow: hidden;
 max-width: 250px;
- @include transition(all 100ms cubic-bezier(.17,.71,.65,.95));
+max-height: 250px;
+
+@include transition(all 100ms cubic-bezier(.17,.71,.65,.95));
 }
 .card-main-text
 {
@@ -26,7 +25,7 @@ display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: flex-start;
 overflow: hidden;
 margin-right: 2vw;
 margin-left: 2vw;
@@ -67,26 +66,33 @@ font-size: 1.5vmin;
 overflow: hiddden;
  @include transition(all 100ms cubic-bezier(.17,.71,.65,.95));
 }
-
+#card-main-text-parent-of-b-and-c{
+  display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: relative;
+}
 .card-main-text-child-b{
 display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
-flex-direction: row;
-justify-content: space-between;
-font-family: 'Ubuntu Condensed', sans-serif;
-font-size : 1.4vmin;
+flex-direction: column;
+justify-content: flex-start;
+//font-family: 'Ubuntu Condensed', sans-serif;
+//font-size : 1.4vmin;
 }
 .card-main-text-child-c{
-
-align-self: flex-end;
 display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
-flex-direction: row;
-justify-content: space-between;
-font-family: 'Ubuntu Condensed', sans-serif;
-font-size : 1.4vmin;
+flex-direction: column;
+justify-content: center;
+position: absolute;
+right: 0;
+ @include transform(translate3d(0, 50%, 0));
+  @include transition(all 300ms cubic-bezier(.53,.53,.54,.53));
 }
 
 .card-post-date span,  .card-read-post-link span {
@@ -105,7 +111,7 @@ font-size : 1.4vmin;
   @include transition(font-size 100ms cubic-bezier(.53,.53,.54,.53));
 }
 .card-post-glyph {
-    font-size: 4vmin;
+  //  font-size: 4vmin;
   @include transition(font-size 100ms cubic-bezier(.53,.53,.54,.53));
 }
 .card-post-glyph span {
@@ -124,7 +130,7 @@ font-size : 1.4vmin;
 
 }
 
-.card-container:hover {
+.carSmall changes d-container:hover {
  .card-main-image
 {
   transform: scale(1.2);
@@ -146,16 +152,25 @@ font-size : 1.4vmin;
   @include transition(font-size 100ms cubic-bezier(.53,.53,.54,.53));
   
 }
+.card-main-text-child-c {
+right:50%;
+@include transform(translate3d(50%,0, 0));
+
+@include transition(all 300ms cubic-bezier(.53,.53,.54,.53));
+}
 .card-post-glyph {
 
-    font-size: 12vmin;
+
    
-  @include transform(translate3d(-2vw, 0, 0));
    @include transition(all 100ms cubic-bezier(.53,.53,.54,.53));
 }
 .card-post-glyph span {
-     border-width: 1.5vmin;
-     @include transition(all 100ms cubic-bezier(.53,.53,.54,.53));
+   font-size: 250px;
+  border-width: 1.5vmax;
+    
+ 
+     
+     @include transition(all 300ms cubic-bezier(.53,.53,.54,.53));
 }
 .card-post-date , .card-post-glyph {
 
