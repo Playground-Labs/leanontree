@@ -1,10 +1,21 @@
 
-#first-site-content-index-wrapper {
+#home-module-a {
  display: flex;   
  flex-direction: row;
- min-height: 90vh;
+ min-height: 100vh;
  flex-wrap: wrap; 
- margin-top: 10vh; 
+ //margin-top: 10vh;
+ background: url('/img/lot/main-bg.jpg'); 
+ //background-size: 1366px 768px;
+ background-size: cover;
+ background-position: 50% 50%;
+ header {
+   span {  font-family: 'Cuprum', sans-serif;
+     font-size: 4vmax;
+     color: white;
+     text-align: center;
+   }
+ }
 }
 #second-site-content-index-wrapper {
  display: flex;   
@@ -17,7 +28,6 @@
 width: 100vw;
 overflow: hidden;
 position: relative;
-
 }
 
 @import 'section_overview_modules/section-overview-mixin';
@@ -37,9 +47,9 @@ position: relative;
 @media(min-width: $screen-md-min) {
 #first-site-content-index-wrapper {
 flex-direction: column;
-max-height: 80vh;
-min-height: 80vh;
-margin-top: 20vh;
+max-height: 100vh;
+min-height: 100vh;
+//margin-top: 20vh;
 }
 #second-site-content-index-wrapper {
 flex-direction: column;
