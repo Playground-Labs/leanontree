@@ -2,20 +2,66 @@
 #home-module-a {
  display: flex;   
  flex-direction: row;
- min-height: 100vh;
+ height: 100vh;
  flex-wrap: wrap; 
  //margin-top: 10vh;
  background: url('/img/lot/main-bg.jpg'); 
  //background-size: 1366px 768px;
  background-size: cover;
  background-position: 50% 50%;
- header {
-   span {  font-family: 'Cuprum', sans-serif;
-     font-size: 4vmax;
-     color: white;
-     text-align: center;
-   }
- }
+
+#site-description-navigation {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+}
+.brief-introduction {
+max-width: 35vw;
+margin: 0 5vw 0 5vw;
+padding: 4vmin;
+background-color: mix(rgba(52,73,94,0.4), rgba(159,204,249,0.4), 50%);;
+font-size: 1.8vmin;
+color: #F7F7F4;
+p {
+  font-family: 'Crete Round', serif;
+  span {
+    font-size: 3vmin !important;
+  }
+}
+}
+.navigation {
+width: 35vw;
+margin: 0 5vw 0 5vw;
+padding: 2.2vmin;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+span {
+  margin: 0 2vw 0 2vw;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  background-color: #FF8B45;
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+
+  .navigation-sign {
+   font-size: 8vmin;
+   
+  }
+  .navigation-text {
+  font-size:2vmin;
+  }
+}
+
 }
 #second-site-content-index-wrapper {
  display: flex;   
