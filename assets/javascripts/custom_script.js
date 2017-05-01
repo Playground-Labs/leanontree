@@ -1,4 +1,5 @@
 "use strict";
+
 function imgError(image) {
     image.onerror = "";
     image.src = "/img/lot/no-picture.jpg";
@@ -22,15 +23,30 @@ var newwindow = window.open(url,'name','height=250,width=500');
     }
  }   
 $(document).ready(function(){
+var coverIcon = document.getElementById("hamburger-icon");
+var iconbarA = document.getElementById("bar-a");
+var iconbarB = document.getElementById("bar-b");
+var iconbarC = document.getElementById("bar-c");
+var navigation = document.getElementById("navigation");
 
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
     $(this).parent().find('li').toggle();
 });
    
-document.querySelector( 'a.icon' ).addEventListener( "click", function() {
+/* document.querySelector( 'a.icon' ).addEventListener( "click", function() {
     this.classList.toggle( "active" );
-  });
+  }); */
+
+
+coverIcon.addEventListener('click', function() {
+  iconbarA.classList.toggle('first-bar');
+  iconbarB.classList.toggle('second-bar');
+  iconbarC.classList.toggle('third-bar');
+ navigation.classList.toggle('visible-navigationelements');
+ // blue.classList.toggle('slide');
+});
+
 });
 
 window.fbAsyncInit = function() {

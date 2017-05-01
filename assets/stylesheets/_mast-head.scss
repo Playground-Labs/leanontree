@@ -8,17 +8,23 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: flex-start;
-
+overflow: auto;
 .navigation-area{
-position: relative;
+
+width: 25%;
+height: 100%;
+
+
 #hamburger-icon {
-      width: 5vmin;
+ 
+  width: 5vmin;
   height: 5vmin;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
   justify-content: center;
-
+  cursor: pointer;
   align-items: center;
   background-color: white;
   .hamburger-bar {
@@ -28,6 +34,15 @@ position: relative;
       width: 2vw;
       background-color: black;
   }
+  #bar-a.first-bar {
+
+  }
+#bar-b.second-bar {
+      
+  }
+#bar-c.third-bar {
+      
+  }
 }
 #navigation {
 position: absolute;
@@ -35,12 +50,24 @@ left: 0;
 top: 0;  
 height: 100vh;
 width: 0%;
-opacity: 0%;
+opacity: 0;
+z-index: 10 !important;
+background: white;
+
 ul {
     position: absolute;
-    left: 0;
-top: 0;  
+left: 0;
+top: 20vh;  
+    margin: 0 !important;
+    padding: 0 !important;
+    li {
+        list-style-type: none;
+    }
 }
+}
+#navigation.visible-navigationelements {
+    opacity: 1;
+    width: 25%;
 }
 }
  .brand-area {
