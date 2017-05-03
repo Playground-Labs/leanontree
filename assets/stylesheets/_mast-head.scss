@@ -9,49 +9,83 @@ flex-direction: row;
 align-items: center;
 justify-content: flex-start;
 overflow: auto;
-.navigation-area{
-
-width: 25%;
-height: 100%;
-
-
+#hamburger-wrap {
+ z-index: 1000;
+ padding: 0 2vw 0 2vw;
 #hamburger-icon {
- 
+
   width: 5vmin;
   height: 5vmin;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
-  z-index: 1000;
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  background-color: white;
-  .hamburger-bar {
-      margin-top: 2px;
-      bottom: 2px;
-      height: 0.2vh;
+  background-color: blueviolet;
+  
+  .hamburger-bar {     
+      height:3px;
       width: 2vw;
       background-color: black;
   }
+  #bar-b {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  }
   #bar-a.first-bar {
-
+transform: rotate(-40deg);
   }
 #bar-b.second-bar {
-      
+      opacity: 0;
   }
 #bar-c.third-bar {
-      
+      transform: rotate(40deg);
   }
 }
-#navigation {
+}
+#brand-area-wrap {
+  display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center; 
+width: 100%; 
+ .brand-area {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+span {
+color: #FAFCFA;  
+}
+#brand-name {
+font-family: 'Bungee', cursive;
+font-size: 8vmin;
+}
+#brand-tag-line {
+font-family: 'Amatic SC', cursive;
+font-weight: 700;
+font-size: 4vmin;
+}
+ }
+}
+ }
+.navigation-area{
+
+width: 100%;
+height: 100%;
+z-index: 999;
 position: absolute;
+
+#navigation {
+
 left: 0;
 top: 0;  
 height: 100vh;
 width: 0%;
 opacity: 0;
-z-index: 10 !important;
+
 background: white;
 
 ul {
@@ -70,27 +104,6 @@ top: 20vh;
     width: 25%;
 }
 }
- .brand-area {
-     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-position: relative;
-span {
-color: #FAFCFA;  
-}
-#brand-name {
-font-family: 'Bungee', cursive;
-font-size: 8vmin;
-}
-#brand-tag-line {
-font-family: 'Amatic SC', cursive;
-font-weight: 700;
-font-size: 4vmin;
-}
- }
- }
-
 /*header.masthead-and-navigation-links {
     min-height: 10vh;
     max-height: 10vh;
