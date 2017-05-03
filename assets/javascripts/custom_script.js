@@ -27,7 +27,7 @@ var coverIcon = document.getElementById("hamburger-icon");
 var iconbarA = document.getElementById("bar-a");
 var iconbarB = document.getElementById("bar-b");
 var iconbarC = document.getElementById("bar-c");
-var navigation = document.getElementById("navigation");
+var navigation = document.getElementById("navigation-elements");
 
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {

@@ -1,6 +1,6 @@
 ﻿ .header-wrapper {
 
-background-color: mix(rgb(52,73,94), rgba(251,250,248,0.9), 65%);
+background-color: mix(rgb(52,73,94), rgba(251,250,248,0.3), 30%);
 text-align: center;
 height: 20vh;
 width: 100%;
@@ -14,33 +14,46 @@ overflow: auto;
  padding: 0 2vw 0 2vw;
 #hamburger-icon {
 
-  width: 5vmin;
-  height: 5vmin;
+  width: 8vmin;
+  height: 8vmin;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  background-color: blueviolet;
-  
+  background-color: #3D5E7E;
+ transition: all 0.2s ease-in-out;
   .hamburger-bar {     
-      height:3px;
-      width: 2vw;
+      height:0.4vh;
+      width: 2.5vw;
+      border-radius: 0.4vh;
       background-color: black;
+      margin-left: auto;
+      margin-right: auto;
+      transition: all 0.1s cubic-bezier(0.175, .520, 0.100, 1);
   }
   #bar-b {
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   }
   #bar-a.first-bar {
-transform: rotate(-40deg);
+//transform: rotate(-40deg);
+ width: 10%;
+
   }
 #bar-b.second-bar {
-      opacity: 0;
+  //    opacity: 0;
+   width: 25%;
+
   }
 #bar-c.third-bar {
-      transform: rotate(40deg);
+   //   transform: rotate(40deg);
+    width: 10%;
+ 
+  }
+  &:hover {
+  
   }
 }
 }
@@ -60,7 +73,7 @@ span {
 color: #FAFCFA;  
 }
 #brand-name {
-font-family: 'Bungee', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
 font-size: 8vmin;
 }
 #brand-tag-line {
@@ -78,28 +91,34 @@ height: 100%;
 z-index: 999;
 position: absolute;
 
-#navigation {
+#navigation-elements {
 
 left: 0;
 top: 0;  
 height: 100vh;
 width: 0%;
 opacity: 0;
-
+transition: all 500ms cubic-bezier(.62,.04,.3,1.8);
 background: white;
 
 ul {
-    position: absolute;
+position: absolute;
 left: 0;
 top: 20vh;  
+width: 25%;
     margin: 0 !important;
     padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     li {
         list-style-type: none;
+        padding: 1vh 1vw;
     }
 }
 }
-#navigation.visible-navigationelements {
+#navigation-elements.visible-navigationelements {
     opacity: 1;
     width: 25%;
 }
