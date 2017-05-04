@@ -1,16 +1,20 @@
 
 #home-module-a {
+
  display: flex;   
  flex-direction: row;
  height: 100vh;
  flex-wrap: wrap; 
  //margin-top: 10vh;
- background: url('/img/lot/main-bg-4.jpg'); 
+ //background-color: #05A190;
+ background: url('/img/lot/main-bg-8.jpg'); 
  //background-size: 1366px 768px;
  background-size: cover;
- background-position: 50% 50%;
+ background-attachment: fixed;
+ //background-position: 10% 10%;
 
 #site-description-navigation {
+  margin-top: 20vh;
   height: 80vh;
   display: flex;
   flex-direction: row;
@@ -22,9 +26,12 @@
 max-width: 35vw;
 margin: 0 5vw 0 5vw;
 padding: 4vmin;
-background-color: mix(rgba(52,73,94,0.4), rgba(159,204,249,0.4), 50%);;
+background-color: mix(rgba(186,187,188,0.4), rgba(124,125,126,0.8), 70%);
 font-size: 1.8vmin;
 color: #F7F7F4;
+h1 {
+  font-family: 'Hammersmith One', sans-serif;
+}
 p {
   font-family: 'Crete Round', serif;
   span {
@@ -43,10 +50,10 @@ padding: 2.2vmin;
   flex-wrap: wrap;
 span {
   margin: 0 2vw 0 2vw;
-  width: 20vmin;
-  height: 20vmin;
+  width: 15vmin;
+  height: 15vmin;
   border-radius: 50%;
-  background-color: #FF8B45;
+  background-color: mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
       display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +61,7 @@ span {
   font-family: 'Alegreya Sans SC', sans-serif;
 
   .navigation-sign {
-   font-size: 8vmin;
+   font-size: 4vmin;
    
   }
   .navigation-text {
@@ -63,6 +70,37 @@ span {
 }
 
 }
+
+#home-module-b {
+
+ display: flex;   
+ flex-direction: row;
+ height: 100vh;
+ flex-wrap: wrap; 
+ //margin-top: 10vh;
+ //background-color: #05A190;
+ background: url('/img/lot/main-bg-9.jpg'); 
+ //background-size: 1366px 768px;
+ background-size: cover;
+ background-attachment: fixed;
+ //background-position: 10% 10%;
+
+#site-description-navigation {
+  margin-top: 20vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.brief-introduction {
+  background-color: mix(rgba(229,96,105,0.4), rgba(124,125,126,0.8), 70%);
+}
+}
+
+
+
+
 #second-site-content-index-wrapper {
  display: flex;   
  flex-direction: row;

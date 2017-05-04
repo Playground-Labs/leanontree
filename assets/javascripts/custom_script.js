@@ -44,6 +44,7 @@ coverIcon.addEventListener('click', function() {
   iconbarB.classList.toggle('second-bar');
   iconbarC.classList.toggle('third-bar');
  navigation.classList.toggle('visible-navigationelements');
+ coverIcon.classList.toggle('change-colour');
  // blue.classList.toggle('slide');
 });
 
