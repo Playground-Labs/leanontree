@@ -46,6 +46,26 @@ coverIcon.addEventListener('click', function() {
  navigation.classList.toggle('visible-navigationelements');
  coverIcon.classList.toggle('change-colour');
  // blue.classList.toggle('slide');
+
+});
+
+var second_module = document.getElementById("home-module-b");
+var hamburgermenu = document.getElementById("hamburger-wrap"); 
+var isColorChanged = false;
+window.addEventListener('scroll', function(e) { 
+if (second_module.getBoundingClientRect()["top"] < hamburgermenu.getBoundingClientRect()["bottom"]) {
+    if(isColorChanged == false) {
+    coverIcon.classList.add('module-b-change-colour');
+        
+isColorChanged = true;
+    }
+}
+else if(second_module.getBoundingClientRect()["top"] > hamburgermenu.getBoundingClientRect()["bottom"]) {
+     if(isColorChanged == true) {
+         coverIcon.classList.remove('module-b-change-colour');
+isColorChanged = false;
+    }
+}
 });
 
 });
