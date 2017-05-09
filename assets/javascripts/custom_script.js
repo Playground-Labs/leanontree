@@ -28,6 +28,9 @@ var iconbarA = document.getElementById("bar-a");
 var iconbarB = document.getElementById("bar-b");
 var iconbarC = document.getElementById("bar-c");
 var navigation = document.getElementById("navigation-elements");
+var second_module = document.getElementById("home-module-b");
+var hamburgermenu = document.getElementById("hamburger-wrap"); 
+var isColorChanged = false;
 
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
@@ -49,13 +52,12 @@ coverIcon.addEventListener('click', function() {
 
 });
 
-var second_module = document.getElementById("home-module-b");
-var hamburgermenu = document.getElementById("hamburger-wrap"); 
-var isColorChanged = false;
+
 window.addEventListener('scroll', function(e) { 
 if (second_module.getBoundingClientRect()["top"] < hamburgermenu.getBoundingClientRect()["bottom"]) {
     if(isColorChanged == false) {
     coverIcon.classList.add('module-b-change-colour');
+     navigation.classList.add('module-b-color-change');
         
 isColorChanged = true;
     }
@@ -63,6 +65,7 @@ isColorChanged = true;
 else if(second_module.getBoundingClientRect()["top"] > hamburgermenu.getBoundingClientRect()["bottom"]) {
      if(isColorChanged == true) {
          coverIcon.classList.remove('module-b-change-colour');
+         navigation.classList.remove('module-b-color-change');
 isColorChanged = false;
     }
 }

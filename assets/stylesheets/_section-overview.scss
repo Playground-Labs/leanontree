@@ -48,6 +48,7 @@ padding: 2.2vmin;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  z-index:999;
 span {
   margin: 0 2vw 0 2vw;
   width: 15vmin;
@@ -66,6 +67,13 @@ span {
   }
   .navigation-text {
   font-size:2vmin;
+  a {
+    text-decoration: none;
+  }
+  a:link, a:visited, a:hover {
+text-decoration: none;
+color: inherit;
+  }
   }
 }
 
