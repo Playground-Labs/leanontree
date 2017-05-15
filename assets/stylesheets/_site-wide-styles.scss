@@ -40,6 +40,17 @@ margin-top: 10vh;
      
 
 }
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 1001; 
+
+ }
 @media (min-width: 768px) {
 .main-content {
 margin-top: 10vh;

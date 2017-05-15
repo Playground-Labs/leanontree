@@ -32,6 +32,10 @@ var second_module = document.getElementById("home-module-b");
 var hamburgermenu = document.getElementById("hamburger-wrap"); 
 var isColorChanged = false;
 
+
+ window.onload = function() 
+  { document.getElementById("hideAll").style.display = "none"; } 
+
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
     $(this).parent().find('li').toggle();
