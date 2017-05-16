@@ -22,6 +22,11 @@ var newwindow = window.open(url,'name','height=250,width=500');
         hb.className = "site-navigation-menu";
     }
  }   
+$(window).load(function() {
+ document.getElementById("hideAll").style.display = "none"; 
+  $("body").removeClass("preload");
+});
+
 $(document).ready(function(){
 var coverIcon = document.getElementById("hamburger-icon");
 var iconbarA = document.getElementById("bar-a");
@@ -33,8 +38,7 @@ var hamburgermenu = document.getElementById("hamburger-wrap");
 var isColorChanged = false;
 
 
- window.onload = function() 
-  { document.getElementById("hideAll").style.display = "none"; } 
+
 
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
