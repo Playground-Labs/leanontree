@@ -44,11 +44,11 @@ p {
   }
   filter: blur(4px);
 
-  animation: fade 0.9s cubic-bezier(.93,.26,.54,.74) 0.5ms 1 normal forwards running;
+  animation: text_blur 1s cubic-bezier(.93,.26,.54,.74) 0.5ms 1 normal forwards running;
 }
 }
 
-@keyframes fade {
+@keyframes text_blur {
 0% {
 
 filter: blur(4px);
