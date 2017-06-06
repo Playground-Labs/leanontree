@@ -70,28 +70,17 @@ filter: blur(4px);
 filter: blur(0px);
   }
 }
-//.navigation {
- 
-  svg {
+.navigation {
 width: 35vw;
 margin: 0 5vw 0 5vw;
 padding: 2.2vmin;
-  display: flex;
+    display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;   
-   z-index:999;
-   .helper-circles {
-    fill: mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-       display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Alegreya Sans SC', sans-serif;
-    }
-  }
-/* span {
+  flex-wrap: wrap;
+  z-index:999;
+span {
   margin: 0 2vw 0 2vw;
   width: 15vmin;
   height: 15vmin;
@@ -117,9 +106,9 @@ text-decoration: none;
 color: inherit;
   }
   }
-} */
+}
 
-//}
+}
 
 #home-module-b {
 
