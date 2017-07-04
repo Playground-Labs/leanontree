@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '3.4.3'
+gem 'jekyll', '3.5'
 gem 'jekyll-sitemap'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'jekyll-watch'

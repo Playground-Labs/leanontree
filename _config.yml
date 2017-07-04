@@ -18,7 +18,7 @@ defaults:
   values:
     layout: "default"
     author: "Punyasloka Parida"
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
 analytics :
