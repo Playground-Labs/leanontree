@@ -1,4 +1,8 @@
+.disabler{
+  display: none;
+}
 .site-categories-overview {
+position: absolute;
 width: 100vw;
 margin-top: 20vh;
   height: 80vh;
@@ -7,13 +11,14 @@ margin-top: 20vh;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  z-index:999;
+  z-index:1000;
 .site-category-overview-rows {
         display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  $element-square-side-smallest: 10vmin; 
 $element-square-side-normal: 15vmin;  
 $element-square-side-large: 24vmin;
 span {  
@@ -35,7 +40,7 @@ $radius-of-circle: ($element-square-side-normal * 49.5)/100 ;
 $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
 stroke-dasharray: $circumference-of-circle $circumference-of-circle;
 stroke-dashoffset: $circumference-of-circle;
-animation: dash-circle 5s linear forwards;
+animation: dash-circle 2s linear forwards;
   }
  @keyframes dash-circle {
   to {
@@ -51,6 +56,20 @@ height: $element-square-side-large;
 svg { 
   circle {
     $radius-of-circle: ($element-square-side-large * 49.5)/100 ;
+$circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
+stroke-dasharray: $circumference-of-circle $circumference-of-circle;
+stroke-dashoffset: $circumference-of-circle;
+  }
+}
+}
+#back {
+  width: $element-square-side-smallest;
+height: $element-square-side-smallest;
+cursor: pointer;
+
+svg { 
+  circle {
+    $radius-of-circle: ($element-square-side-smallest * 49.5)/100 ;
 $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
 stroke-dasharray: $circumference-of-circle $circumference-of-circle;
 stroke-dashoffset: $circumference-of-circle;
@@ -89,7 +108,7 @@ stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
 stroke-width:2;
 stroke-dasharray: 100%;
 stroke-dashoffset: 100%;
-animation: dash 5s linear forwards;
+animation: dash 2s linear forwards;
 }
 }
 @keyframes dash {

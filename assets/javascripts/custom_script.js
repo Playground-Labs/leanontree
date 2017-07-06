@@ -37,7 +37,11 @@ var second_module = document.getElementById("home-module-b");
 var hamburgermenu = document.getElementById("hamburger-wrap"); 
 var isColorChanged = false;
 var buttonTester = document.getElementById("button-tester");
-
+var helper_circle_for_categories = document.getElementById("helper-circle-for-categories");
+var helper_circle_for_events = document.getElementById("helper-circle-for-events");
+var helper_circle_for_other_pages = document.getElementById("helper-circle-for-other-pages");
+var brief_introduction = document.getElementById("landing-page-brief-introduction");
+var landing_page_site_categories_overiew = document.getElementById("landing-page-site-categories-overiew");
 
 
 
@@ -81,8 +85,11 @@ isColorChanged = false;
 });
 
 buttonTester.addEventListener('click', function(){
-   lot-helper-circles.classList.add(disappear-navigation);
-
+   helper_circle_for_categories.classList.add('disappear-navigation');
+   helper_circle_for_other_pages.classList.add('disappear-navigation');
+   helper_circle_for_events.classList.add('disappear-navigation');
+   brief_introduction.classList.add('disappear-description');
+   landing_page_site_categories_overiew.classList.add('site-categories-overview');
 });
 
 });
