@@ -36,6 +36,7 @@ var navigation = document.getElementById("navigation-elements");
 var second_module = document.getElementById("home-module-b");
 var hamburgermenu = document.getElementById("hamburger-wrap"); 
 var isColorChanged = false;
+var buttonTester = document.getElementById("button-tester");
 
 
 
@@ -77,6 +78,11 @@ else if(second_module.getBoundingClientRect()["top"] > hamburgermenu.getBounding
 isColorChanged = false;
     }
 }
+});
+
+buttonTester.addEventListener('click', function(){
+   lot-helper-circles.classList.add(disappear-navigation);
+
 });
 
 });

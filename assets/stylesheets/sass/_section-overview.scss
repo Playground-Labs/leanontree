@@ -80,17 +80,6 @@ padding: 2.2vmin;
   align-items: center;
   flex-wrap: wrap;
   z-index:999;
-      $svg-width: 15vmin;
-$svg-height: 15vmin;
-  svg {
-
-    width: 200px;
-  height: 200px;
-    .navigation-helper-circles {
-      fill:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-     
-    }
-  }
 span {
   margin: 0 2vw 0 2vw;
   width: 15vmin;
@@ -111,16 +100,23 @@ span {
   font-size:2vmin;
   a {
     text-decoration: none;
+     
   }
   a:link, a:visited, a:hover {
 text-decoration: none;
 color: inherit;
-  }
-  }
-}
 
-}
 
+         
+  }
+
+  }
+  transition: all 500ms ease-out;
+}
+}
+.disappear-navigation {
+transform: scale(0);
+}
 #home-module-b {
 
  display: flex;   
