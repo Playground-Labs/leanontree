@@ -42,7 +42,7 @@ var helper_circle_for_events = document.getElementById("helper-circle-for-events
 var helper_circle_for_other_pages = document.getElementById("helper-circle-for-other-pages");
 var brief_introduction = document.getElementById("landing-page-brief-introduction");
 var landing_page_site_categories_overiew = document.getElementById("landing-page-site-categories-overiew");
-
+var back_button = document.getElementById("back");
 
 
 $(".timeline > li").hide();
@@ -91,7 +91,14 @@ buttonTester.addEventListener('click', function(){
    brief_introduction.classList.add('disappear-description');
    landing_page_site_categories_overiew.classList.add('site-categories-overview');
 });
-
+back_button.addEventListener('click', function(){
+   landing_page_site_categories_overiew.classList.remove('site-categories-overview');
+   helper_circle_for_categories.classList.remove('disappear-navigation');
+   helper_circle_for_other_pages.classList.remove('disappear-navigation');
+   helper_circle_for_events.classList.remove('disappear-navigation');
+   brief_introduction.classList.remove('disappear-description');
+   landing_page_site_categories_overiew.classList.remove('site-categories-overview');
+});
 });
 
 window.fbAsyncInit = function() {
