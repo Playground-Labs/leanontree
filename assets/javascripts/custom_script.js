@@ -43,7 +43,8 @@ var helper_circle_for_other_pages = document.getElementById("helper-circle-for-o
 var brief_introduction = document.getElementById("landing-page-brief-introduction");
 var landing_page_site_categories_overiew = document.getElementById("landing-page-site-categories-overiew");
 var back_button = document.getElementById("back");
-
+var explore_module_a_button = document.getElementById("explore-module-a");
+var explore_module_b_button = document.getElementById("explore-module-b");
 
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
@@ -98,6 +99,14 @@ back_button.addEventListener('click', function(){
    helper_circle_for_events.classList.remove('disappear-navigation');
    brief_introduction.classList.remove('disappear-description');
    landing_page_site_categories_overiew.classList.remove('site-categories-overview');
+});
+explore_module_b_button.addEventListener('click',function(){
+var viewport_height = document.documentElement.clientHeight;
+window.scrollTo({ top: viewport_height, left: 0, behavior: 'smooth' });    
+});
+explore_module_a_button.addEventListener('click',function(){
+ var viewport_height = document.documentElement.clientHeight;
+window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });      
 });
 });
 
