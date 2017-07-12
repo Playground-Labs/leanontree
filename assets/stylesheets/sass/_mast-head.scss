@@ -14,7 +14,8 @@ overflow: auto;
  z-index: 1000;
  padding: 0 2vw 0 2vw;
 #hamburger-icon {
-
+  list-style: none;
+  margin: 0;
   width: 8vmin;
   height: 8vmin;
   border-radius: 50%;
@@ -25,11 +26,13 @@ overflow: auto;
   align-items: center;
   background-color: #7C7D7E;
  transition: all 0.2s ease-in-out;
-
+padding: 25% 0;
+position: relative;
   .hamburger-bar {     
-      height:0.4vh;
-      width: 2.5vw;
-      border-radius: 0.4vh;
+     width: 50%;
+     height: 2px;
+      margin: 3px 0;
+    border-radius: 24px;
       background-color: black;
       margin-left: auto;
       margin-right: auto;
@@ -37,8 +40,8 @@ overflow: auto;
   
 }
   #bar-a,#bar-b,#bar-c {
-  margin-top: 2.5px;
- margin-bottom: 2.5px;
+ // margin-top: 2.5px;
+// margin-bottom: 2.5px;
   }
   #bar-a.first-bar {
 //transform: rotate(-40deg);
