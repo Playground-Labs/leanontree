@@ -1,0 +1,20 @@
+#home-module-b {
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    height: 100vh;
+    background: url('/img/lot/main-bg-9-opt.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    #self-love-description-and-navigation {
+        margin-top: 20vh;
+        height: 80vh;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
+    }
+    .brief-introduction {
+        background-color: mix(rgba(229, 96, 105, 0.4), rgba(124, 125, 126, 0.8), 70%);
+    }
+}

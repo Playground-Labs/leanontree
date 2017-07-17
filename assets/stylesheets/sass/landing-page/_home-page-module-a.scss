@@ -1,0 +1,107 @@
+#overview {
+  @include flexbox();
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  height: 100vh;
+  background: url('/img/lot/main-bg-8-opt.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  #site-description-and-navigation {
+    margin-top: 20vh;
+    height: 80vh;
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+  }
+}
+
+.brief-introduction {
+  max-width: 35vw;
+  margin: 0 5vw 0 5vw;
+  padding: 4vmin;
+  background-color: mix(rgba(186, 187, 188, 0.4), rgba(124, 125, 126, 0.8), 50%);
+  font-size: 1.8vmin;
+  color: #F7F7F4;
+  h1 {
+    font-family: 'Hammersmith One', sans-serif;
+  }
+  p {
+    font-family: 'Crete Round', serif;
+    span {
+      font-size: 3vmin !important;
+    }
+    filter: blur(4px);
+    @include animation(text_blur 1s cubic-bezier(.93, .26, .54, .74) 0.5ms 1 normal forwards running);
+  }
+  @include transition(all 500ms ease-out);
+}
+
+.disappear-description {
+  @include transform(translateX(-50%));
+  opacity: 0;
+}
+
+@include keyframes(text_blur) {
+  0% {
+    filter: blur(4px);
+  }
+  25% {
+    filter: blur(3px);
+  }
+  50% {
+    filter: blur(2px);
+  }
+  75% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.navigation {
+  width: 35vw;
+  margin: 0 5vw 0 5vw;
+  padding: 2.2vmin;
+  z-index: 999;
+  @include flexbox();
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  span {
+    margin: 0 2vw 0 2vw;
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    background-color: mix(rgb(255, 139, 69), rgba(249, 244, 242, 0.8), 70%);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    .navigation-sign {
+      font-size: 4vmin;
+    }
+    .navigation-text {
+      font-size: 2vmin;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      a:link,
+      a:visited,
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+    @include transition(all 300ms ease-out);
+  }
+}
+
+.disappear-navigation {
+  @include transform(scale(0));
+}
