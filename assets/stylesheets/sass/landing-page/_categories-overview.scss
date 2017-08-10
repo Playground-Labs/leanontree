@@ -14,7 +14,7 @@ margin-top: 20vh;
   z-index:1000;
 .site-category-overview-rows {
     @include flexbox();
-@include flex-direction(row);
+@include flex-direction(column);
 @include justify-content(center);
 @include align-items(center);
 @include flex-wrap(wrap);
@@ -104,6 +104,19 @@ color: inherit;
   
 }
 span:nth-child(even) {
+
+
+
+}
+}
+}
+@media(min-width: $screen-sm-min ) {
+  .site-categories-overview {
+    .site-category-overview-rows {
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+
+span:nth-child(even) {
 svg {
 line {
 stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
@@ -120,12 +133,6 @@ animation: dash 2s linear forwards;
 }
 
 }
-}
-}
-@media(min-width: $screen-sm-min ) {
-  .site-categories-overview {
-    .site-category-overview-rows {
-      @include flex-wrap(nowrap);
   }
   }
 }
