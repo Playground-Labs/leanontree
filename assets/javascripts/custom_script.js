@@ -32,6 +32,7 @@ var coverIcon = document.getElementById("hamburger-icon");
 var iconbarA = document.getElementById("bar-a");
 var iconbarB = document.getElementById("bar-b");
 var iconbarC = document.getElementById("bar-c");
+
 var navigation = document.getElementById("navigation-elements");
 var second_module = document.getElementById("home-module-b");
 var hamburgermenu = document.getElementById("hamburger-wrap"); 
@@ -60,6 +61,7 @@ coverIcon.addEventListener('click', function() {
   iconbarB.classList.toggle('second-bar');
   iconbarC.classList.toggle('third-bar');
  navigation.classList.toggle('visible-navigationelements');
+ navigation.parentNode.classList.toggle('visible-navigation-area');
  coverIcon.classList.toggle('change-colour');
  // blue.classList.toggle('slide');
 

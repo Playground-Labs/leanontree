@@ -1,6 +1,6 @@
 #home-module-b {
     @include flexbox();
-    @include flex-direction(row);
+    @include flex-direction(column);
     @include flex-wrap(wrap);
     height: 100vh;
     background: url('/img/lot/main-bg-9-opt.jpg');
@@ -10,11 +10,30 @@
         margin-top: 20vh;
         height: 80vh;
         @include flexbox();
-        @include flex-direction(row);
-        @include justify-content(center);
+        @include flex-direction(column);
+        @include justify-content(space-evenly);
         @include align-items(center);
     }
     .brief-introduction {
         background-color: mix(rgba(229, 96, 105, 0.4), rgba(124, 125, 126, 0.8), 70%);
     }
+}
+@media(min-width: $screen-sm-min ) {
+  #home-module-b {
+    @include flex-direction(row);
+    #self-love-description-and-navigation {
+
+        @include flex-direction(row);
+          @include justify-content(center);
+    }
+    .brief-introduction {
+       
+    }
+}
+}
+@media(min-width: $screen-md-min ) {
+
+}
+@media(min-width: $screen-lg-min ) {
+  
 }
