@@ -19,20 +19,18 @@
     }
 }
 @media(min-width: $screen-sm-min ) {
-  #home-module-b {
-    @include flex-direction(row);
-    #self-love-description-and-navigation {
 
-        @include flex-direction(row);
-          @include justify-content(center);
-    }
-    .brief-introduction {
-       
-    }
-}
 }
 @media(min-width: $screen-md-min ) {
-
+    #home-module-b {
+        @include flex-direction(row);
+        #self-love-description-and-navigation {
+    
+            @include flex-direction(row);
+              @include justify-content(center);
+        }
+      
+    }
 }
 @media(min-width: $screen-lg-min ) {
   

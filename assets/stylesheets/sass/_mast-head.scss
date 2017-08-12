@@ -135,39 +135,31 @@ width: 50%;
     z-index: 998;
   }
 @media(min-width: $screen-sm-min ) {
-  .header-wrapper{
-      #hamburger-wrap {
- padding: 0 2vw 0 2vw;
+   .header-wrapper{
+    #hamburger-wrap {
+
 #hamburger-icon {
-  width: 8vmin;
-  height: 8vmin;
-padding: 25% 0;
-
-  .hamburger-bar {     
-     width: 50%;
-     height: 2px;
-      margin: 3px 0;
-    border-radius: 24px;
- 
-}
+width: 10vmin;
+height: 10vmin;
 }
 
 }
-#brand-area-wrap {
-width: 100%; 
- .brand-area {
-span {
 
 }
-#brand-name {
-font-size: 8vmin;
 }
-#brand-tag-line {
-font-size: 4vmin;
+@media(min-width: $screen-md-min ) {
+  
+  .header-wrapper{
+    #hamburger-wrap {
+padding: 0 2vw 0 2vw;
+#hamburger-icon {
+width: 8vmin;
+height: 8vmin;
 }
- }
+
 }
-  }
+
+}
 .navigation-area{
 
 
@@ -180,13 +172,10 @@ width: 25%;
 }
 }
 #navigation-elements.visible-navigationelements {
-    
-    width: 25%;
-}
-}
-}
-@media(min-width: $screen-md-min ) {
   
+  width: 25%;
+}
+}
 }
 @media(min-width: $screen-lg-min ) {
   
