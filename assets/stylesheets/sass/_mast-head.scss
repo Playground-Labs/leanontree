@@ -68,7 +68,7 @@ background-color: mix(rgb(231,56,68), rgba(252,190,194,0.8), 70%);
 width: 100%; 
 
  .brand-area {
-     @include flexbox();
+@include flexbox();
 @include flex-direction(column);
 @include justify-content(center);
 @include align-items(center);

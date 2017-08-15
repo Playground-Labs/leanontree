@@ -3,80 +3,26 @@
 }
 .site-categories-overview {
 position: absolute;
+list-style-type: none;
+padding: 0 !important;
+margin: 20vh 0 0 0 !important;
 width: 100vw;
-margin-top: 20vh;
-  height: 80vh;
+height: 80vh;
   @include flexbox();
 @include flex-direction(row);
-@include justify-content(center);
-@include align-items(center);
-@include flex-wrap(wrap);
-  z-index:1000;
-.site-category-overview-rows {
-    @include flexbox();
-@include flex-direction(column);
-@include justify-content(center);
-@include align-items(center);
+@include justify-content(space-evenly);
+@include align-items(space-evenly);
 @include flex-wrap(wrap);
 
+  z-index:1000;
   $element-square-side-smallest: 10vmin; 
-$element-square-side-normal: 15vmin;  
-$element-square-side-large: 24vmin;
-span {  
+  $element-square-side-normal: 15vmin;  
+  $element-square-side-large: 24vmin;
+.site-category-overview-fragment {
 width: $element-square-side-normal;
 height: $element-square-side-normal;
-}
-span:nth-child(odd) {
-  
-position: relative;
-svg { 
-  
-  position: absolute;
-  top:0;
-  circle {
-stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-fill:transparent;
-stroke-width: 2;
-$radius-of-circle: ($element-square-side-normal * 49.5)/100 ;
-$circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
-stroke-dasharray: $circumference-of-circle $circumference-of-circle;
-stroke-dashoffset: $circumference-of-circle;
-animation: dash-circle 2s linear forwards;
-  }
- @keyframes dash-circle {
-  to {
-    stroke-dashoffset: 0;
-    fill: mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-  }
-}
-}
-}
-#my-december {
-width: $element-square-side-large;
-height: $element-square-side-large;
-svg { 
-  circle {
-    $radius-of-circle: ($element-square-side-large * 49.5)/100 ;
-$circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
-stroke-dasharray: $circumference-of-circle $circumference-of-circle;
-stroke-dashoffset: $circumference-of-circle;
-  }
-}
-}
-#back {
-  width: $element-square-side-smallest;
-height: $element-square-side-smallest;
-cursor: pointer;
+margin: 0 10% 0 10%;
 
-svg { 
-  circle {
-    $radius-of-circle: ($element-square-side-smallest * 49.5)/100 ;
-$circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
-stroke-dasharray: $circumference-of-circle $circumference-of-circle;
-stroke-dashoffset: $circumference-of-circle;
-  }
-}
-}
 .category-information {
   height: 100%; 
     @include flexbox();
@@ -103,41 +49,105 @@ color: inherit;
  
   
 }
-span:nth-child(even) {
-
-
-
 }
+#my-december {
+  margin: 0 25% 0 25% !important;
+  width: $element-square-side-large !important;
+  height: $element-square-side-large !important;
+  svg { 
+    circle {
+      $radius-of-circle: ($element-square-side-large * 49.5)/100 ;
+  $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
+  stroke-dasharray: $circumference-of-circle $circumference-of-circle;
+  stroke-dashoffset: $circumference-of-circle;
+    }
+  }
+  }
+  #back {
+    width: $element-square-side-normal !important;
+  height: $element-square-side-normal !important;
+  cursor: pointer;
+  
+  svg { 
+    circle {
+      $radius-of-circle: ($element-square-side-normal * 49.5)/100 ;
+  $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
+  stroke-dasharray: $circumference-of-circle $circumference-of-circle;
+  stroke-dashoffset: $circumference-of-circle;
+    }
+  }
+  }
+li:nth-child(odd) { 
+     
+  position: relative;
+  svg { 
+    
+    position: absolute;
+    top:0;
+    circle {
+  stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
+  fill:transparent;
+  stroke-width: 2;
+  $radius-of-circle: ($element-square-side-normal * 49.5)/100 ;
+  $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
+  stroke-dasharray: $circumference-of-circle $circumference-of-circle;
+  stroke-dashoffset: $circumference-of-circle;
+  animation: dash-circle 2s linear forwards;
+    }
+   @keyframes dash-circle {
+    to {
+      stroke-dashoffset: 0;
+      fill: mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
+    }
+  }
+  
+  }
+}
+li:nth-child(even) { 
+display: none;
 }
 }
 @media(min-width: $screen-sm-min ) {
 }
 @media(min-width: $screen-md-min ) {
-  
+  $element-square-side-smallest: 10vmin; 
+  $element-square-side-normal: 15vmin;  
+  $element-square-side-large: 24vmin;
   .site-categories-overview {
-    .site-category-overview-rows {
-      @include flex-direction(row);
-      @include flex-wrap(nowrap);
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+    
+    .site-category-overview-fragment {
+      margin: 0 0 0 0;
+    }
+    #my-december {
+      margin: 0 0 0 0 !important;
+    }
+    #back {
+      width: $element-square-side-smallest !important;
+      height: $element-square-side-smallest !important;
+    }
 
-span:nth-child(even) {
-svg {
-line {
-stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-stroke-width:2;
-stroke-dasharray: 100%;
-stroke-dashoffset: 100%;
-animation: dash 2s linear forwards;
+    li:nth-child(even) {
+      display: inline;
+    svg {
+    line {
+    stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
+    stroke-width:2;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    animation: dash 2s linear forwards;
+    }
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    
+    }  
 }
-}
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-}
-  }
-  }
 }
 @media(min-width: $screen-lg-min ) {
   
