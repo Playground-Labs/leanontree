@@ -52,13 +52,13 @@ function smoothScroll(ElementId) {
     }
 }
 
-var explore_module_a_button = document.getElementById("explore-module-a");
-var explore_module_b_button = document.getElementById("explore-module-b");
-explore_module_b_button.addEventListener('click',function(){
+var overiew_navigator_button = document.getElementById("overview-category-navigator");
+var self_love_navigator_button = document.getElementById("self-love-category-navigator");
+overiew_navigator_button.addEventListener('click',function(){
     
-smoothScroll("home-module-b");    
+smoothScroll("self-love");    
 });
-explore_module_a_button.addEventListener('click',function(){
+self_love_navigator_button.addEventListener('click',function(){
 smoothScroll("overview");    
 });
 });

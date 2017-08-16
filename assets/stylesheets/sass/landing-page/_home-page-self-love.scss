@@ -1,4 +1,4 @@
-#home-module-b {
+#self-love {
     @include flexbox();
     @include flex-direction(column);
     @include flex-wrap(wrap);
@@ -22,7 +22,7 @@
 
 }
 @media(min-width: $screen-md-min ) {
-    #home-module-b {
+    #self-love {
         @include flex-direction(row);
         #self-love-description-and-navigation {
     

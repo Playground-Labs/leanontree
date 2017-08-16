@@ -34,7 +34,7 @@ var iconbarB = document.getElementById("bar-b");
 var iconbarC = document.getElementById("bar-c");
 
 var navigation = document.getElementById("navigation-elements");
-var second_module = document.getElementById("home-module-b");
+var self_love_module = document.getElementById("self-love");
 var hamburgermenu = document.getElementById("hamburger-wrap"); 
 var isColorChanged = false;
 var buttonTester = document.getElementById("button-tester");
@@ -69,18 +69,18 @@ coverIcon.addEventListener('click', function() {
 
 
 window.addEventListener('scroll', function(e) { 
-if (second_module.getBoundingClientRect()["top"] < hamburgermenu.getBoundingClientRect()["bottom"]) {
+if (self_love_module.getBoundingClientRect()["top"] < hamburgermenu.getBoundingClientRect()["bottom"]) {
     if(isColorChanged == false) {
-    coverIcon.classList.add('module-b-change-colour');
-     navigation.classList.add('module-b-color-change');
+    coverIcon.classList.add('self-love-change-colour');
+     navigation.classList.add('self-love-color-change');
         
 isColorChanged = true;
     }
 }
-else if(second_module.getBoundingClientRect()["top"] > hamburgermenu.getBoundingClientRect()["bottom"]) {
+else if(self_love_module.getBoundingClientRect()["top"] > hamburgermenu.getBoundingClientRect()["bottom"]) {
      if(isColorChanged == true) {
-         coverIcon.classList.remove('module-b-change-colour');
-         navigation.classList.remove('module-b-color-change');
+         coverIcon.classList.remove('self-love-change-colour');
+         navigation.classList.remove('self-love-color-change');
 isColorChanged = false;
     }
 }

@@ -1,29 +1,11 @@
 @import 'global-mixins';
-@import 'local-fonts';
 @import 'import-fonts';
-@import 'special-font-style';
 @import 'global-variables';
-@import 'label-styles';
-@import 'social-media-widgets';
-
 @import 'site-wide-styles';
-@import 'mast-head';
-@import 'navigation-bar';
+@import 'mast-head-and-navigation-menu';
 @import 'landing-page/landing-page-root';
-@import 'jumbotron';
-
-@import 'the-left-half';
-
-@import 'posts-listing-style';
-@import 'post-content-style';
-@import 'post-content-customization';
-
-@import 'gadgets';
-
 @import 'information-and-services';
-
 @import 'footer';
-
 @import 'archive-timeline';
 
 /* Experimental Feature 
