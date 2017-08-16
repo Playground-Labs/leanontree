@@ -10,8 +10,8 @@ width: 100vw;
 height: 80vh;
   @include flexbox();
 @include flex-direction(row);
-@include justify-content(space-evenly);
-@include align-items(space-evenly);
+@include justify-content(space-around);
+@include align-items(space-around);
 @include flex-wrap(wrap);
 
   z-index:1000;
