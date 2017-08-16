@@ -59,6 +59,6 @@ explore_module_b_button.addEventListener('click',function(){
 smoothScroll("home-module-b");    
 });
 explore_module_a_button.addEventListener('click',function(){
-smoothScroll("home-module-a");    
+smoothScroll("overview");    
 });
 });

@@ -14,7 +14,7 @@ height: 80vh;
 @include align-items(space-around);
 @include flex-wrap(wrap);
 
-  z-index:1000;
+  z-index:997;
   $element-square-side-smallest: 10vmin; 
   $element-square-side-normal: 15vmin;  
   $element-square-side-large: 24vmin;
