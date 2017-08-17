@@ -73,6 +73,7 @@
   @include align-items(center);
   @include flex-wrap(wrap);
   span {
+    cursor: pointer;
     margin: 0 2vw 0 2vw;
     width: 15vmin;
     height: 15vmin;
@@ -88,7 +89,7 @@
     }
     .navigation-text {
       font-size: 2vmin;
-      cursor: pointer;
+      
       a {
         text-decoration: none;
       }

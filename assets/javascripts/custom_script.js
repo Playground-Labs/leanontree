@@ -37,10 +37,10 @@ var navigation = document.getElementById("navigation-elements");
 var self_love_module = document.getElementById("self-love");
 var hamburgermenu = document.getElementById("hamburger-wrap"); 
 var isColorChanged = false;
-var buttonTester = document.getElementById("button-tester");
-var helper_circle_for_categories = document.getElementById("helper-circle-for-categories");
-var helper_circle_for_events = document.getElementById("helper-circle-for-events");
-var helper_circle_for_other_pages = document.getElementById("helper-circle-for-other-pages");
+var category_overview_navigator = document.getElementById("helper-circle-for-categories-overview");
+var helper_circle_for_categories_overview = document.getElementById("helper-circle-for-categories-overview");
+var helper_circle_for_events_overview = document.getElementById("helper-circle-for-events-overview");
+var helper_circle_to_navigate_to_next_page_overview = document.getElementById("helper-circle-to-navigate-to-next-page-overview");
 var brief_introduction = document.getElementById("landing-page-brief-introduction");
 var landing_page_site_categories_overiew = document.getElementById("landing-page-site-categories-overiew");
 var back_button = document.getElementById("back");
@@ -86,18 +86,18 @@ isColorChanged = false;
 }
 });
 
-buttonTester.addEventListener('click', function(){
-   helper_circle_for_categories.classList.add('disappear-navigation');
-   helper_circle_for_other_pages.classList.add('disappear-navigation');
-   helper_circle_for_events.classList.add('disappear-navigation');
+category_overview_navigator.addEventListener('click', function(){
+   helper_circle_for_categories_overview.classList.add('disappear-navigation');
+   helper_circle_to_navigate_to_next_page_overview.classList.add('disappear-navigation');
+   helper_circle_for_events_overview.classList.add('disappear-navigation');
    brief_introduction.classList.add('disappear-description');
    landing_page_site_categories_overiew.classList.add('site-categories-overview');
 });
 back_button.addEventListener('click', function(){
    landing_page_site_categories_overiew.classList.remove('site-categories-overview');
-   helper_circle_for_categories.classList.remove('disappear-navigation');
-   helper_circle_for_other_pages.classList.remove('disappear-navigation');
-   helper_circle_for_events.classList.remove('disappear-navigation');
+   helper_circle_for_categories_overview.classList.remove('disappear-navigation');
+   helper_circle_to_navigate_to_next_page_overview.classList.remove('disappear-navigation');
+   helper_circle_for_events_overview.classList.remove('disappear-navigation');
    brief_introduction.classList.remove('disappear-description');
    landing_page_site_categories_overiew.classList.remove('site-categories-overview');
 });
