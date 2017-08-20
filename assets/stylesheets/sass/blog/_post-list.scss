@@ -1,0 +1,42 @@
+.blog-skeleton {
+     @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(centre);
+    @include align-items(centre);
+    @include flex-wrap(no-wrap);
+    .generic-post-card {
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(flex-end);
+        @include align-items(space-around);
+        @include flex-wrap(wrap);
+        background-color: gainsboro;
+    }
+    .featured-blog-post-cards {
+    width: 40vw;
+    height: 80vh;
+    
+.featured-blog-post-cards-title {
+    font-size: 16pt;
+}
+    }
+    .normal-blog-post-cards{
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(centre);
+        @include align-items(space-around);
+        @include flex-wrap(wrap);
+       
+        .general-blog-post-cards {  
+            margin: 0 5vmax;
+            width: 25vmax;
+            padding: 1vmax;
+            height: 15vmax;
+            overflow: hidden;
+             .general-blog-post-cards-title {
+                font-size: 16pt;
+            }
+            }
+    }
+
+}

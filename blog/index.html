@@ -1,0 +1,25 @@
+---
+title: LeanOnTree - Blog
+layout: blog
+currentElement: 0
+---
+<div class="blog-skeleton">
+{% for post in paginator.posts %}
+{% assign everyfifthElement = forloop.index0 | modulo: 5 %}
+{% if everyfifthElement == 0 %}
+<div class="featured-blog-post-cards generic-post-card">
+        <span class="featured-blog-post-cards-date">{{ post.date | date_to_string }}</span>
+        <span class="featured-blog-post-cards-title">{{ post.title }}</span>
+        <span class="featured-blog-post-cards-description">{{ post.description }}</span>
+</div>
+<div class="normal-blog-post-cards">
+{% else %}
+<div class="general-blog-post-cards generic-post-card">
+        <span class="general-blog-post-cards-date">{{ post.date | date_to_string }}</span>
+        <span class="general-blog-post-cards-title">{{ post.title }}</span>
+        <span class="general-blog-post-cards-description">{{ post.description }}</span>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+</div>
