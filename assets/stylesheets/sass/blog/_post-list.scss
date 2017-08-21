@@ -1,9 +1,14 @@
 .blog-skeleton {
+    z-index: 997;
      @include flexbox();
     @include flex-direction(row);
-    @include justify-content(centre);
-    @include align-items(centre);
+    @include justify-content(flex-start);
+    @include align-items(center);
     @include flex-wrap(no-wrap);
+    width: 100vw;
+    min-height: 80vh;
+    margin-top: 20vh;
+    padding: 5vh 5vw;
     .generic-post-card {
         @include flexbox();
         @include flex-direction(column);
@@ -12,9 +17,9 @@
         @include flex-wrap(wrap);
         background-color: gainsboro;
     }
-    .featured-blog-post-cards {
-    width: 40vw;
-    height: 80vh;
+.featured-blog-post-cards {
+width:30vw;
+height: 70vh;
     
 .featured-blog-post-cards-title {
     font-size: 16pt;
@@ -23,15 +28,20 @@
     .normal-blog-post-cards{
         @include flexbox();
         @include flex-direction(row);
-        @include justify-content(centre);
-        @include align-items(space-around);
+        @include justify-content(flex-start);
+        @include align-items(space-evenly);
         @include flex-wrap(wrap);
-       
+        
+        width: 60vw;
+        height: 70vh;
+        .general-blog-post-cards:nth-child(n+3) {
+         margin-top: 2vh;
+        }
         .general-blog-post-cards {  
-            margin: 0 5vmax;
-            width: 25vmax;
-            padding: 1vmax;
-            height: 15vmax;
+            margin-left: 2vw;
+            width: 25vw;
+            padding: 2vmin;
+            height: 34vh;
             overflow: hidden;
              .general-blog-post-cards-title {
                 font-size: 16pt;

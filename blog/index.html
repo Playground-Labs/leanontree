@@ -1,10 +1,10 @@
 ---
 title: LeanOnTree - Blog
 layout: blog
-currentElement: 0
 ---
+{% include navigation.html %}
 <div class="blog-skeleton">
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 {% assign everyfifthElement = forloop.index0 | modulo: 5 %}
 {% if everyfifthElement == 0 %}
 <div class="featured-blog-post-cards generic-post-card">
@@ -22,4 +22,8 @@ currentElement: 0
 {% endif %}
 {% endfor %}
 </div>
+<ul class="pager">
+                <li><a href="/blog/page2">&#x0003C;</a></li>
+                <li><a href="/blog/">&#x0003E;</a></li>
+              </ul>
 </div>

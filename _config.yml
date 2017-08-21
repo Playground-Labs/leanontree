@@ -4,9 +4,8 @@ name: "Lean On Tree"
 description : "Living, breathing, seeing, observing, existing. Sometimes, we all need to LeanOnTree.It's a story. It's life. Yours and mine."
 highlighter: rouge
 permalink: none
-paginate: 5
+
 url: http://leanontree.com
-paginate_path: "/blog/page:num/"
 markdown: rdiscount
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 excerpt_separator: <!--more-->
