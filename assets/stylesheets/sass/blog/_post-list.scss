@@ -1,14 +1,16 @@
 .blog-skeleton {
     z-index: 997;
-     @include flexbox();
-    @include flex-direction(row);
-    @include justify-content(flex-start);
-    @include align-items(center);
-    @include flex-wrap(no-wrap);
-    width: 100vw;
-    min-height: 80vh;
     margin-top: 20vh;
-    padding: 5vh 5vw;
+    width: 100vw;
+    .blog-cards-super-set {
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(flex-start);
+        @include align-items(center);
+        @include flex-wrap(wrap);
+        height: 80vh;
+        padding: 5vh 5vw;
+   
     .generic-post-card {
         @include flexbox();
         @include flex-direction(column);
@@ -17,6 +19,7 @@
         @include flex-wrap(wrap);
         background-color: gainsboro;
     }
+    
 .featured-blog-post-cards {
 width:30vw;
 height: 70vh;
@@ -48,5 +51,5 @@ height: 70vh;
             }
             }
     }
-
+    }
 }
