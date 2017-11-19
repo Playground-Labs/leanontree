@@ -1,14 +1,25 @@
 .blog-skeleton {
     z-index: 997;
-    margin-top: 20vh;
+    margin-top: 15vh;
     width: 100vw;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+    #blog-cards-wrapper {
+        z-index: 997;
+        width: 100vw;
+        height: 75vh;
+        position: absolute;
+     
     .blog-cards-super-set {
+       // position: absolute;
+       // bottom: 0;
         @include flexbox();
         @include flex-direction(row);
         @include justify-content(flex-start);
         @include align-items(center);
         @include flex-wrap(wrap);
-        height: 80vh;
+        height: 75vh;
         padding: 5vh 5vw;
    
     .generic-post-card {
@@ -51,5 +62,18 @@ height: 70vh;
             }
             }
     }
+    }
+    #blog-cards-super-set-0 	 {
+        
+    }
+}
+}
+.pager {
+    height: 5vh;
+    z-index: 997;
+    li {
+        padding: 1vmin;
+        background-color: #bdbcbb;
+        cursor: pointer;
     }
 }

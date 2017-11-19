@@ -3,15 +3,17 @@ title: LeanOnTree - Blog
 layout: blog
 ---
 {% include navigation.html %}
-<div class="blog-skeleton">
+<div id="blog-cards-skeleton" class="blog-skeleton">
+<div id="blog-cards-wrapper">
 {% for post in site.posts %}
 {% assign everyfifthElement = forloop.index0 | modulo: 5 %}
 {% if everyfifthElement == 0 %}
 {% if forloop.first == false %}
 </div>
 </div>
+
 {% endif %}
-<div id="blog-cards-super-set-{{ forloop.index }}" class="blog-cards-super-set">
+<div id="blog-cards-super-set-{% increment counter %}" class="blog-cards-super-set">
 <div class="featured-blog-post-cards generic-post-card">
         <span class="featured-blog-post-cards-date">{{ post.date | date_to_string }}</span>
         <span class="featured-blog-post-cards-title">{{ post.title }}</span>
@@ -28,10 +30,12 @@ layout: blog
 {% if forloop.last == true %}
 </div>
 </div>
+
 {% endif %}
 {% endfor %}
-<ul class="pager">
-                <li><a href="/blog/page2">&#x0003C;</a></li>
-                <li><a href="/blog/">&#x0003E;</a></li>
-              </ul>
 </div>
+</div>
+<ul class="pager">
+        <li id="pager-previous">&#x0003C;</li>
+        <li id="pager-next">&#x0003E;</li>
+      </ul>

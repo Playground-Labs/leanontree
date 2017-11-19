@@ -54,11 +54,15 @@ function smoothScroll(ElementId) {
 
 var navigator_to_next_page_overview = document.getElementById("helper-circle-to-navigate-to-next-page-overview");
 var navigator_to_next_page_self_love = document.getElementById("helper-circle-to-navigate-to-next-page-self-love");
+if (navigator_to_next_page_overview) {
 navigator_to_next_page_overview.addEventListener('click',function(){
     
 smoothScroll("self-love");    
 });
+}
+if (navigator_to_next_page_self_love) {
 navigator_to_next_page_self_love.addEventListener('click',function(){
 smoothScroll("overview");    
 });
+}
 });
