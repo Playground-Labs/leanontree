@@ -112,15 +112,50 @@ back_button.addEventListener('click', function(){
    landing_page_site_categories_overiew.classList.remove('site-categories-overview');
 });
 }
-
 if (pager_previous_button) {
     pager_previous_button.addEventListener('click', function(){
-        container_div.insertBefore(container_div.lastElementChild, container_div.firstChild);       
+      /*  document.getElementById("blog-cards-wrapper").firstElementChild.classList.add("set-animation");
+        document.getElementById("blog-cards-wrapper").lastElementChild.classList.add("set-animation-up");
+        setTimeout(function(){ container_div.insertBefore(container_div.lastElementChild, container_div.firstChild);}, 300); 
+        setTimeout(function(){
+        document.getElementById("blog-cards-wrapper").firstElementChild.classList.remove("set-animation-up");
+        document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.remove("set-animation");
+        }, 400);*/
+           // document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.add("set-animation-up");
+    document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.add("active");
     });
+
+
     }
+
+  
+
+
 if (pager_next_button) {
-        pager_next_button.addEventListener('click', function(){
-            container_div.appendChild(container_div.firstElementChild);           
+        pager_next_button.addEventListener('click', function(){            
+            container_div.appendChild(container_div.firstElementChild);
+
+      document.getElementById("blog-cards-wrapper").firstElementChild.classList.add("set-animation");      
+       document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.add("set-animation-up"); 
+     
+      
+       /* document.getElementById("blog-cards-wrapper").lastElementChild.style.zIndex=0;
+        document.getElementById("blog-cards-wrapper").firstElementChild.style.zIndex=997;   
+        document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.style.zIndex=996; 
+       //   container_div.appendChild(container_div.firstElementChild);*/
+     //  setTimeout(function(){ 
+               
+   // }, 300); 
+   /* setTimeout(function(){ 
+    document.getElementById("blog-cards-wrapper").lastElementChild.classList.remove("set-animation");
+    document.getElementById("blog-cards-wrapper").firstElementChild.classList.remove("set-animation-up");
+    },1000);*/
+
+           //  container_div.appendChild(container_div.firstElementChild);
+          //   setTimeout(function(){ container_div.appendChild(container_div.firstElementChild); }, 300);   
+          
+          
+                      
         });
         }
 });

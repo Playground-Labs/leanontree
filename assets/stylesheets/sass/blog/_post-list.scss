@@ -5,23 +5,29 @@
     height: 75vh;
     position: relative;
     overflow: hidden;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+   
     #blog-cards-wrapper {
         z-index: 997;
         width: 100vw;
         height: 75vh;
         position: absolute;
-     
+       
     .blog-cards-super-set {
-       // position: absolute;
-       // bottom: 0;
+      position: absolute;
+       bottom: 0;
         @include flexbox();
         @include flex-direction(row);
         @include justify-content(flex-start);
         @include align-items(center);
         @include flex-wrap(wrap);
+        //margin-bottom: 75vh;
         height: 75vh;
         padding: 5vh 5vw;
-   
+        transform: translate3d(0, 0, 0);
+        background-color: gainsboro;
+        @include transition(all .7s ease);
     .generic-post-card {
         @include flexbox();
         @include flex-direction(column);
@@ -62,10 +68,34 @@ height: 70vh;
             }
             }
     }
+   
     }
-    #blog-cards-super-set-0 	 {
+    .blog-cards-super-set:first-child {
+        z-index: 997;
+    }
+    .blog-cards-super-set:not(:first-child) {
+        z-index: 0;
+    }
+    .set-animation{
         
+        @include animation(scaleDown 1s ease both);
     }
+    @include keyframes(scaleDown) {
+
+        to { opacity: 0;
+        
+            transform: scale(.8); }
+    }
+    .set-animation-up{
+     @include animation(scaleUp 1s ease both);
+    }
+    @include keyframes(scaleUp) {
+
+        from { opacity: 0; 
+           
+            transform: scale(1.4); }
+    }
+   
 }
 }
 .pager {
