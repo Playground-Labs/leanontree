@@ -46,20 +46,11 @@ var back_button = document.getElementById("back");
 var container_div = document.getElementById('blog-cards-wrapper');
 var pager_previous_button = document.getElementById('pager-previous');
 var pager_next_button = document.getElementById('pager-next');
-/*var blog_cards = document.getElementsByClassName("blog-cards-super-set");
-var blog_cards_count = blog_cards.length;
-var blog_cards_height = blog_cards[0].offsetHeight;
-var total_length_of_blog_cards_superset = blog_cards_count * blog_cards_height;
-var null_counter = blog_cards_height;*/
 
 $(".timeline > li").hide();
 $('.timeline  > .row-fluid,.badges-year').click(function() {
     $(this).parent().find('li').toggle();
 });
-   
-/* document.querySelector( 'a.icon' ).addEventListener( "click", function() {
-    this.classList.toggle( "active" );
-  }); */
 
 
 coverIcon.addEventListener('click', function() {
@@ -69,7 +60,6 @@ coverIcon.addEventListener('click', function() {
  navigation.classList.toggle('visible-navigationelements');
  navigation.parentNode.classList.toggle('visible-navigation-area');
  coverIcon.classList.toggle('change-colour');
- // blue.classList.toggle('slide');
 
 });
 
@@ -114,15 +104,13 @@ back_button.addEventListener('click', function(){
 }
 if (pager_previous_button) {
     pager_previous_button.addEventListener('click', function(){
-      /*  document.getElementById("blog-cards-wrapper").firstElementChild.classList.add("set-animation");
-        document.getElementById("blog-cards-wrapper").lastElementChild.classList.add("set-animation-up");
-        setTimeout(function(){ container_div.insertBefore(container_div.lastElementChild, container_div.firstChild);}, 300); 
-        setTimeout(function(){
-        document.getElementById("blog-cards-wrapper").firstElementChild.classList.remove("set-animation-up");
-        document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.remove("set-animation");
-        }, 400);*/
-           // document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.add("set-animation-up");
-    document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.add("active");
+document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.remove("set-animation", "set-animation-up");      
+document.getElementById("blog-cards-wrapper").firstElementChild.classList.remove("set-animation", "set-animation-up");
+document.getElementById("blog-cards-wrapper").lastElementChild.classList.remove("set-animation", "set-animation-up");      
+     document.getElementById("blog-cards-wrapper").firstElementChild.classList.add("set-animation");      
+    document.getElementById("blog-cards-wrapper").lastElementChild.classList.add("set-animation-up");              
+    container_div.insertBefore(container_div.lastElementChild, container_div.firstChild);
+ 
     });
 
 
@@ -132,30 +120,13 @@ if (pager_previous_button) {
 
 
 if (pager_next_button) {
-        pager_next_button.addEventListener('click', function(){            
-            container_div.appendChild(container_div.firstElementChild);
-
-      document.getElementById("blog-cards-wrapper").firstElementChild.classList.add("set-animation");      
-       document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.add("set-animation-up"); 
-     
-      
-       /* document.getElementById("blog-cards-wrapper").lastElementChild.style.zIndex=0;
-        document.getElementById("blog-cards-wrapper").firstElementChild.style.zIndex=997;   
-        document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.style.zIndex=996; 
-       //   container_div.appendChild(container_div.firstElementChild);*/
-     //  setTimeout(function(){ 
-               
-   // }, 300); 
-   /* setTimeout(function(){ 
-    document.getElementById("blog-cards-wrapper").lastElementChild.classList.remove("set-animation");
-    document.getElementById("blog-cards-wrapper").firstElementChild.classList.remove("set-animation-up");
-    },1000);*/
-
-           //  container_div.appendChild(container_div.firstElementChild);
-          //   setTimeout(function(){ container_div.appendChild(container_div.firstElementChild); }, 300);   
-          
-          
-                      
+        pager_next_button.addEventListener('click', function(){
+            document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.remove("set-animation","set-animation-up");      
+            document.getElementById("blog-cards-wrapper").firstElementChild.classList.remove("set-animation","set-animation-up");
+            document.getElementById("blog-cards-wrapper").lastElementChild.classList.remove("set-animation","set-animation-up");     
+       document.getElementById("blog-cards-wrapper").firstElementChild.classList.add("set-animation");      
+       document.getElementById("blog-cards-wrapper").firstElementChild.nextElementSibling.classList.add("set-animation-up");              
+       container_div.appendChild(container_div.firstElementChild);
         });
         }
 });

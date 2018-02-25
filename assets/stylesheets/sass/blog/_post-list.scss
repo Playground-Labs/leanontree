@@ -78,7 +78,7 @@ height: 70vh;
     }
     .set-animation{
         
-        @include animation(scaleDown 1s ease both);
+        @include animation(scaleDown 1s cubic-bezier(.17,.67,.37,.92) both);
     }
     @include keyframes(scaleDown) {
 
@@ -87,7 +87,7 @@ height: 70vh;
             transform: scale(.8); }
     }
     .set-animation-up{
-     @include animation(scaleUp 1s ease both);
+     @include animation(scaleUp 1s cubic-bezier(.17,.67,.37,.92) both);
     }
     @include keyframes(scaleUp) {
 

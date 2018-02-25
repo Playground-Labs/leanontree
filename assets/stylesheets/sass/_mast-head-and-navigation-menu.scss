@@ -76,16 +76,33 @@ position: relative;
 span {
 color: #FAFCFA;  
 }
+
 #brand-name {
 font-family: 'Love Ya Like A Sister', cursive;
 font-size: 8vmin;
 }
+
 #brand-tag-line {
 font-family: 'Amatic SC', cursive;
 font-weight: 700;
 font-size: 4vmin;
 }
  }
+ .brand-area-mini {
+  @include flexbox();
+  @include flex-direction(row);
+  @include justify-content(left);
+  @include align-items(center);
+  position: relative;
+  span {
+  color: rgb(46, 172, 221);  
+  }
+  
+  #brand-name-mini {
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 4vmin;
+  }
+  }
 }
  }
 .navigation-area{
