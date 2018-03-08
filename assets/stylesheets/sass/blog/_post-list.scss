@@ -1,3 +1,10 @@
+#blog-page {
+    background: #125eda;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
 .blog-skeleton {
     z-index: 997;
     margin-top: 15vh;
@@ -26,7 +33,7 @@
         height: 75vh;
         padding: 5vh 5vw;
         transform: translate3d(0, 0, 0);
-        background-color: gainsboro;
+        //background-color: rgb(167, 137, 137);
         @include transition(all .7s ease);
     .generic-post-card {
         @include flexbox();
@@ -35,6 +42,7 @@
         @include align-items(space-around);
         @include flex-wrap(wrap);
         background-color: gainsboro;
+        padding: 2vmin;
     }
     
 .featured-blog-post-cards {
@@ -60,7 +68,6 @@ height: 70vh;
         .general-blog-post-cards {  
             margin-left: 2vw;
             width: 25vw;
-            padding: 2vmin;
             height: 34vh;
             overflow: hidden;
              .general-blog-post-cards-title {
