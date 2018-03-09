@@ -1,10 +1,11 @@
-#blog-page {
-    background: #125eda;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top:0;
-}
+.page-wrapper {
+   background: #4BDEAF;
+   @include flexbox();
+   @include flex-direction(column);
+   @include justify-content(flex-start);
+   @include align-items(center);
+   @include flex-wrap(wrap);
+
 .blog-skeleton {
     z-index: 997;
     margin-top: 15vh;
@@ -113,4 +114,5 @@ height: 70vh;
         background-color: #bdbcbb;
         cursor: pointer;
     }
+}
 }

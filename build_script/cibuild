@@ -4,7 +4,7 @@ set -e # halt script on error
 SITE_DIR=_site
 
 # Compiling SASS to CSS
-sass --update assets/stylesheets:assets/stylesheets/core --style compressed
+sass --update assets/stylesheets/sass:assets/stylesheets/css --style compressed
 
 bundle exec jekyll build
 #bundle exec htmlproof ./_site
