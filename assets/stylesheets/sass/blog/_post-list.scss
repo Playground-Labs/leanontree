@@ -115,4 +115,14 @@ height: 70vh;
         cursor: pointer;
     }
 }
+.svg-background-circle-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 996;
+.svg-background-circle {
+    fill: rgb(27, 153, 113);
+}
+}
 }

@@ -106,14 +106,13 @@ font-size: 4vmin;
 }
  }
 .navigation-area{
-
 width: 100%;
 height: 100%;
-
 position: fixed;
-
+z-index: 998;
+visibility: hidden;
+transition: visibility 500ms cubic-bezier(.62,.04,.3,1.8);
 #navigation-elements {
-
 left: 0;
 top: 0;  
 height: 100vh;
@@ -149,7 +148,7 @@ width: 50%;
 }
 }
 .visible-navigation-area {
-    z-index: 998;
+  visibility: visible;
   }
 @media(min-width: $screen-sm-min ) {
    .header-wrapper{
