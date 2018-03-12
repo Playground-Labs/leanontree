@@ -18,14 +18,15 @@ layout: blog
 <div class="featured-blog-post-cards generic-post-card">
         <span class="featured-blog-post-cards-date">{{ post.date | date_to_string }}</span>
         <span class="featured-blog-post-cards-title">{{ post.title }}</span>
-        <span class="featured-blog-post-cards-description">{{ post.description }}</span>
+        <!--img class="featured-blog-post-cards-image" src="{{ post.index-pic }}" alt="{{ post.alt-image-text }}"></img-->
+      <!--  <span class="featured-blog-post-cards-description">{{ post.description }}</span>-->
 </div>
 <div class="normal-blog-post-cards">
 {% else %}
 <div class="general-blog-post-cards generic-post-card">
         <span class="general-blog-post-cards-date">{{ post.date | date_to_string }}</span>
         <span class="general-blog-post-cards-title">{{ post.title }}</span>
-        <span class="general-blog-post-cards-description">{{ post.description }}</span>
+      <!--  <span class="general-blog-post-cards-description">{{ post.description }}</span>-->
 </div>
 {% endif %}
 {% if forloop.last == true %}
@@ -41,8 +42,8 @@ layout: blog
         <li id="pager-next">&#x0003E;</li>
       </ul>
 <div class="svg-background-circle-container">
-<svg height="100%" width="100%">
-   <circle class="svg-background-circle" cx="0" cy="0" r="50%" />
+<svg height="100%" width="100%" viewbox="0 0 50 50">
+   <circle class="svg-background-circle" cx="50" cy="50" r="50" />
 </svg>
 </div>     
 </div>      
