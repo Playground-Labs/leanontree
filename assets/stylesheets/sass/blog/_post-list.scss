@@ -8,10 +8,8 @@
     .blog-skeleton {
         z-index: 997;
         margin-top: 15vh;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
         width: 100vw;
-        height: 73vh;
+        height: 80vh;
         position: relative;
         overflow: hidden;
         perspective: 1200px;
@@ -20,124 +18,132 @@
             z-index: 997;
             width: 100vw;
             height: 100%;
-            position: absolute;
-            .blog-cards-super-set {
-                position: absolute;
-                bottom: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+            grid-auto-rows: 40vh;
+            grid-auto-flow: dense; //      grid-template-areas: 
+            // "a b b"
+            //"a c c";
+            /*
+
                 @include flexbox();
                 @include flex-direction(row);
                 @include justify-content(flex-start);
                 @include align-items(center);
                 @include flex-wrap(wrap); //margin-bottom: 75vh;
-                height: 100%;
-              //  padding: 5vh 5vw;
+                height: 100%;*/
+            //  padding: 5vh 5vw;
+            .generic-post-card {
                 transform: translate3d(0, 0, 0); //background-color: rgb(167, 137, 137);
                 @include transition(all .7s ease);
-                .generic-post-card {
-                    @include flexbox();
+                /* @include flexbox();
                     @include flex-direction(column);
                     @include justify-content(flex-end);
                     @include align-items(center);
-                    @include flex-wrap(wrap);
-                    background-color: #26fa80;
-                    padding: 4vmin; // border-radius: 30px;
-                    text-align: center;
-                    box-shadow: 0.5px 0.5px 0.5px 0.5px #ccc;
-                    
-                   
+                    @include flex-wrap(wrap);*/
+                background-color: #26fa80;
+                padding: 4vmin; // border-radius: 30px;
+                text-align: center;
+                box-shadow: 0.5px 0.5px 0.5px 0.5px #ccc;
+            }
+            .featured-blog-post-cards {
+                //width: 30vw;
+                height: 100%;
+                
+                font-family: 'Roboto', sans-serif;
+                position: relative;
+                overflow: hidden;
+                .featured-blog-post-cards-title {
+                    font-family: 'Copse', 'Hind', serif;
+                    font-size: 22pt;
+                    z-index: 997;
                 }
-                .featured-blog-post-cards {
-                    width: 30vw;
+                .featured-blog-post-cards-date {
+                    z-index: 997;
+                    font-family: 'Bungee', cursive;
+                    font-size: 10pt;
+                }
+                .featured-blog-post-cards-image {
+                    position: absolute;
+                    bottom: 0;
+                    width: auto;
                     height: 100%;
+                    z-index: 996;
+                }
+            }
+            .normal-blog-post-cards {
+                @include flexbox();
+                @include flex-direction(row);
+                @include justify-content(flex-start);
+                @include align-items(space-evenly);
+                @include flex-wrap(wrap);
+                width: 60vw;
+                height: 100%;
+                .general-blog-post-cards:nth-child(n+3) {
+                    margin-top: 2vh;
+                }
+                .general-blog-post-cards {
+                    //margin-left: 2vw;
+                    width: 25vw;
+                    height: 50%;
+                    overflow: hidden;
                     font-family: 'Roboto', sans-serif;
-                    position: relative;
-                    
-                        overflow: hidden;
-                    .featured-blog-post-cards-title {
+                    .general-blog-post-cards-title {
                         font-family: 'Copse', 'Hind', serif;
-                        font-size: 22pt;
-                        z-index: 997;
+                        font-size: 18pt;
                     }
-                    .featured-blog-post-cards-date {
-                        z-index: 997;
-
-    font-family: 'Bungee', cursive;
-
-                        font-size: 10pt;
+                    .general-blog-post-cards-date {
+                        font-family: 'Bungee', cursive;
+                        font-size: 8pt;
                     }
-                    .featured-blog-post-cards-image {
-                        position: absolute;
-                        bottom: 0;
-                        width: auto;
-                        height: 100%;
-                        z-index: 996;
-                        
-                    }
-                }
-                .normal-blog-post-cards {
-                    @include flexbox();
-                    @include flex-direction(row);
-                    @include justify-content(flex-start);
-                    @include align-items(space-evenly);
-                    @include flex-wrap(wrap);
-                    width: 60vw;
-                    height: 100%;
-                    .general-blog-post-cards:nth-child(n+3) {
-                        margin-top: 2vh;
-                    }
-                    .general-blog-post-cards {
-                        //margin-left: 2vw;
-                        width: 25vw;
-                        height: 50%;
-                        overflow: hidden;
-                        font-family: 'Roboto', sans-serif;
-                        .general-blog-post-cards-title {
-                            font-family: 'Copse', 'Hind', serif;
-                            font-size: 18pt;
-                        }
-                        .general-blog-post-cards-date {
-                            font-family: 'Bungee', cursive;
-                            font-size: 8pt;
-                        }
-                    }
-                }
-            }
-            .blog-cards-super-set:first-child {
-                z-index: 997;
-            }
-            .blog-cards-super-set:not(:first-child) {
-                z-index: 0;
-            }
-            .set-animation {
-                @include animation(scaleDown 1s cubic-bezier(.17, .67, .37, .92) both);
-            }
-            @include keyframes(scaleDown) {
-                to {
-                    opacity: 0;
-                    transform: scale(.8);
-                }
-            }
-            .set-animation-up {
-                @include animation(scaleUp 1s cubic-bezier(.17, .67, .37, .92) both);
-            }
-            @include keyframes(scaleUp) {
-                from {
-                    opacity: 0;
-                    transform: scale(1.4);
                 }
             }
         }
+        .blog-cards-super-set:first-child {
+            z-index: 997;
+        }
+        .blog-cards-super-set:not(:first-child) {
+            z-index: 0;
+        }
+        .set-animation {
+            @include animation(scaleDown 1s cubic-bezier(.17, .67, .37, .92) both);
+        }
+        @include keyframes(scaleDown) {
+            to {
+                opacity: 0;
+                transform: scale(.8);
+            }
+        }
+        .set-animation-up {
+            @include animation(scaleUp 1s cubic-bezier(.17, .67, .37, .92) both);
+        }
+        @include keyframes(scaleUp) {
+            from {
+                opacity: 0;
+                transform: scale(1.4);
+            }
+        }
     }
-    .pager {
+    .pager-lot {
         height: 5vh;
+        width: 100vw;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
+        @include flex-wrap(wrap);
         z-index: 997;
-        li {
-            padding: 1vmin;
+        text-align: center;
+        list-style: none;
+        .pager-buttons {
+            height: 100%;
+            width: 50%; // padding: 1vmin;
             background-color: #bdbcbb;
             cursor: pointer;
         }
     }
-    .svg-background-circle-container {
+    /* .svg-background-circle-container {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -146,5 +152,5 @@
         .svg-background-circle {
             fill: rgb(27, 153, 113);
         }
-    }
+    }*/
 }

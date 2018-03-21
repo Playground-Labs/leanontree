@@ -1,7 +1,7 @@
 ﻿.header-wrapper {
 position: fixed;
 text-align: center;
-height: 20vh;
+height: 15vh;
 width: 100%;
 @include flexbox();
 @include flex-direction(row);
