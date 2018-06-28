@@ -3,38 +3,21 @@ title: LeanOnTree - Blog
 layout: blog
 ---
 {% include navigation/mini.html %}
-<div class="page-wrapper">
+<div id="blog-skeleton-wrapper">
 <div id="blog-cards-skeleton" class="blog-skeleton">
-<div id="blog-cards-wrapper">
-
 {% for post in site.posts %}
 
-<!--div id="blog-cards-super-set-{% increment counter %}" class="blog-cards-super-set"-->
+<div class="generic-post-card">
+        
+        
+        <div class="display-text">
+        <span class="display-text-title">{{ post.title | upcase  }}</span>
+        <span class="display-text-date">{{ post.date | date_to_string }}</span>
+        
+        </div>
 
-<div class="featured-blog-post-cards generic-post-card">
-        <span class="featured-blog-post-cards-date">{{ post.date | date_to_string }}</span>
-        <span class="featured-blog-post-cards-title">{{ post.title }}</span>
-        <!--img class="featured-blog-post-cards-image" src="{{ post.index-pic }}" alt="{{ post.alt-image-text }}"></img-->
-      <!--  <span class="featured-blog-post-cards-description">{{ post.description }}</span>-->
 </div>
-<!--<div class="normal-blog-post-cards">-->
-           
-<!--<div class="general-blog-post-cards generic-post-card">
-        <span class="general-blog-post-cards-date">{{ post.date | date_to_string }}</span>
-        <span class="general-blog-post-cards-title">{{ post.title }}</span>-->
-      <!--  <span class="general-blog-post-cards-description">{{ post.description }}</span>-->
-<!--</div>-->
-<!--</div>-->
 {% endfor %}
 </div>
 </div>
-<div class="pager-lot">
-        <div class="pager-buttons" id="pager-previous">&#x0003C;</div>
-        <div class="pager-buttons" id="pager-next">&#x0003E;</div>
-</div>
-<!--div class="svg-background-circle-container">
-<svg height="100%" width="100%" viewbox="0 0 50 50">
-   <circle class="svg-background-circle" cx="50" cy="50" r="50" />
-</svg>
-</div-->     
-</div>      
+    
