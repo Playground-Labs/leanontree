@@ -20,9 +20,8 @@
                  .generic-post-card {   
                 background-color: #80a6be;
                 text-align: center;
-            //    border-radius: 10px;
- // box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
-  background: url(/img/lot/display-picture.jpg);
+  background: url(/img/lot/display-picture.jpg) no-repeat 50% 50%;
+  padding: 1vh 0; 
                .display-text {
                  height: 100%;
                  width: 100%;
@@ -30,27 +29,62 @@
                   @include flex-direction(column);
                   @include justify-content(space-between);
                   @include align-items(center);
+                   .display-text-title-and-author{
+                  .display-text-title {
+                    font-family: 'Fjalla One', 'Teko',sans-serif;
+                    font-weight: 700;
+                    color: #fcd0b4;
+                    font-size: 1.25em;
+                  }
+                    .dash {
+                      background-color: #fab565;
+                      margin: 1vh auto;
+                      height:4px;
+                      width: 5vw;
+
+                   }
+                   .display-text-author {
+                    font-family: 'Fjalla One', 'Teko', sans-serif;
+                    color: #fcd0b4;
+                    font-weight: 400;
+                    font-size: 1em;
+                }
+              }
                   .display-text-date {
                     font-family: 'Fjalla One', sans-serif;
-                    color: #aedbfa;
+                    color: #c2c2c2;
                     font-size: 1em;
-
-                  }
-                  .display-text-title {
-                    font-family: 'Fjalla One', sans-serif;
-                    color: #12415e;
-                    font-size: 1.5em;
-                  }
+                  
+                 
                 }
             }
-            .generic-post-card:nth-child(5n+1) { 
-              background: url(/img/the-story-hour/display-picture.jpg) !important;
+          }
+            .generic-post-card:nth-child(5n+1) {
+              padding: 2vh 0; 
+              background: url(/img/the-story-hour/display-picture.jpg) no-repeat !important;
               grid-row: span 2;  
+              .display-text {
+              .display-text-title-and-author{
               .display-text-title {
               font-size: 2em !important;
+              color: #12415e !important;
+                           }
+                           .dash {
+                             background-color: #36a9f0;
+                           }
+              .display-text-author {
+                color: #12415e !important;
+                font-size: 1em;
+            }
+            }
+              .display-text-date {
+                color: #aedbfa !important;
+
               }
-            }  
+            }
 
             }
      
-          }
+          
+        }
+      }

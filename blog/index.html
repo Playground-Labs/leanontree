@@ -11,7 +11,11 @@ layout: blog
         
         
         <div class="display-text">
+        <div class="display-text-title-and-author">
         <span class="display-text-title">{{ post.title | upcase  }}</span>
+        <div class="dash"></div>
+        <span class="display-text-author">{{ post.author | upcase}}</span>
+        </div>
         <span class="display-text-date">{{ post.date | date_to_string }}</span>
         
         </div>
