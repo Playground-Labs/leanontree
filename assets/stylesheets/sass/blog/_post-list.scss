@@ -31,6 +31,12 @@
                   @include align-items(center);
                    .display-text-title-and-author{
                   .display-text-title {
+                    .lamp-icon{
+                      fill: #12415e;
+                      fill: #fcd0b4;
+                      height: 1em;
+                      width: 1em;
+                    }
                     font-family: 'Fjalla One', 'Teko',sans-serif;
                     font-weight: 600;
                     color: #fcd0b4;
@@ -66,6 +72,9 @@
               .display-text {
               .display-text-title-and-author{
               .display-text-title {
+                .lamp-icon{
+                  fill: #12415e !important;
+                }
               font-size: 2em !important;
               color: #12415e !important;
                            }

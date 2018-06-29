@@ -1,6 +1,7 @@
 ---
 title: LeanOnTree - Blog
 layout: blog
+svg-icon-sprite-sheet: "/assets/svg/site-icon-sprite.svg"
 ---
 {% include navigation/mini.html %}
 <div id="blog-skeleton-wrapper">
@@ -12,7 +13,8 @@ layout: blog
         
         <div class="display-text">
         <div class="display-text-title-and-author">
-        <span class="display-text-title">{{ post.title | upcase  }}</span>
+        <span class="display-text-title">
+        <svg class="lamp-icon"><use xlink:href="{{ page.svg-icon-sprite-sheet }}#lamp-icon"></use></svg> {{ post.title | upcase  }}</span>
         <div class="dash"></div>
         <span class="display-text-author">{{ post.author | upcase}}</span>
         </div>
