@@ -1,4 +1,6 @@
- #blog-skeleton-wrapper{
+
+
+#blog-skeleton-wrapper{
   background-color: #f5f8fa;
   width: 100%;
   height: 100%;
@@ -31,11 +33,9 @@
                   @include align-items(center);
                    .display-text-title-and-author{
                   .display-text-title {
-                    .lamp-icon{
-                      fill: #12415e;
-                      fill: #fcd0b4;
-                      height: 1em;
-                      width: 1em;
+                    svg{
+                      fill:#fcd0b4 !important;              
+
                     }
                     font-family: 'Fjalla One', 'Teko',sans-serif;
                     font-weight: 600;
@@ -72,7 +72,7 @@
               .display-text {
               .display-text-title-and-author{
               .display-text-title {
-                .lamp-icon{
+                svg{
                   fill: #12415e !important;
                 }
               font-size: 2em !important;
@@ -97,3 +97,9 @@
           
         }
       }
+
+
+.post-list-icon {
+  height: 1em;
+  width: 1em;
+}

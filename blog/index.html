@@ -3,6 +3,7 @@ title: LeanOnTree - Blog
 layout: blog
 svg-icon-sprite-sheet: "/assets/svg/site-icon-sprite.svg"
 ---
+{% include svgs/svg-inline.html %}
 {% include navigation/mini.html %}
 <div id="blog-skeleton-wrapper">
 <div id="blog-cards-skeleton" class="blog-skeleton">
@@ -14,7 +15,14 @@ svg-icon-sprite-sheet: "/assets/svg/site-icon-sprite.svg"
         <div class="display-text">
         <div class="display-text-title-and-author">
         <span class="display-text-title">
-        <svg class="lamp-icon"><use xlink:href="{{ page.svg-icon-sprite-sheet }}#lamp"></use></svg> {{ post.title | upcase  }}</span>
+        {% if post.categories contains "self-love" %}
+        <svg class="post-list-icon"><use xlink:href="#heart"></use></svg>
+        {% elsif post.categories contains "TheStoryHour" %}
+        <svg class="post-list-icon"><use xlink:href="#lamp"></use></svg>    
+       {% else %}
+       <svg class="post-list-icon"><use xlink:href="#tree-monochrome"></use></svg>
+       {% endif %}
+       {{ post.title | upcase  }}</span>
         <div class="dash"></div>
         <span class="display-text-author">{{ post.author | upcase}}</span>
         </div>

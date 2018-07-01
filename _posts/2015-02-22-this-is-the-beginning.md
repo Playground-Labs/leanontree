@@ -1,6 +1,8 @@
 ---
 title: This is the beginning
 date: 2015-02-22 00:00:00 +05:30
+categories:
+- general
 tags:
 - healing
 - leanontreeblog
