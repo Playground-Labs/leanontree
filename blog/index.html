@@ -14,10 +14,11 @@ svg-icon-sprite-sheet: "/assets/svg/site-icon-sprite.svg"
         <div class="display-text">
         <div class="display-text-title-and-author">
         <span class="display-text-title">
-        <svg class="lamp-icon"><use xlink:href="{{ page.svg-icon-sprite-sheet }}#lamp-icon"></use></svg> {{ post.title | upcase  }}</span>
+        <svg class="lamp-icon"><use xlink:href="{{ page.svg-icon-sprite-sheet }}#lamp"></use></svg> {{ post.title | upcase  }}</span>
         <div class="dash"></div>
         <span class="display-text-author">{{ post.author | upcase}}</span>
         </div>
+        <span class="display-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies hendrerit leo, vitae sollicitudin massa efficitur vel.</span>
         <span class="display-text-date">{{ post.date | date_to_string }}</span>
         
         </div>
