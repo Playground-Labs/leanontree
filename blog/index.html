@@ -26,11 +26,19 @@ svg-icon-sprite-sheet: "/assets/svg/site-icon-sprite.svg"
         <div class="dash"></div>
         <span class="display-text-author">{{ post.author | upcase}}</span>
         </div>
-        <span class="display-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies hendrerit leo, vitae sollicitudin massa efficitur vel.</span>
-        <span class="display-text-date">{{ post.date | date_to_string }}</span>
+        <div class="display-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies hendrerit leo, vitae sollicitudin massa efficitur vel.
+        
+        <button class="simple-btn simple-btn-border">Read Story</button>
+          
+        </div>
+        <span class="display-text-date">
+                <span class="month">{{ post.date | date: "%b" }}</span>
+                <span class="date">{{ post.date | date: "%d" }}</span>
+                <span class="year">{{ post.date | date: "%Y" }}</span>
+        </span>
         
         </div>
-
+<div class="gradient-overlay"></div>
 </div>
 {% endfor %}
 </div>
