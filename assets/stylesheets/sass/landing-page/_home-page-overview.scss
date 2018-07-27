@@ -8,8 +8,8 @@
   background-attachment: fixed;
   position: relative;
   #site-description-and-navigation {
-    margin-top: 20vh;
-    height: 80vh;
+  
+    height: 90vh;
     @include flexbox();
     @include flex-direction(column);
     @include justify-content(space-evenly);

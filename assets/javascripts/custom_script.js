@@ -28,13 +28,8 @@ $(window).load(function() {
 });
 
 $(document).ready(function(){
-var coverIcon = document.getElementById("hamburger-icon");
-var iconbarA = document.getElementById("bar-a");
-var iconbarB = document.getElementById("bar-b");
-var iconbarC = document.getElementById("bar-c");
-var navigation = document.getElementById("navigation-elements");
-var self_love_module = document.getElementById("self-love");
-var hamburgermenu = document.getElementById("hamburger-wrap"); 
+var menu_toggle = document.getElementById("menu-toggle");
+var navigation_elements = document.getElementById("navigation-elements");
 var isColorChanged = false;
 var category_overview_navigator = document.getElementById("helper-circle-for-categories-overview");
 var helper_circle_for_categories_overview = document.getElementById("helper-circle-for-categories-overview");
@@ -53,14 +48,9 @@ $('.timeline  > .row-fluid,.badges-year').click(function() {
 });
 
 
-coverIcon.addEventListener('click', function() {
-  iconbarA.classList.toggle('first-bar');
-  iconbarB.classList.toggle('second-bar');
-  iconbarC.classList.toggle('third-bar');
- navigation.classList.toggle('visible-navigationelements');
- navigation.parentNode.classList.toggle('visible-navigation-area');
- coverIcon.classList.toggle('change-colour');
-
+menu_toggle.addEventListener('click', function() {
+ navigation_elements.classList.toggle('navigation-elements--open');
+ this.classList.toggle('menu-toggle--open');
 });
 
 
@@ -139,14 +129,6 @@ window.fbAsyncInit = function() {
     });
   };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > $(".masthead-and-navigation-links").height()) {
@@ -156,14 +138,12 @@ $(window).scroll(function() {
       $('.brand-logo').addClass('brand-logo-dynamic');
     
 
-    } else {
- 
+    } else { 
        $('#brand-tag-line').removeClass('brand-tag-line-dynamic');
          $('.masthead-and-navigation-links').removeClass('dynamic-header');
       $('.brand-name').removeClass('brand-name-dynamic');
       $('.brand-logo').removeClass('brand-logo-dynamic');
-     
-       
+          
     }
 });
 

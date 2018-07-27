@@ -1,222 +1,178 @@
 ﻿.header-wrapper {
-position: fixed;
-text-align: center;
-height: 15vh;
-width: 100%;
-@include flexbox();
-@include flex-direction(row);
-@include justify-content(center);
-@include align-items(center);
-overflow: auto;
-z-index: 1000;
-#hamburger-wrap {
- z-index: 1000;
- padding: 0 2vw 0 2vw;
-#hamburger-icon {
-  list-style: none;
-  margin: 0;
-  width: 15vmin;
-  height: 15vmin;
-  border-radius: 50%;
-@include flexbox();
-@include flex-direction(column);
-@include justify-content(center);
-@include align-items(center);
-cursor: pointer;
-background-color: #7C7D7E;
- transition: all 0.2s ease-in-out;
-padding: 25% 0;
-position: relative;
-  .hamburger-bar {     
-     width: 50%;
-     height: 2px;
-      margin: 3px 0;
-    border-radius: 24px;
-      background-color: black;
-      margin-left: auto;
-      margin-right: auto;
-      transition: all 0.1s cubic-bezier(0.175, .520, 0.100, 1);
-  
-}
-  #bar-a.first-bar {
- width: 10%;
-
-  }
-#bar-b.second-bar {
-   width: 25%;
-
-  }
-#bar-c.third-bar {
-    width: 10%;
- 
-  }
-
-}
-#hamburger-icon.change-colour {
-background: #E34968;
-}
-#hamburger-icon.self-love-change-colour {
-background-color: mix(rgb(231,56,68), rgba(252,190,194,0.8), 70%);
-}
-
-}
-#brand-area-wrap {
-@include flexbox();
-@include flex-direction(row);
-@include justify-content(center);
-@include align-items(center);
-width: 100%; 
-
- .brand-area {
-@include flexbox();
-@include flex-direction(column);
-@include justify-content(center);
-@include align-items(center);
-position: relative;
-span {
-color: #FAFCFA;  
-}
-
-#brand-name {
-font-family: 'Love Ya Like A Sister', cursive;
-font-size: 8vmin;
-}
-
-#brand-tag-line {
-font-family: 'Amatic SC', cursive;
-font-weight: 700;
-font-size: 4vmin;
-}
- }
- .brand-area-mini {
-  @include flexbox();
-  @include flex-direction(row);
-  @include justify-content(left);
-  @include align-items(center);
-  position: relative;
-  span {
-  color: rgb(46, 172, 221);  
-  }
-  
-  #brand-name-mini {
-  font-family: 'Love Ya Like A Sister', cursive;
-  font-size: 4vmin;
-  }
-  }
-}
- }
-.navigation-area{
-width: 100%;
-height: 100%;
-position: fixed;
-z-index: 998;
-visibility: hidden;
-transition: visibility 500ms cubic-bezier(.62,.04,.3,1.8);
-#navigation-elements {
-left: 0;
-top: 0;  
-height: 100vh;
-width: 0%;
-opacity: 0;
-transition: all 500ms cubic-bezier(.62,.04,.3,1.8);
-background: #FAB388;
-font-family: 'Amatic SC', cursive;
-font-size: 7.5vmin;
-ul {
-position: absolute;
-left: 0;
-top: 15vh;  
-width: 50%;
-    margin: 0 !important;
-    padding: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  #navigation-container {
+    height: 10vh;
+    padding: 0 1em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
     @include flexbox();
-@include flex-direction(column);
-@include justify-content(flex-start);
-@include align-items(center);
-    li {
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    z-index: 1000;
+    position: relative;
+    .brand-area {
+      @include flexbox();
+      @include flex-direction(row);
+      @include justify-content(center);
+      @include align-items(center);
+      position: relative;
+      #brand-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.2em;
+        text-transform: uppercase;
+      }
+    }
+    .navigation-elements {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #ecc850;
+      height: 90vh;
+      clip-path: circle(0 at top right);
+      transition: all 300ms cubic-bezier(.24, .76, .62, .2);
+      ul {
+        margin: 0;
+        padding: 0;
         list-style-type: none;
-        padding: 1vh 1vw;
-        opacity: 0;
-        transform: translateX(-20px);
-        transition: all 0.2s ease;
-        
+        li {
+      
+          border-bottom: 1px solid #f3d684;
+          a {
+               
+           
+            .nav-icon {
+              width: 1em;
+              height: 1em;
+              fill: rgba(68, 68, 68, 0.5);
+              margin: auto 0.5em;
+            }
+          
+            
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;          
+            padding: 2em 6em;
+            text-decoration: none;
+            color:rgb(55, 56, 56);
+            display: block;
+            text-transform: uppercase;
+            &:hover,
+            &:focus {
+              background: #f0b27a;
+              color: #273746;
+            }
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
     }
-    li:nth-child(1) {
-      transition-delay: 0.5s;
+    .navigation-elements--open {
+      clip-path: circle(100vh at top right);
     }
-    li:nth-child(2) {
-      transition-delay: 0.6s;
+    .menu-toggle {
+      padding: 1em;
+      width: 4em;
+      cursor: pointer;
+      .hamburger {
+        background: rgb(48, 47, 47);
+        width: 100%;
+        height: 0.15em;
+        transition: all 100ms cubic-bezier(.24, .76, .62, .2);
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          @extend .hamburger;
+        }
+        &::before {
+          transform: translate(0, -0.3em);
+        }
+        &::after {
+          transform: translate(0, 0.15em);
+        }
+      }
     }
-    li:nth-child(3) {
-      transition-delay: 0.7s;
+    .menu-toggle--open {
+      .hamburger {
+        transform: scale(0.6, 1)
+      }
+      .hamburger::before {
+        transform: scale(0.4, 1) translate(0, -0.3em);
+      }
+      .hamburger::after {
+        transform: scale(0.4, 1) translate(0, 0.15em);
+      }
     }
-    li:nth-child(4) {
-      transition-delay: 0.8s;
+    @media(min-width: $screen-md-min) {
+      .menu-toggle {
+        display: none;
+      }
+      .navigation-elements {
+        position: relative;
+        top: 0;
+        height: auto;
+        background: transparent;
+        clip-path: initial;
+        ul {
+          li {
+            margin-left: 1em;
+            display: inline-block;
+            border-bottom: none;
+            text-align: center; 
+            a {
+              
+              transition: all 70ms cubic-bezier(.24, .76, .62, .2);
+              .nav-icon {
+                fill: rgba(40, 42, 44,0.5);
+              }
+           
+              padding: 0;              
+              color:rgba(22, 23, 24,0.5);
+              &:hover,
+              &:focus {
+                background: transparent;
+                color: rgb(238, 182, 27);
+                font-weight: 700;
+                .nav-icon {
+                  fill: rgba(238, 182, 27, 0.7);
+                }
+              }
+
+             
+            }
+            &:nth-child(1) {            
+              
+                
+              width: 4em;
+            
+          }
+          &:nth-child(2) {            
+              
+                
+            width: 4em;
+          
+        }
+            &:nth-child(3) {            
+              
+                
+                width: 5.4em;
+              
+            }
+             &:nth-child(4) {            
+              
+                
+                width: 4em;
+              
+            }
+          }
+       
+        }
+      }
     }
-    
-}
-}
-#navigation-elements.self-love-color-change {
-    background: #FC904E;
-}
-#navigation-elements.visible-navigationelements {
-    opacity: 1;
-    width: 50%;
-ul 
-{
-  li {
-    opacity: 1;
-    transform: translateX(0);
   }
-}
-}
-}
-.visible-navigation-area {
-  visibility: visible;
-  }
-@media(min-width: $screen-sm-min ) {
-   .header-wrapper{
-    #hamburger-wrap {
-
-#hamburger-icon {
-width: 10vmin;
-height: 10vmin;
-}
-
-}
-
-}
-}
-@media(min-width: $screen-md-min ) {
-  
-  .header-wrapper{
-    #hamburger-wrap {
-padding: 0 2vw 0 2vw;
-#hamburger-icon {
-width: 8vmin;
-height: 8vmin;
-}
-
-}
-
-}
-.navigation-area{
-
-
-#navigation-elements {
-font-size: 4vmin;
-ul {
-
-width: 25%;
-
-}
-}
-#navigation-elements.visible-navigationelements {
-  
-  width: 25%;
-}
-}
-}
-@media(min-width: $screen-lg-min ) {
-  
 }
