@@ -32,6 +32,7 @@
       right: 0;
       background: #ecc850;
       height: 90vh;
+      width: 100%;
       clip-path: circle(0 at top right);
       transition: all 300ms cubic-bezier(.24, .76, .62, .2);
       ul {
@@ -39,7 +40,7 @@
         padding: 0;
         list-style-type: none;
         li {
-      
+          text-align: center; 
           border-bottom: 1px solid #f3d684;
           a {
                
@@ -72,7 +73,7 @@
       }
     }
     .navigation-elements--open {
-      clip-path: circle(100vh at top right);
+      clip-path: circle(110vh at top right);
     }
     .menu-toggle {
       padding: 1em;
@@ -119,12 +120,14 @@
         height: auto;
         background: transparent;
         clip-path: initial;
+        
+      width: auto;
         ul {
           li {
             margin-left: 1em;
             display: inline-block;
             border-bottom: none;
-            text-align: center; 
+            
             a {
               
               transition: all 70ms cubic-bezier(.24, .76, .62, .2);

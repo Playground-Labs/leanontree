@@ -1,14 +1,15 @@
 #self-love {
-    @include flexbox();
-    @include flex-direction(column);
-    @include flex-wrap(wrap);
     height: 100vh;
     background: url('/img/lot/main-bg-9-opt.jpg');
     background-size: cover;
     background-attachment: fixed;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
     #self-love-description-and-navigation {
-        margin-top: 20vh;
-        height: 80vh;
+        margin-top: 10vh;
+        height: 90vh;
         @include flexbox();
         @include flex-direction(column);
         @include justify-content(space-evenly);
