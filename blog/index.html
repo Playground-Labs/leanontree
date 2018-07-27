@@ -1,46 +1,49 @@
----
-title: LeanOnTree - Blog
-layout: blog
-svg-icon-sprite-sheet: "/assets/svg/site-icon-sprite.svg"
----
-{% include svgs/svg-inline.html %}
-{% include navigation/main.html %}
+--- 
+title: LeanOnTree - Blog 
+layout: blog 
+--- 
+{% include svgs/svg-inline.html %} {% include navigation/main.html %}
 <div id="blog-skeleton-wrapper">
-<div id="blog-cards-skeleton" class="blog-skeleton">
-{% for post in site.posts %}
+        <div id="blog-cards-skeleton" class="blog-skeleton">
+                {% for post in site.posts %}
 
-<div class="generic-post-card">
-        
-        
-        <div class="display-text">
-        <div class="display-text-title-and-author">
-        <span class="display-text-title">
-        {% if post.categories contains "self-love" %}
-        <svg class="post-list-icon"><use xlink:href="#heart"></use></svg>
-        {% elsif post.categories contains "TheStoryHour" %}
-        <svg class="post-list-icon"><use xlink:href="#lamp"></use></svg>    
-       {% else %}
-       <svg class="post-list-icon"><use xlink:href="#tree-monochrome"></use></svg>
-       {% endif %}
-       {{ post.title | upcase  }}</span>
-        <div class="dash"></div>
-        <span class="display-text-author">{{ post.author | upcase}}</span>
+                <div class="generic-post-card">
+
+
+                        <div class="display-text">
+                                <div class="display-text-title-and-author">
+                                        <span class="display-text-title">
+                                                {% if post.categories contains "self-love" %}
+                                                <svg class="post-list-icon">
+                                                        <use xlink:href="#heart"></use>
+                                                </svg>
+                                                {% elsif post.categories contains "TheStoryHour" %}
+                                                <svg class="post-list-icon">
+                                                        <use xlink:href="#lamp"></use>
+                                                </svg>
+                                                {% else %}
+                                                <svg class="post-list-icon">
+                                                        <use xlink:href="#tree-monochrome"></use>
+                                                </svg>
+                                                {% endif %} {{ post.title | upcase }}</span>
+                                        <div class="dash"></div>
+                                        <span class="display-text-author">{{ post.author | upcase}}</span>
+                                </div>
+                                <div class="display-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies hendrerit leo,
+                                        vitae sollicitudin massa efficitur vel.
+
+                                        <button class="simple-btn simple-btn-border">Read Story</button>
+
+                                </div>
+                                <span class="display-text-date">
+                                        <span class="month">{{ post.date | date: "%b" }}</span>
+                                        <span class="date">{{ post.date | date: "%d" }}</span>
+                                        <span class="year">{{ post.date | date: "%Y" }}</span>
+                                </span>
+
+                        </div>
+                        <div class="gradient-overlay"></div>
+                </div>
+                {% endfor %}
         </div>
-        <div class="display-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies hendrerit leo, vitae sollicitudin massa efficitur vel.
-        
-        <button class="simple-btn simple-btn-border">Read Story</button>
-          
-        </div>
-        <span class="display-text-date">
-                <span class="month">{{ post.date | date: "%b" }}</span>
-                <span class="date">{{ post.date | date: "%d" }}</span>
-                <span class="year">{{ post.date | date: "%Y" }}</span>
-        </span>
-        
-        </div>
-<div class="gradient-overlay"></div>
 </div>
-{% endfor %}
-</div>
-</div>
-    

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg"><title>svg-icon-sprite</title>
-<defs>
-
-<symbol id="lamp" viewBox="0 0 102 114.78"><circle class="cls-1" cx="71" cy="35.78" r="7"/><path class="cls-2" d="M102,110.49v4.29H17v-4.29c0-3.14,3.12-5.71,6.94-5.71H95.06C98.88,104.78,102,107.35,102,110.49Z"/><path class="cls-2" d="M85,105.78v6H34v-6c0-.34,0-.67,0-1,.25-3.93,2-7,4.12-7H80.84a3.32,3.32,0,0,1,2.64,1.83A11.24,11.24,0,0,1,85,104.78C85,105.11,85,105.44,85,105.78Z"/><rect class="cls-2" x="25.5" y="52.49" width="5" height="56.57" transform="translate(-48.92 43.46) rotate(-45)"/><rect class="cls-2" x="-2.28" y="37.28" width="56.57" height="5" transform="translate(-20.51 30.04) rotate(-45)"/><circle class="cls-2" cx="6" cy="58.78" r="6"/><rect class="cls-2" x="32" y="7.78" width="43" height="21" rx="10.5" ry="10.5" transform="translate(28.59 -32.48) rotate(45)"/><path class="cls-2" d="M90.14,19.18,73.59,36.35l-19,19.7A25.64,25.64,0,1,1,90.14,19.18Z"/><path class="cls-2" d="M83.48,99.61,82.28,101l-3.94-3.27h2.5A3.32,3.32,0,0,1,83.48,99.61Z"/></symbol>
-<style>#heart {isolation:isolate;}.heart{fill:#e5031f;}.heart-shadow{opacity:0.75;mix-blend-mode:multiply;}</style>
-<symbol id="heart" viewBox="0 0 298.06 263.34"><title>heart-redesign</title><path class="heart" d="M297.56,81a80.74,80.74,0,0,1-23.72,57.28L148.78,263.34,34.22,148.78,159.28,23.72A81,81,0,0,1,297.56,81Z"/><path class="heart" d="M263.34,148.78,148.78,263.34,23.72,138.28A81,81,0,0,1,138.28,23.72Z"/><path class="heart heart-shadow" d="M298.06,81a80.74,80.74,0,0,1-23.72,57.28L149.28,263.34l-.5-.5V33.72l.5.5,10.5-10.5A81,81,0,0,1,298.06,81Z"/></symbol>
-</defs>
-</svg>

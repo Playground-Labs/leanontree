@@ -83,6 +83,7 @@
         width: 100%;
         height: 0.15em;
         transition: all 100ms cubic-bezier(.24, .76, .62, .2);
+        display: block;
         &::before,
         &::after {
           content: '';
