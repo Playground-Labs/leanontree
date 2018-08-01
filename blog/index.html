@@ -3,8 +3,11 @@ title: LeanOnTree - Blog
 layout: blog 
 --- 
 {% include svgs/svg-inline.html %} {% include navigation/main.html %}
+
 <div id="blog-skeleton-wrapper">
+        <div class="site-section-title"><span>Blog</span></div>
         <div id="blog-cards-skeleton" class="blog-skeleton">
+              
                 {% for post in site.posts %}
 
                 <div class="generic-post-card">
@@ -30,9 +33,8 @@ layout: blog
                                         <span class="display-text-author">{{ post.author | upcase}}</span>
                                 </div>
                                 <div class="display-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies hendrerit leo,
-                                        vitae sollicitudin massa efficitur vel.
-
-                                        <button class="simple-btn simple-btn-border">Read Story</button>
+                                        vitae sollicitudin massa efficitur vel.<br/>
+                                <button class="simple-btn simple-btn-border">Read Story</button>
 
                                 </div>
                                 <span class="display-text-date">
