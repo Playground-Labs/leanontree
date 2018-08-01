@@ -14,8 +14,6 @@
     @include flex-direction(row);
     @include justify-content(space-between);
     @include align-items(center);
-    
-   
     .brand-area {
       @include flexbox();
       @include flex-direction(row);
@@ -43,21 +41,18 @@
         padding: 0;
         list-style-type: none;
         li {
-          text-align: center; 
+          text-align: center;
           border-bottom: 1px solid #f3d684;
           a {
-               
-           
             .nav-icon {
               width: 1em;
               height: 1em;
               fill: rgba(68, 68, 68, 0.5);
               margin: auto 0.5em;
             }
-          
-            
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 400;          
+            font-family: 'Quicksand',
+            sans-serif;
+            font-weight: 400;
             padding: 2em 6em;
             text-decoration: none;
             color:rgb(55, 56, 56);
@@ -123,23 +118,19 @@
         height: auto;
         background: transparent;
         clip-path: initial;
-        
-      width: auto;
+        width: auto;
         ul {
           li {
             margin-left: 1em;
             display: inline-block;
             border-bottom: none;
-            
             a {
-              
               transition: all 70ms cubic-bezier(.24, .76, .62, .2);
               .nav-icon {
-                fill: rgba(40, 42, 44,0.5);
+                fill: rgba(40, 42, 44, 0.5);
               }
-           
-              padding: 0;              
-              color:rgba(22, 23, 24,0.5);
+              padding: 0;
+              color:rgba(22, 23, 24, 0.5);
               &:hover,
               &:focus {
                 background: transparent;
@@ -149,35 +140,20 @@
                   fill: rgba(238, 182, 27, 0.7);
                 }
               }
-
-             
             }
-            &:nth-child(1) {            
-              
-                
+            &:nth-child(1) {
               width: 4em;
-            
-          }
-          &:nth-child(2) {            
-              
-                
-            width: 4em;
-          
-        }
-            &:nth-child(3) {            
-              
-                
-                width: 5.4em;
-              
             }
-             &:nth-child(4) {            
-              
-                
-                width: 4.8em;
-              
+            &:nth-child(2) {
+              width: 4em;
+            }
+            &:nth-child(3) {
+              width: 5.4em;
+            }
+            &:nth-child(4) {
+              width: 4.8em;
             }
           }
-       
         }
       }
     }
