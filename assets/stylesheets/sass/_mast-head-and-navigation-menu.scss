@@ -90,10 +90,10 @@
           @extend .hamburger;
         }
         &::before {
-          transform: translate(0, -0.3em);
+          transform: translate(0, -0.45em);
         }
         &::after {
-          transform: translate(0, 0.15em);
+          transform: translate(0, 0.30em);
         }
       }
     }
