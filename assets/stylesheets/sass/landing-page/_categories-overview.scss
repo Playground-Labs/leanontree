@@ -5,23 +5,32 @@
 position: absolute;
 list-style-type: none;
 padding: 0 !important;
-margin: 20vh 0 0 0 !important;
-width: 100vw;
+margin: 0 !important;
+width: 100%;
 height: 80vh;
-  @include flexbox();
-@include flex-direction(row);
-@include justify-content(space-around);
-@include align-items(space-around);
-@include flex-wrap(wrap);
 
-  z-index:997;
+z-index:997;
   $element-square-side-smallest: 10vmin; 
-  $element-square-side-normal: 15vmin;  
+  $element-square-side-normal: 18vmin;  
   $element-square-side-large: 24vmin;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24vmin, 1fr));
+  grid-auto-rows: 24vmin;
+  grid-gap: 2vmin;
+  grid-auto-flow: dense;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
 .site-category-overview-fragment {
 width: $element-square-side-normal;
 height: $element-square-side-normal;
-margin: 0 10% 0 10%;
+//background-color: mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
+color: rgb(245, 245, 245);
+background: rgb(255,139,69);
+background: linear-gradient(45deg, rgba(255,139,69,1) 0%, rgba(255,97,97,1) 100%);
+      display: block;
+      border-radius: 50%;
 
 .category-information {
   height: 100%; 
@@ -32,8 +41,14 @@ margin: 0 10% 0 10%;
 
    font-family: 'Alegreya Sans SC', sans-serif;
   .navigation-sign {
-   font-size: 4vmin;
+     font-size: 3vmin;
      z-index:1;
+  }
+  .category-information-icon {
+   height: 4vmin;
+   width: 4vmin;
+     z-index:1;
+     fill: rgb(255, 88, 58);
   }
   .navigation-text {
   font-size:2vmin;
@@ -49,63 +64,16 @@ color: inherit;
  
   
 }
+&:nth-child(4){
+  width: $element-square-side-large;
+height: $element-square-side-large;
 }
-#my-december {
-  margin: 0 25% 0 25% !important;
-  width: $element-square-side-large !important;
-  height: $element-square-side-large !important;
-  svg { 
-    circle {
-      $radius-of-circle: ($element-square-side-large * 49.5)/100 ;
-  $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
-  stroke-dasharray: $circumference-of-circle $circumference-of-circle;
-  stroke-dashoffset: $circumference-of-circle;
-    }
-  }
-  }
-  #back {
-    width: $element-square-side-normal !important;
-  height: $element-square-side-normal !important;
-  cursor: pointer;
-  
-  svg { 
-    circle {
-      $radius-of-circle: ($element-square-side-normal * 49.5)/100 ;
-  $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
-  stroke-dasharray: $circumference-of-circle $circumference-of-circle;
-  stroke-dashoffset: $circumference-of-circle;
-    }
-  }
-  }
-li:nth-child(odd) { 
-     
-  position: relative;
-  svg { 
-    
-    position: absolute;
-    top:0;
-    circle {
-  stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-  fill:transparent;
-  stroke-width: 2;
-  $radius-of-circle: ($element-square-side-normal * 49.5)/100 ;
-  $circumference-of-circle: 2 * 3.14159 * $radius-of-circle ;
-  stroke-dasharray: $circumference-of-circle $circumference-of-circle;
-  stroke-dashoffset: $circumference-of-circle;
-  animation: dash-circle 2s linear forwards;
-    }
-   @keyframes dash-circle {
-    to {
-      stroke-dashoffset: 0;
-      fill: mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-    }
-  }
-  
-  }
+
+
 }
-li:nth-child(even) { 
-display: none;
-}
+
+
+
 }
 @media(min-width: $screen-sm-min ) {
 }
@@ -114,39 +82,15 @@ display: none;
   $element-square-side-normal: 15vmin;  
   $element-square-side-large: 24vmin;
   .site-categories-overview {
-    @include flex-direction(row);
-    @include justify-content(center);
-    @include align-items(center);
+
     
     .site-category-overview-fragment {
-      margin: 0 0 0 0;
-    }
-    #my-december {
-      margin: 0 0 0 0 !important;
-    }
-    #back {
-      width: $element-square-side-smallest !important;
-      height: $element-square-side-smallest !important;
+
+      
     }
 
-    li:nth-child(even) {
-      display: inline;
-    svg {
-    line {
-    stroke:mix(rgb(255,139,69), rgba(249,244,242,0.8), 70%);
-    stroke-width:2;
-    stroke-dasharray: 100%;
-    stroke-dashoffset: 100%;
-    animation: dash 2s linear forwards;
-    }
-    }
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-    
-    }  
+
+ 
 }
 }
 @media(min-width: $screen-lg-min ) {

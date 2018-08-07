@@ -78,7 +78,8 @@
     width: 15vmin;
     height: 15vmin;
     border-radius: 50%;
-    background-color: mix(rgb(255, 139, 69), rgba(249, 244, 242, 0.8), 70%);
+    background: rgb(255,139,69);
+background: linear-gradient(45deg, rgba(255,139,69,1) 0%, rgba(255,97,97,1) 100%);
     font-family: 'Alegreya Sans SC', sans-serif;
     @include flexbox();
     @include flex-direction(column);
