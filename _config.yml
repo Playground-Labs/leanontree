@@ -25,5 +25,5 @@ analytics :
   provider : google
   google :
       tracking_id : 'UA-65359714-1'
-exclude: ['vendor','build_script', 'Gemfile','Gemfile.lock','README.md','assets/stylesheets/sass','tag/tag_template_generator.py','tag/index.html','localserver.bat','localsass.bat','.travis.yml','*.log', ]
+exclude: ['vendor','build_script', 'Gemfile','Gemfile.lock','README.md','assets/stylesheets/sass','tag/tag_template_generator.py','tag/index.html','.travis.yml','*.log', ]
  

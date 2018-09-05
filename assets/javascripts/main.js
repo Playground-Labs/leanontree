@@ -102,6 +102,48 @@ $(document).ready(function () {
             container_div.appendChild(container_div.firstElementChild);
         });
     }
+
+  //contact form firebase code 
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyACiKhc-fIZcpg0XbjWLWUyb2EHW3f4o7Y",
+    authDomain: "leanontree-5358a.firebaseapp.com",
+    databaseURL: "https://leanontree-5358a.firebaseio.com",
+    projectId: "leanontree-5358a",
+    storageBucket: "leanontree-5358a.appspot.com",
+    messagingSenderId: "462433730861"
+  };
+  firebase.initializeApp(config);
+
+  var messagesRef = firebase.database().ref('messages');
+
+  document.getElementById('contact-form').addEventListener('submit', submitForm);
+
+  // submit Form
+  function submitForm(e) {
+  e.preventDefault();
+
+  //Get Values
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var message = getInputVal('message');
+saveMessage(name,email,message);
+  document.getElementById('contact-form').reset();
+  }
+
+  // Function to get get form values
+function getInputVal(id){
+    return document.getElementById(id).value;
+  }
+
+  function saveMessage(name,email,message) {
+      var newMessageRef = messagesRef.push();
+      newMessageRef.set({
+        name: name,
+        email: email,
+        message: message
+      });
+  }
 });
 
 window.fbAsyncInit = function () {
