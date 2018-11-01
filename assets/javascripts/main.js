@@ -106,7 +106,7 @@ $(document).ready(function () {
   //contact form firebase code 
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyACiKhc-fIZcpg0XbjWLWUyb2EHW3f4o7Y",
+    apiKey: "AIzaSyDORMIq3M5o3np6NKfUzIGjd7NrzMbHLaE",
     authDomain: "leanontree-5358a.firebaseapp.com",
     databaseURL: "https://leanontree-5358a.firebaseio.com",
     projectId: "leanontree-5358a",
