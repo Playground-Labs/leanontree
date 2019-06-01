@@ -1,18 +1,18 @@
 <template>
   <header class="header-wrapper">
     <div id="navigation-container" class="navigation-container">
-      <div class="brand-area">
-        <span id="brand-name">lean on tree</span>
-      </div>
-      <menu-items />
+      <brand />
+      <nav-items />
     </div>
   </header>
 </template>
 <script>
-import menuItems from '~/components/navigation/menuItems.vue'
+import brand from '~/components/navigation/brand.vue'
+import navItems from '~/components/navigation/navItems.vue'
 export default {
   components: {
-    menuItems
+    brand,
+    navItems
   }
 }
 </script>
@@ -33,19 +33,7 @@ export default {
     @include flex-direction(row);
     @include justify-content(space-between);
     @include align-items(center);
-    .brand-area {
-      @include flexbox;
-      @include flex-direction(row);
-      @include justify-content(center);
-      @include align-items(center);
-      position: relative;
-      #brand-name {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 1.2em;
-        text-transform: uppercase;
-      }
-    }
+
     @media(min-width: $screen-md-min) {
       .menu-toggle {
         display: none;
