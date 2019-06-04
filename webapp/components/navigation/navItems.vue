@@ -2,7 +2,7 @@
   <div>
     <nav id="navigation-elements" class="navigation-elements">
       <ul>
-        <li><a href="/"><svg-icon-home class="nav-icon"/>Home</a></li>
+        <li><a href="/"><svg-icon-home class="nav-icon" />Home</a></li>
         <li><a href="#"><svg class="nav-icon nav-about"><use xlink:href="#nav-about" /></svg>About</a></li>
         <li><a href="#"><svg class="nav-icon nav-initiatives"><use xlink:href="#nav-initiatives" /></svg>Initiatives</a></li>
         <li><a href="#"><svg class="nav-icon nav-contact"><use xlink:href="#nav-contact" /></svg>Contact</a></li>

@@ -25,7 +25,8 @@
 svg {
 #nav-home {
     isolation: isolate;
-                        }
+    fill: black;
+}
                         .home-door {
                                 fill: none;
                         }
